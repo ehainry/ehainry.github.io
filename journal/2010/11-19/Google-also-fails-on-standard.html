@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8" />
+<title>Google also fails on standards [velsheda]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/plus.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/pygments.css" type="text/css" media="screen, projection" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<meta name="author" content="EH" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+</div>
+<div class="collapse navbar-collapse" id="menu-collapse">
+<ul class="nav navbar-nav">
+<li><a href="/journal/archive.html">Archive</a></li>
+<li><a href="/journal/categories.html">Categories</a></li>
+<li><a href="/journal/about.html">Contact</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
+<ul class="dropdown-menu">
+	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
+	<li><a href="http://www.goodreads.com/user/show/2385793">Goodreads</a></li>
+	<li><a href="http://last.fm/">Last.fm</a></li>
+	<li><a href="https://linuxfr.org/">DLFP</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10">
+ <h2>Google also fails on standards</h2>
+ <span id="tag">standards and en</span>
+ <p>The google chrome team published a webbook entitled <a href='http://www.20thingsilearned.com/'>&#8220;20 things I learned about browsers &amp; the web&#8221;</a>. It&#8217;s nice and pretty with beautiful drawings and interesting content. However, there was a distasteful yellow header on the page while I was viewing the page in my current browser of choice: <a href='http://luakit.org/'>luakit</a> telling me that I needed a modern browser to see the book and all its features:</p>
+
+<p><img alt='luakit' src='http://velsheda.lateralis.org/journal/images/luakit_20.png' /></p>
+
+<p>Well, luakit may not support everything I guessed. Let us use firefox (well technically, iceweasel but it&#8217;s just firefox with another name, it should be recognized as firefox by any intelligent website). Same verdict:</p>
+
+<p><img alt='iceweasel' src='http://velsheda.lateralis.org/journal/images/iceweasel_20.png' /></p>
+
+<p>OK, I followed the link at the top telling me what modern browsers meant. It listed firefox but also opera. I like opera. And I have the latest alpha of it. Just let me launch it and&#8230; nothing better:</p>
+
+<p><img alt='opera' src='http://velsheda.lateralis.org/journal/images/opera_20.png' /></p>
+
+<p>So I guess they do user-agent sniffing and they are bad at it. Let us try luakit with chrome&#8217;s user-agent string. Hey it works! And there is a new feature: some kind of red bookmark that shows sharing possibility when I hover it&#8230;</p>
+
+<p><img alt='luakit as chrome' src='http://velsheda.lateralis.org/journal/images/luakit_as_chrome_20.png' /></p>
+
+<p>Conclusion: still the same: sniffing user-agent is bad: it prevents my browser from doing what it can do and you pretend it cannot. Please don&#8217;t do it (and if you are Apple or Google, be fair to your competitors).</p>
+<div class="date">Written on 19 November 2010 by <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+</div>
+<div class="col-sm-2">
+  <a href="/journal/index.html">Index</a><br />
+  Next: <a href="/journal/2010/11-25/Naviguer-autrement-avec-luakit.html">Naviguer autrement avec luakit</a><br />
+  Prev: <a href="/journal/2010/11-07/regrouper-les-sources.html">Regrouper les sources</a><br />
+</div>
+</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8" />
+<title>Games libraries [velsheda]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/plus.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/pygments.css" type="text/css" media="screen, projection" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<meta name="author" content="EH" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+</div>
+<div class="collapse navbar-collapse" id="menu-collapse">
+<ul class="nav navbar-nav">
+<li><a href="/journal/archive.html">Archive</a></li>
+<li><a href="/journal/categories.html">Categories</a></li>
+<li><a href="/journal/about.html">Contact</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
+<ul class="dropdown-menu">
+	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
+	<li><a href="http://www.goodreads.com/user/show/2385793">Goodreads</a></li>
+	<li><a href="http://last.fm/">Last.fm</a></li>
+	<li><a href="https://linuxfr.org/">DLFP</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10">
+ <h2>Games libraries</h2>
+ <span id="tag">en, linux, and games</span>
+ <p>Gaming on Linux was once a desolated land containing only small open source games and one or two gems (<a href='http://www.wesnoth.org/'>Battle for Wesnoth</a> for example). However, this is no longer the case essentially since 2010 and the first <a href='http://en.wikipedia.org/wiki/Humble_Bundle#Humble_Indie_Bundle'>Humble indie bundle</a>, and more recently with steam coming to linux, many games comming along and steam even announcing future gaming machines running Linux as their primary OS.</p>
+
+<p>Apart from that, there are also ways to get old games to play under Linux (and other OSes) through the reimplementation of their engine. For example, if you have the files for <em>Broken Sword</em>, you can play it under Linux using Scummvm. <a href='http://www.scummvm.org'>Scummvm</a> in fact contains engines to run dozens of adventure games from the 90s such as Broken Sword, Day of the Tentacle, Monkey Island, Indiana Jones and the Fate of Atlantis, Space Quest, Kyrandia&#8230; Other new engines for old games include <a href='http://freesynd.sourceforge.net/'>FreeSynd</a> for playing Syndicate, <a href='http://cyxdown.free.fr/reminiscence/'>REminiscence</a> for playing Flashback, or <a href='http://icculus.org/rott/'>rott</a> to play Rise of the Triad. Wikipedia has <a href='https://en.wikipedia.org/wiki/Game_engine_recreation'>a list for this</a>.</p>
+
+<p>And then, there are wine and dosbos. <a href='http://winehq.com'>wine</a> allows you to launch windows programs, including games, under Linux. <a href='http://www.dosbox.com/'>dosbox</a> does the same for dos games. The performance in both cases is however not spectacular.</p>
+
+<p>And with all those games, most of them not coming through the package manager, there is a need for organisation and simple installing. Steam and Desura are doing it, through their somewhat bloated client. The Open Source <a href='http://lutris.net/'>Lutris</a> also promises this but, I cannot grasp how to use it. The installation of games part is on par with the experience on other OSes, not as great as using the package manager (apt-get/synaptic), but reasonably simple. Concerning the organisation need, it should already be filled by the native support for <em>desktop-files</em>. Indeed, executable programs usually install a small file with the extension <code>.desktop</code> that associates a legend and an icon to the launch command. Then the Desktop Manager knows how to treat those files, for example in gnome, pressing the Meta key (also called Windows key) brings a menu in which it is possible to launch programs, even to display all those from a given category (say Games)&#8230;</p>
+
+<p>And <em>desktop-files</em> are not difficult to write by oneself. For example, the following is a complete desktop file:</p>
+
+<pre><code>[Desktop Entry]
+Name=Gobliins 2
+Exec=scummvm -n -p /home/manu/.local/share/scummvm/gobliins2 gob2cd-fr
+Type=Application
+Icon=gobliiins
+Categories=Game;</code></pre>
+
+<p>For DEs to find those files and their icons, they need to be in specific locations: desktop files can be put in <code>~/.local/share/applications/</code> and icons in <code>~/.local/share/icons/</code> for example.</p>
+
+<p>When not using Desktop Environments, it can be more difficult, but launchers such as <a href='http://engla.github.io/kupfer/'>kupfer</a> understand them, and there usually exist scripts to generate a menu for your desktop entries: for example a <a href='http://openbox.org/wiki/Openbox:Pipemenus:obam'>pipemenu for openbox</a>; I did a similar program in lua for awesome, which I could share.</p>
+<div class="date">Written on 22 November 2013 by <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+</div>
+<div class="col-sm-2">
+  <a href="/journal/index.html">Index</a><br />
+  
+  Prev: <a href="/journal/2013/08-24/fin_de_vie_orizon.html">Livre en fin de vie</a><br />
+</div>
+</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

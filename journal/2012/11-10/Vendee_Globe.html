@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Suivre le Vendée Globe sans flash [velsheda]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/plus.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/pygments.css" type="text/css" media="screen, projection" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<meta name="author" content="EH" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-c">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+</div>
+<div class="collapse navbar-collapse" id="menu-c">
+<ul class="nav navbar-nav">
+<li><a href="/journal/archive.html">Archive</a></li>
+<li><a href="/journal/categories.html">Categories</a></li>
+<li><a href="/journal/about.html">Contact</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
+<ul class="dropdown-menu">
+	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
+	<li><a href="http://www.goodreads.com/user/show/2385793">Goodreads</a></li>
+	<li><a href="http://last.fm/">Last.fm</a></li>
+	<li><a href="https://linuxfr.org/">DLFP</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10">
+ <h2>Suivre le Vendée Globe sans flash</h2>
+ <!--<span id="tag">fr, voile, cartographie, python, javascript, and vendee globe</span>-->
+ <span id="tag">
+   
+   <a href="/journal/categories.html#fr">fr</a>,
+   
+   <a href="/journal/categories.html#voile">voile</a>,
+   
+   <a href="/journal/categories.html#cartographie">cartographie</a>,
+   
+   <a href="/journal/categories.html#python">python</a>,
+   
+   <a href="/journal/categories.html#javascript">javascript</a>,
+   
+   <a href="/journal/categories.html#vendee globe">vendee globe</a>,
+   </span>
+ <p>Hop, départ du Vendée Globe 2012. Comme d&#8217;habitude, la cartographie se fait dans une application flash. C&#8217;est lourd, ça ne marche pas sur mon téléphone et ça fait souffler mon ordinateur comme une baleine ! J&#8217;ai ressorti mon <a href='https://bitbucket.org/manu/vg/'>script python pour fabriquer des cartes statiques</a> qui donne des <a href='http://velsheda.lateralis.org/cartes/vg_carte.jpg'>cartes plus ou moins jolies</a>. Et pour être moderne (et apprendre à utiliser les API de cartographie), j&#8217;ai aussi fait deux versions en javascript : <a href='https://bitbucket.org/manu/vendeejs/'>vendeejs</a>.</p>
+
+<p><img alt='Exemple de carte statique' src='/cartes/vg_vi.jpg' /></p>
+
+<p>En bref trois cartes des positions des bateaux du Vendée Globe :</p>
+
+<ul>
+<li><a href='/cartes/vg_carte.jpg'>carte jpg statique (mais à jour)</a></li>
+
+<li><a href='/vg/nokia.html'>carte dynamique v1</a></li>
+
+<li><a href='/vgjs/leaflet.html'>carte dynamique v2</a></li>
+</ul>
+
+<p>Les versions javascript utilisent</p>
+
+<ul>
+<li>d&#8217;une part l&#8217;<a href='http://api.maps.nokia.com/en/index.html'>API de cartographie nokia</a></li>
+
+<li>d&#8217;autre part l&#8217;<a href='http://leaflet.cloudmade.com/'>API Leaflet</a> avec des tuiles <a href='http://www.esri.com/getting-started/developers'>ESRI</a>. Les icones des bateaux ne sont pas terribles, mais j&#8217;ai fait une version plus jolie accessible en enlevant &#8220;js&#8221; dans l&#8217;adresse.</li>
+</ul>
+
+<p>J&#8217;ai découvert que ce n&#8217;était plus possible de charger un fichier html sur un autre serveur<sup id='fnref:1'><a href='#fn:1' rel='footnote'>1</a></sup> depuis un script javascript alors que j&#8217;aimerais le faire pour récupérer le classement. Ceci pour éviter les <a href='https://fr.wikipedia.org/wiki/Cross-site_scripting'>attaques XSS</a>. J&#8217;ai aussi redécouvert que javascript est vraiment un langage désagréable pour programmer. Même si j&#8217;ai codé ce script à l&#8217;arrache, je trouve que les erreurs pourraient être un peu mieux expliquées, que concaténer et additionner avec le même opérateur dans un langage où les types sont aussi mous qu&#8217;en javascript, c&#8217;est une mauvaise idée, bref que python est quand même beaucoup plus sympa.</p>
+<div class='footnotes'><hr /><ol><li id='fn:1'>
+<p>sauf si c&#8217;était un serveur que j&#8217;administre auquel cas je pourrais faire du <a href='https://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing'>CORS</a>, ce qui n&#8217;est pas le cas pour <a href='http://www.vendeeglobe.org/'>http://www.vendeeglobe.org/</a>.</p>
+<a href='#fnref:1' rev='footnote'>&#8617;</a></li></ol></div>
+<div class="date">Écrit le 10 November 2012 par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+</div>
+<div class="col-sm-2">
+  <a href="/journal/index.html">Index</a><br />
+  Next: <a href="/journal/2012/11-11/Safran.html">Vendée Globe : premier abandon</a><br />
+  Prev: <a href="/journal/2012/10-10/bug_cybook.html">Deux bugs et un contournement pour mon cybook</a><br />
+</div>
+</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

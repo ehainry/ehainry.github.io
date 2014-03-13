@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Améliorations pour mes cartes du Vendée Globe [velsheda]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/plus.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/pygments.css" type="text/css" media="screen, projection" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<meta name="author" content="EH" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-c">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+</div>
+<div class="collapse navbar-collapse" id="menu-c">
+<ul class="nav navbar-nav">
+<li><a href="/journal/archive.html">Archive</a></li>
+<li><a href="/journal/categories.html">Categories</a></li>
+<li><a href="/journal/about.html">Contact</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
+<ul class="dropdown-menu">
+	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
+	<li><a href="http://www.goodreads.com/user/show/2385793">Goodreads</a></li>
+	<li><a href="http://last.fm/">Last.fm</a></li>
+	<li><a href="https://linuxfr.org/">DLFP</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10">
+ <h2>Améliorations pour mes cartes du Vendée Globe</h2>
+ <!--<span id="tag">fr, voile, cartographie, javascript, and vendee globe</span>-->
+ <span id="tag">
+   
+   <a href="/journal/categories.html#fr">fr</a>,
+   
+   <a href="/journal/categories.html#voile">voile</a>,
+   
+   <a href="/journal/categories.html#cartographie">cartographie</a>,
+   
+   <a href="/journal/categories.html#javascript">javascript</a>,
+   
+   <a href="/journal/categories.html#vendee globe">vendee globe</a>,
+   </span>
+ <p>J&#8217;ai <a href='/journal/2012/11-10/Vendee_Globe.html'>donc</a> réalisé des programmes pour voir les positions des bateaux du Vendée Globe. Trois versions <a href='/cartes/vg_carte.jpg'>statique</a>, <a href='/vg/nokia.html'>dynamique nokia</a> et <a href='/vgjs/leaflet.html'>dynamique leaflet</a> qui donnent respectivement des choses ressemblant à</p>
+
+<p><img alt='statique mini' src='/cartes/vg_vi.jpg' /></p>
+
+<p><img alt='dynamique nokia' src='/journal/images/nokia.jpg' /></p>
+
+<p><img alt='dynamique leaflet' src='/journal/images/leaflet.jpg' /></p>
+
+<p>J&#8217;ai plusieurs idées de modifications et améliorations mais je ne sais pas encore trop comment les réaliser ou si ce serait vraiment intéressant.</p>
+
+<ol>
+<li>
+<p><strong>Affichage des force et direction du vent.</strong> Il devrait être possible d&#8217;inclure les forces des vents pour deviner par exemple l&#8217;anticyclone de Ste Hélène. Je pourrais par exemple utiliser les données <a href='http://grib.us'>GRIB</a> mais ce n&#8217;est pas très facile à traiter et il n&#8217;existe pas à ma connaissance de bibliothèque javascript pour le vent.</p>
+</li>
+
+<li>
+<p><strong>Affichage des points de passage obligés.</strong> Dans quelques jours, les navigateurs devront laisser à tribord l&#8217;île Gough, puis ils devront passer dans la porte atlantique, c&#8217;est-à-dire passer entre deux points donnés. Comment les représenter ? Une épingle d&#8217;une couleur spéciale pour le point à laisser à tribord ? un trait pour la porte ?</p>
+</li>
+
+<li>
+<p><strong>Calcul de distances orthodromiques.</strong> Ce serait intéressant de pouvoir calculer la distance entre deux bateaux ou la distance à un point donné sur la carte. Par exemple comme le permet l&#8217;outil règle des <a href='http://here.net/'>cartes nokia</a>.</p>
+</li>
+
+<li>
+<p><strong>Zoom sur un groupe donné de bateaux.</strong> En ce moment, il est possible dans les versions javascript de zoomer sur <em>les cinq premiers</em> ou <em>toute la flotte</em> ou <em>toute la flotte + Les Sables d&#8217;Olonne</em>. Comme des groupes se sont formés, il pourrait être intéressant de zoomer sur un groupe de bateaux particulier, par exemple <em>Akena</em>, <em>Acciona</em>, <em>Initiatives Cœur</em> et <em>Votre nom autour du monde</em>. Malheureusement, cela nécessite une interface plus évoluée que des boutons (par exemple des sliders définissant un min et un max).</p>
+</li>
+</ol>
+<div class="date">Écrit le 23 November 2012 par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+</div>
+<div class="col-sm-2">
+  <a href="/journal/index.html">Index</a><br />
+  Next: <a href="/journal/2013/01-12/stamm.html">Cartes du Vendée Globe avec Bernard Stamm</a><br />
+  Prev: <a href="/journal/2012/11-19/abandons_en_serie.html">Abandons en série</a><br />
+</div>
+</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

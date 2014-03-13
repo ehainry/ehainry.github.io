@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Lecteur d'epub [velsheda]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/plus.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/pygments.css" type="text/css" media="screen, projection" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<meta name="author" content="EH" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-c">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+</div>
+<div class="collapse navbar-collapse" id="menu-c">
+<ul class="nav navbar-nav">
+<li><a href="/journal/archive.html">Archive</a></li>
+<li><a href="/journal/categories.html">Categories</a></li>
+<li><a href="/journal/about.html">Contact</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
+<ul class="dropdown-menu">
+	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
+	<li><a href="http://www.goodreads.com/user/show/2385793">Goodreads</a></li>
+	<li><a href="http://last.fm/">Last.fm</a></li>
+	<li><a href="https://linuxfr.org/">DLFP</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10">
+ <h2>Lecteur d'epub</h2>
+ <!--<span id="tag">fr, livres, and epub</span>-->
+ <span id="tag">
+   
+   <a href="/journal/categories.html#fr">fr</a>,
+   
+   <a href="/journal/categories.html#livres">livres</a>,
+   
+   <a href="/journal/categories.html#epub">epub</a>,
+   </span>
+ <p>Existe-t-il un logiciel de lecture des fichiers ePub sous linux qui soit complètement satisfaisant ? J&#8217;en ai essayé plusieurs mais je n&#8217;ai pas trouvé mon bonheur. Les concurrents : <a href='https://addons.mozilla.org/en-US/firefox/addon/epubreader/'>epubreader</a>, <a href='http://www.lucidor.org/lucidor/'>lucidor</a>, <a href='http://widgets.opera.com/widget/15552/'>ebook reader for opera</a>, <a href='http://code.google.com/p/aranduka/'>aranduka</a>, <a href='http://calibre-ebook.com/'>calibre</a> et <a href='http://fbreader.org/'>FBReader</a>.</p>
+
+<h3 id='fbreader'>FBReader</h3>
+
+<p><a href='http://fbreader.org/'>FBReader</a> explore un dossier et classe les livres contenus par auteur ou genre. Ensuite, il permet de lire le fichier plutôt pas mal. Malheureusement, il zappe beaucoup du style des fichiers. Ce pourrait être un avantage pour éviter les mises en page lourdes qui peuvent arriver à condition que la configuration de base soit excellente ou la configuration facile, ce n&#8217;est pas le cas.</p>
+
+<p>Cependant, fbreader est le logiciel que je continue à utiliser pour regarder des livres.</p>
+
+<h3 id='calibre'>Calibre</h3>
+
+<p><a href='http://calibre-ebook.com/'>calibre</a> gère la bibliothèque, la synchronisation avec le livre électronique et la conversion entre différents formats de livres numériques. Il possède aussi un visualiseur simple. Et particulièrement mauvais : au changement de page, des lignes apparaissent à moitié ou parfois à la fois en dernière ligne d&#8217;une page et en première de la suivante. En plus, il est lent (il a même une animation lente, moche, inutile pour le changement de page). Bref, calibre n&#8217;est pas du tout la solution pour lire un ePub.</p>
+
+<h3 id='aranduka'>Aranduka</h3>
+
+<p>Je ne sais pas tout ce qu&#8217;est censé faire <a href='http://code.google.com/p/aranduka/'>aranduka</a>, mais c&#8217;est prometteur. Son lecteur d&#8217;epub fonctionne. Son défaut est qu&#8217;il ne sait pas faire la pagination (chaque chapitre est présentée comme une seule très longue page).</p>
+
+<h3 id='ebook_reader_for_opera'>Ebook reader for Opera</h3>
+
+<p><a href='http://widgets.opera.com/widget/15552/'>ebook reader for opera</a> est un widget pour le navigateur Opera. Logique, il s&#8217;agit d&#8217;afficher du html/xhtml, qui mieux qu&#8217;un navigateur pour faire ça ? Mais ce widget est malcommode et ne gère pas la pagination.</p>
+
+<h3 id='lucidor'>Lucidor</h3>
+
+<p><a href='http://www.lucidor.org/lucidor/'>lucidor</a> est à Firefox ce que Ebook Reader est à Opera. Défaut : pas de pagination.</p>
+
+<h3 id='okular'>Okular</h3>
+
+<p>Le lecteur/éditeur de pdf de KDE, <a href='http://okular.kde.org/'>okular</a> sait lire les epub. Je n&#8217;ai pas trouvé comment augmenter la taille de la police.</p>
+
+<h3 id='epubreader'>Epubreader</h3>
+
+<p>Une extension pour firefox : <a href='https://addons.mozilla.org/en-US/firefox/addon/epubreader/'>epubreader</a>. Sa bibliothèque n&#8217;est pas trop commode, mais niveau lecteur, il a l&#8217;air le plus abouti et agréable : il fait des pages, il comprend les styles mieux que fbreader, il permet d&#8217;outrepasser les thèmes du livre.</p>
+
+<h3 id='bookworm'>bookworm</h3>
+
+<p>Cas à part, <a href='http://bookworm.oreilly.com/'>bookworm</a> est un lecteur d&#8217;epub en ligne. Il est <a href='http://code.google.com/p/threepress/'>open source</a> et peut donc être installé sur n&#8217;importe quel serveur. Bookworm ne gère pas la pagination.</p>
+
+<h3 id='epubtopdf'>epubtopdf</h3>
+
+<p>Ça ne répond absolument pas à la problématique de départ mais ça peut être intéressant tout de même, je me suis fait un <a href='https://bitbucket.org/manu/epubinfo/src/21c36398f143/epubtopdf.sh'>script shell epubtopdf</a> qui dépend de wkhtmltopdf pour transformer du html en pdf et de pdfjam pour accoler les différents pdf produits. Certaines images ne passent pas (à cause d&#8217;un bug dans wkhtmltopdf). Je trouve le résultat plus joli que celui de calibre.</p>
+<div class="date">Écrit le 26 September 2011 par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+</div>
+<div class="col-sm-2">
+  <a href="/journal/index.html">Index</a><br />
+  Next: <a href="/journal/2011/10-02/lbdb.html">Get contacts from LinkedIn, Google Plus, Ldap together with lbdb</a><br />
+  Prev: <a href="/journal/2011/09-19/Livre-sur-la-place.html">Livre sur la place</a><br />
+</div>
+</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

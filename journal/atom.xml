@@ -1,0 +1,1121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ <title>Velsheda</title>
+ <link href="http://velsheda.lateralis.org/journal/atom.xml" rel="self"/>
+ <link href="http://velsheda.lateralis.org/journal/"/>
+ <updated>2014-03-13T15:53:35+01:00</updated>
+ <id>http://velsheda.lateralis.org/journal/</id>
+ <author><name>Emmanuel Hainry</name><email>ehainry@laposte.net</email></author>
+ 
+ <entry><title>Games libraries</title>
+  <link href="http://velsheda.lateralis.org/journal/2013/11-22/game_library.html"/>
+  <updated>2013-11-22T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2013/11-22/game_library</id>
+  <content type="html">&lt;p&gt;Gaming on Linux was once a desolated land containing only small open source games and one or two gems (&lt;a href='http://www.wesnoth.org/'&gt;Battle for Wesnoth&lt;/a&gt; for example). However, this is no longer the case essentially since 2010 and the first &lt;a href='http://en.wikipedia.org/wiki/Humble_Bundle#Humble_Indie_Bundle'&gt;Humble indie bundle&lt;/a&gt;, and more recently with steam coming to linux, many games comming along and steam even announcing future gaming machines running Linux as their primary OS.&lt;/p&gt;
+
+&lt;p&gt;Apart from that, there are also ways to get old games to play under Linux (and other OSes) through the reimplementation of their engine. For example, if you have the files for &lt;em&gt;Broken Sword&lt;/em&gt;, you can play it under Linux using Scummvm. &lt;a href='http://www.scummvm.org'&gt;Scummvm&lt;/a&gt; in fact contains engines to run dozens of adventure games from the 90s such as Broken Sword, Day of the Tentacle, Monkey Island, Indiana Jones and the Fate of Atlantis, Space Quest, Kyrandia&amp;#8230; Other new engines for old games include &lt;a href='http://freesynd.sourceforge.net/'&gt;FreeSynd&lt;/a&gt; for playing Syndicate, &lt;a href='http://cyxdown.free.fr/reminiscence/'&gt;REminiscence&lt;/a&gt; for playing Flashback, or &lt;a href='http://icculus.org/rott/'&gt;rott&lt;/a&gt; to play Rise of the Triad. Wikipedia has &lt;a href='https://en.wikipedia.org/wiki/Game_engine_recreation'&gt;a list for this&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;And then, there are wine and dosbos. &lt;a href='http://winehq.com'&gt;wine&lt;/a&gt; allows you to launch windows programs, including games, under Linux. &lt;a href='http://www.dosbox.com/'&gt;dosbox&lt;/a&gt; does the same for dos games. The performance in both cases is however not spectacular.&lt;/p&gt;
+
+&lt;p&gt;And with all those games, most of them not coming through the package manager, there is a need for organisation and simple installing. Steam and Desura are doing it, through their somewhat bloated client. The Open Source &lt;a href='http://lutris.net/'&gt;Lutris&lt;/a&gt; also promises this but, I cannot grasp how to use it. The installation of games part is on par with the experience on other OSes, not as great as using the package manager (apt-get/synaptic), but reasonably simple. Concerning the organisation need, it should already be filled by the native support for &lt;em&gt;desktop-files&lt;/em&gt;. Indeed, executable programs usually install a small file with the extension &lt;code&gt;.desktop&lt;/code&gt; that associates a legend and an icon to the launch command. Then the Desktop Manager knows how to treat those files, for example in gnome, pressing the Meta key (also called Windows key) brings a menu in which it is possible to launch programs, even to display all those from a given category (say Games)&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;And &lt;em&gt;desktop-files&lt;/em&gt; are not difficult to write by oneself. For example, the following is a complete desktop file:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Desktop Entry]
+Name=Gobliins 2
+Exec=scummvm -n -p /home/manu/.local/share/scummvm/gobliins2 gob2cd-fr
+Type=Application
+Icon=gobliiins
+Categories=Game;&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For DEs to find those files and their icons, they need to be in specific locations: desktop files can be put in &lt;code&gt;~/.local/share/applications/&lt;/code&gt; and icons in &lt;code&gt;~/.local/share/icons/&lt;/code&gt; for example.&lt;/p&gt;
+
+&lt;p&gt;When not using Desktop Environments, it can be more difficult, but launchers such as &lt;a href='http://engla.github.io/kupfer/'&gt;kupfer&lt;/a&gt; understand them, and there usually exist scripts to generate a menu for your desktop entries: for example a &lt;a href='http://openbox.org/wiki/Openbox:Pipemenus:obam'&gt;pipemenu for openbox&lt;/a&gt;; I did a similar program in lua for awesome, which I could share.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Livre en fin de vie</title>
+  <link href="http://velsheda.lateralis.org/journal/2013/08-24/fin_de_vie_orizon.html"/>
+  <updated>2013-08-24T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2013/08-24/fin_de_vie_orizon</id>
+  <content type="html">&lt;p&gt;Mon livre électronique a l&amp;#8217;air d&amp;#8217;être en fin de vie. Après un peu plus de 2 ans d&amp;#8217;utilisation, cet été plusieurs lignes verticales noires sont apparues sur l&amp;#8217;écran. Ces lignes disparaissent quand l&amp;#8217;écran flashe (passe entièrement au noir avant d&amp;#8217;afficher la nouvelle page) mais réapparaissent au bout de quelques secondes.&lt;/p&gt;
+
+&lt;p&gt;Je suppose que c&amp;#8217;est ainsi que finissent les écrans &lt;a href='http://wiki.mobileread.com/wiki/SiPix'&gt;sipix&lt;/a&gt; puisque l&amp;#8217;&lt;a href='http://wiki.mobileread.com/wiki/OYO'&gt;Oyo&lt;/a&gt; de Papa a les mêmes symptômes.&lt;/p&gt;
+
+&lt;p&gt;Je vais donc bientôt m&amp;#8217;acheter un nouveau livre. Pour l&amp;#8217;instant j&amp;#8217;hésite entre le &lt;a href='http://www.pocketbook-int.com/fr/products/pocketbook-touch-lux'&gt;Pocketbook Touch Lux&lt;/a&gt;, le &lt;a href='http://www.bookeen.com/fr/cybook-odyssey-hd-frontlight'&gt;Cybook Odyssey Frontlight&lt;/a&gt; et le &lt;a href='http://www.kobo.com/koboglo'&gt;Kobo Glo&lt;/a&gt;. Mais je vais attendre septembre et les annonces de nouveaux modèles avant de me décider.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Remplacer Google Reader</title>
+  <link href="http://velsheda.lateralis.org/journal/2013/06-19/remplacer_google_reader.html"/>
+  <updated>2013-06-19T19:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2013/06-19/remplacer_google_reader</id>
+  <content type="html">&lt;p&gt;Le RSS&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; (Really Simple Syndication) est un format de données (comme html) qui permet de rassembler un ensemble d&amp;#8217;articles comme un magazine le ferait. Ce format est particulièrement intéressant pour les blogs puisqu&amp;#8217;il permet de s&amp;#8217;abonner et ainsi de suivre quand de nouveaux articles sont publiés. L&amp;#8217;intérêt par rapport à la page d&amp;#8217;accueil du site est que l&amp;#8217;on peut agréger plusieurs flux rss et donc surveiller de nombreux blogs, magazines à la fois. &lt;a href='http://inessential.com/2013/03/14/why_i_love_rss_and_you_do_too'&gt;RSS c&amp;#8217;est aussi beaucoup plus&lt;/a&gt;. Un gros avantage (et inconvénient si on se place de l&amp;#8217;autre côté) est que l&amp;#8217;on peut ainsi lire le contenu d&amp;#8217;un site sans le visiter, donc sans subir de publicités intrusives.&lt;/p&gt;
+
+&lt;p&gt;Google, avec &lt;em&gt;Google Reader&lt;/em&gt; propose un service en ligne permettant de s&amp;#8217;abonner et de lire des flux dans une interface pratique (on peut regrouper des flux par thème ou par importance, marquer des articles pour les lire plus tard ou les partager). Mais Google a décidé de fermer &lt;em&gt;Google Reader&lt;/em&gt;. Et oui, quand on a pour business de vendre de la publicité ciblée, l&amp;#8217;avantage du RSS est un terrible obstacle (et n&amp;#8217;est sans doute pas contrebalancé par la quantité d&amp;#8217;information qu&amp;#8217;on acquiert en connaissant ce que lit le client). Comme je l&amp;#8217;utilisais assidûment (un des rares services google dont j&amp;#8217;étais dépendant), il me faut un remplaçant. Et des remplaçants, beaucoup se sont déclarés : voici par exemple une &lt;a href='http://getgini.com/google-reader-alternatives'&gt;liste non exhaustive&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Parmi ces possibilités, un choix doit être fait entre une solution hébergée, auto-hébergé et un client natif. L&amp;#8217;avantage de l&amp;#8217;hébergé étant que la gestion du service est déléguée, l&amp;#8217;avantage de l&amp;#8217;auto-hébergé que l&amp;#8217;on n&amp;#8217;est pas dépendant du bon vouloir du fournisseur de service (donc pas de fermeture du service comme avec Google Reader. L&amp;#8217;avantage du client natif est qu&amp;#8217;il n&amp;#8217;y a ni gestion ni dépendance, mais il manque a priori la possibilité de lire sur plusieurs appareils sans retomber sur les articles déjà lus. Les solutions hébergées ou auto-hébergées doivent bien entendu être accessibles par un navigateur web et lisibles sur smartphone.&lt;/p&gt;
+
+&lt;p&gt;Sous linux, j&amp;#8217;apprécie &lt;a href='http://lzone.de/liferea/'&gt;liferea&lt;/a&gt; et &lt;a href='http://newsbeuter.org/'&gt;newsbeuter&lt;/a&gt; comme clients natifs. Mais j&amp;#8217;ai finalement opté pour &lt;a href='https://feedhq.org/'&gt;Feedhq&lt;/a&gt;, c&amp;#8217;est-à-dire une solution hébergée mais open-source donc que je peux auto-héberger si l&amp;#8217;envie m&amp;#8217;en prend.&lt;/p&gt;
+
+&lt;p&gt;En réalité j&amp;#8217;utilise une solution mixte, une sorte de meilleur des deux mondes : un service hébergé et synchronisation depuis un client natif. En l&amp;#8217;occurence, j&amp;#8217;ai choisi newsbeuter (le mutt des lecteurs RSS) qui pouvait se synchroniser avec google reader (c&amp;#8217;est-à-dire récupérer les flux et le statut lu ou non) et peut le faire aussi avec tiny tiny rss. Liferea a les mêmes capacités de synchronisation, sous iOS ou Android, pléthore de lecteurs RSS sont aussi conçu pour se synchroniser avec &lt;em&gt;google reader&lt;/em&gt; ou &lt;em&gt;tiny tiny rss&lt;/em&gt;. &lt;a href='https://feedhq.org/blog/3-supporting-google-reader-api'&gt;FeedHQ implémente la même API que google reader&lt;/a&gt;, d&amp;#8217;autres services font de même, par exemple, feedly ou feedbin et potentiellement seront bien supportés par les clients natifs (ou le sont déjà).&lt;/p&gt;
+
+&lt;p&gt;En parallèle, j&amp;#8217;utilise rawdog et rss2email pour quelques flux. En gros, pour des flux riches en images et pas trop fréquents, j&amp;#8217;utilise rawdog qui produit une page web (et j&amp;#8217;ai bidouillé la configuration pour avoir une page &amp;#8220;responsive&amp;#8221; c&amp;#8217;est-à-dire qui s&amp;#8217;adapte joliment aux téléphones avec la plate-forme &lt;a href='http://www.getskeleton.com/'&gt;skeleton&lt;/a&gt; : mes fichiers de configuration sont &lt;a href='https://bitbucket.org/manu/rawdog/src'&gt;disponibles&lt;/a&gt;). Et pour des flux de textes longs, j&amp;#8217;utilise rss2email qui comme son nom l&amp;#8217;indique m&amp;#8217;envoie des mails contenant les nouveaux articles.&lt;/p&gt;
+&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
+&lt;p&gt;Je confonds RSS et ATOM qui ont le même but et sont en général également supportés par les logiciels de RSS.&lt;/p&gt;
+&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry><title>Publicité mensongère</title>
+  <link href="http://velsheda.lateralis.org/journal/2013/03-14/publicite_mensongere.html"/>
+  <updated>2013-03-14T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2013/03-14/publicite_mensongere</id>
+  <content type="html">&lt;p&gt;&lt;a href='http://sdrv.ms/ZKUPC1'&gt;&lt;img alt='1,09 &amp;lt; 1' src='http://velsheda.lateralis.org/journal/images/auchan.jpg' /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1.09 &amp;lt; 1&lt;/code&gt;&lt;/pre&gt;</content>
+ </entry>
+ 
+ <entry><title>Hébergement de fichiers</title>
+  <link href="http://velsheda.lateralis.org/journal/2013/01-24/file_locker.html"/>
+  <updated>2013-01-24T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2013/01-24/file_locker</id>
+  <content type="html">&lt;p&gt;Le nombre de photos numériques que j&amp;#8217;ai ne cessant d&amp;#8217;augmenter, mes autres possessions immatérielles (livres numériques) se multipliant également, de même que mes fichiers de travail, j&amp;#8217;ai décidé de les conserver dans les &lt;a href='http://fr.wikipedia.org/wiki/Cloud_computing'&gt;nuages&lt;/a&gt;. Pour les photos (ou les vidéos ou la musique), il existe des services dédiés mais je suis plus intéressé par des solutions indépendantes du type de fichier.&lt;/p&gt;
+
+&lt;p&gt;J&amp;#8217;ai donc créé des comptes gratuits sur un certain nombre des sites d&amp;#8217;hébergement de fichiers (&lt;a href='https://www.dropbox.com'&gt;dropbox&lt;/a&gt;, &lt;a href='https://www.sugarsync.com/'&gt;sugarsync&lt;/a&gt;, &lt;a href='https://skydrive.live.com'&gt;skydrive&lt;/a&gt;, &lt;a href='https://drive.google.com'&gt;google drive&lt;/a&gt;, &lt;a href='https://one.ubuntu.com/'&gt;ubuntu one&lt;/a&gt;, &lt;a href='https://www.cx.com/'&gt;cx&lt;/a&gt;, &lt;a href='https://www.cubby.com'&gt;cubby&lt;/a&gt;) pour les essayer et j&amp;#8217;ai maintenant une idée assez précise des &lt;em&gt;features&lt;/em&gt; que doit avoir un tel service pour me satisfaire.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Il doit y avoir une interface web utilisable (sans flash).&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Il doit être utilisable sans client dédié (je veux pouvoir l&amp;#8217;utiliser dans d&amp;#8217;autres systèmes d&amp;#8217;exploitation que ceux pour lesquels les concepteurs ont créé un client).&lt;/p&gt;
+
+&lt;p&gt;a. je dois donc pouvoir envoyer plusieurs fichiers à la fois. b. je dois pouvoir télécharger un dossier et tout son contenu en une seule fois.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Le point 2a élimine dropbox, sugarsync et ubuntu one.&lt;/p&gt;
+
+&lt;p&gt;Le point 2a élimine aussi google drive qui ne permet pas l&amp;#8217;upload de fichiers multiples avec mon navigateur préféré et prétend que mon navigateur de secours est trop vieux.&lt;/p&gt;
+
+&lt;p&gt;Le point 2b élimine cx et ubuntu one.&lt;/p&gt;
+
+&lt;p&gt;Il nous reste donc skydrive et cubby.&lt;/p&gt;
+
+&lt;p&gt;Skydrive a une interface web qui permet de faire tout ce que je veux avec le navigateur que je veux. Le seul ennui est que le navigateur par défaut de mon smartphone bugge sur le site web, mais Opera mobile s&amp;#8217;en sort bien.&lt;/p&gt;
+
+&lt;p&gt;Cubby n&amp;#8217;a pas une interface web parfaite mais il propose d&amp;#8217;utiliser webdav comme protocole de transfert et est donc utilisables directement sur n&amp;#8217;importe quel système d&amp;#8217;exploitation sérieux. Je ne comprends pas que les concurrents ne proposent pas ça plutôt que de s&amp;#8217;aliéner les utilisateurs de systèmes d&amp;#8217;exploitation différents.&lt;/p&gt;
+
+&lt;p&gt;Il me restera à tester mega&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;Je suis particulièrement déçu qu&amp;#8217;ubuntu one ne soit pas utilisable sous linux..&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Bragelonne 300000</title>
+  <link href="http://velsheda.lateralis.org/journal/2013/01-17/bragelonne300.html"/>
+  <updated>2013-01-17T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2013/01-17/bragelonne300</id>
+  <content type="html">&lt;p&gt;&lt;a href='/journal/2012/09-12/bragelonne200.html'&gt;200 000 en septembre&lt;/a&gt;, &lt;a href='http://blog.epagine.fr/index.php/2013/01/operation300k-de-bragelonne-du-18-au-20-janvier-2012-sur-epagine/'&gt;300000 aujourd&amp;#8217;hui&lt;/a&gt;, les ventes numériques de Bragelonne explosent et c&amp;#8217;est de nouveau noël.&lt;/p&gt;
+
+&lt;p&gt;Et je n&amp;#8217;ai plus qu&amp;#8217;une chose à dire : &lt;a href='https://www.bookeenstore.com/fr/ebook/9782820501028/brasyl-ian-mcdonald'&gt;Brasyl&lt;/a&gt; !&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Cartes du Vendée Globe avec Bernard Stamm</title>
+  <link href="http://velsheda.lateralis.org/journal/2013/01-12/stamm.html"/>
+  <updated>2013-01-12T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2013/01-12/stamm</id>
+  <content type="html">&lt;p&gt;Depuis l&amp;#8217;abandon officiel de Bernard Stamm, sa position n&amp;#8217;apparaît plus dans le tableau officiel du Vendée Globe. Lors des précédentes éditions, je me souviens que les navigateurs hors course étaient toujours positionnés mais simplement indiqués comme non classés. Le &lt;a href='http://poujoulat.bernard-stamm.com/fr/'&gt;site de l&amp;#8217;équipe Poujoulat&lt;/a&gt; a d&amp;#8217;abord donné les informations dans les articles d&amp;#8217;actualités publiés plus ou moins régulièrement. Maintenant, ils ont mis en place une &lt;a href='http://poujoulat.bernard-stamm.com/carte/'&gt;cartographie complète&lt;/a&gt; en javascript avec les positions et trajectoires de tout les skippers, Bernard Stamm compris. Les données viennent bien sur de l&amp;#8217;organisation du Vendée Globe qui continue de suivre Bernard Stamm.&lt;/p&gt;
+
+&lt;p&gt;De mon côté, je récupère aussi ces données pour afficher Cheminées Poujoulat sur mes &lt;a href='/vgjs/'&gt;cartes&lt;/a&gt;. Et l&amp;#8217;on voit que depuis le cap Horn, Bernard Stam a suivi une trajectoire nettement plus directe que Dominique Wavre, ce qui lui a permis de dépasser Mirabaud assez nettement.&lt;/p&gt;
+
+&lt;p&gt;Et une dernière chose : j&amp;#8217;ai voté pour Bernard Stamm pour les &amp;#8221;&lt;a href='http://www.sodebo.fr/voile/vendee-globe/les-palmes-sodebo'&gt;palmes Sodebo de la combativité&lt;/a&gt;&amp;#8221;. Je trouve qu&amp;#8217;il a la bonne attitude et mériterait d&amp;#8217;avoir ce lot de consolation quand il arrivera aux Sables.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Améliorations pour mes cartes du Vendée Globe</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/11-23/ameliorations.html"/>
+  <updated>2012-11-23T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/11-23/ameliorations</id>
+  <content type="html">&lt;p&gt;J&amp;#8217;ai &lt;a href='/journal/2012/11-10/Vendee_Globe.html'&gt;donc&lt;/a&gt; réalisé des programmes pour voir les positions des bateaux du Vendée Globe. Trois versions &lt;a href='/cartes/vg_carte.jpg'&gt;statique&lt;/a&gt;, &lt;a href='/vg/nokia.html'&gt;dynamique nokia&lt;/a&gt; et &lt;a href='/vgjs/leaflet.html'&gt;dynamique leaflet&lt;/a&gt; qui donnent respectivement des choses ressemblant à&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='statique mini' src='/cartes/vg_vi.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='dynamique nokia' src='/journal/images/nokia.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='dynamique leaflet' src='/journal/images/leaflet.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;J&amp;#8217;ai plusieurs idées de modifications et améliorations mais je ne sais pas encore trop comment les réaliser ou si ce serait vraiment intéressant.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Affichage des force et direction du vent.&lt;/strong&gt; Il devrait être possible d&amp;#8217;inclure les forces des vents pour deviner par exemple l&amp;#8217;anticyclone de Ste Hélène. Je pourrais par exemple utiliser les données &lt;a href='http://grib.us'&gt;GRIB&lt;/a&gt; mais ce n&amp;#8217;est pas très facile à traiter et il n&amp;#8217;existe pas à ma connaissance de bibliothèque javascript pour le vent.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Affichage des points de passage obligés.&lt;/strong&gt; Dans quelques jours, les navigateurs devront laisser à tribord l&amp;#8217;île Gough, puis ils devront passer dans la porte atlantique, c&amp;#8217;est-à-dire passer entre deux points donnés. Comment les représenter ? Une épingle d&amp;#8217;une couleur spéciale pour le point à laisser à tribord ? un trait pour la porte ?&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Calcul de distances orthodromiques.&lt;/strong&gt; Ce serait intéressant de pouvoir calculer la distance entre deux bateaux ou la distance à un point donné sur la carte. Par exemple comme le permet l&amp;#8217;outil règle des &lt;a href='http://here.net/'&gt;cartes nokia&lt;/a&gt;.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Zoom sur un groupe donné de bateaux.&lt;/strong&gt; En ce moment, il est possible dans les versions javascript de zoomer sur &lt;em&gt;les cinq premiers&lt;/em&gt; ou &lt;em&gt;toute la flotte&lt;/em&gt; ou &lt;em&gt;toute la flotte + Les Sables d&amp;#8217;Olonne&lt;/em&gt;. Comme des groupes se sont formés, il pourrait être intéressant de zoomer sur un groupe de bateaux particulier, par exemple &lt;em&gt;Akena&lt;/em&gt;, &lt;em&gt;Acciona&lt;/em&gt;, &lt;em&gt;Initiatives Cœur&lt;/em&gt; et &lt;em&gt;Votre nom autour du monde&lt;/em&gt;. Malheureusement, cela nécessite une interface plus évoluée que des boutons (par exemple des sliders définissant un min et un max).&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content>
+ </entry>
+ 
+ <entry><title>Abandons en série</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/11-19/abandons_en_serie.html"/>
+  <updated>2012-11-19T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/11-19/abandons_en_serie</id>
+  <content type="html">&lt;p&gt;Après Marc Guillemot, Kito de Pavant (&lt;a href='http://www.editionstelemaque.com/site2/f/index.php?sp=liv&amp;amp;livre_id=136'&gt;Le plus grand navigateur de tout l&amp;#8217;étang&lt;/a&gt;) et Louis Burton ont abandonné à la suite d&amp;#8217;une rencontre d&amp;#8217;un peu trop près avec des chalutiers. Samantha Davies a perdu son mât et n&amp;#8217;a eu d&amp;#8217;autre choix que de faire escale à Madère (où elle va récupérer un petit mât de rechange pour convoyer, en double, son Savéol jusqu&amp;#8217;en France). Un vérin de quille a cassé sur Maître Coq ce qui contraint Jérémie Beyou à abandonner après avoir tenté une réparation de fortune.&lt;/p&gt;
+
+&lt;p&gt;D&amp;#8217;autres casses et avaries ont eu lieu et ont été réparées (un chariot de quille de grand voile pour Javier Sanso, une barre pour Alex Thomson) ou sont en train de l&amp;#8217;être (j&amp;#8217;espère que Zbigniew Gutkowski pourra résoudre ses problème électriques et reprendre la course).&lt;/p&gt;
+
+&lt;p&gt;On pourrait se dire qu&amp;#8217;à ce rythme, il ne restera personne dans 2 mois.&lt;/p&gt;
+
+&lt;p&gt;Mais les 5 favoris&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt;, les 5 qui ont un bateau neuf taillé pour la victoire sont toujours là et toujours en tête. Seul Alex Thomson et son superbe Hugo Boss parvient à tenir leur rythme sur un bateau d&amp;#8217;ancienne génération.&lt;/p&gt;
+
+&lt;p&gt;Et si on regarde les précédentes éditions, l&amp;#8217;Atlantique Nord a souvent interrompu la course de beaucoup de concurrents. 5 sur 30 lors de la dernière édition, mais remontons plus loin : en 1992, sur 15 inscrits, ils n&amp;#8217;étaient déjà plus que 11 au niveau de Gibraltar. En 1996, Nandor Fa avait expérimenté la collision avec un cargo dans les premiers jours de course. Il y a souvent eu beaucoup d&amp;#8217;abandons dans la première semaine de course, mais c&amp;#8217;est probablement l&amp;#8217;océan Indien qui détient le record en la matière et qui a produit les images les plus impressionnantes depuis la première édition avec Fleury Michon X couché, son skipper, Philippe Poupon secouru par Loïck Peyron, à Yann Éliès qui s&amp;#8217;est cassé une jambe à bord lors de l&amp;#8217;édition 2008-2009 qui a vu se succéder les abandons de favoris/leaders (Jean-Pierre Dick, Loïck Peyron, Mike Golding et Sébastien Josse).&lt;/p&gt;
+
+&lt;p&gt;Bref, il reste du chemin à faire et une belle course à suivre.&lt;/p&gt;
+&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
+&lt;p&gt;Jean-Pierre Dick (Virbac Paprec 3), François Gabart (Macif), Armel Le Cléac&amp;#8217;h (Banque Populaire), Vincent Riou (PRB) et Bernard Stamm (Cheminées Poujoulat).&lt;/p&gt;
+&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry><title>Vendée Globe : premier abandon</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/11-11/Safran.html"/>
+  <updated>2012-11-11T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/11-11/Safran</id>
+  <content type="html">&lt;p&gt;Marc Guillemot a annoncé ce matin son abandon dans le Vendée Globe 2012-2013. C&amp;#8217;était un de mes favoris, ça ne lui a pas porté chance, mais comme guigne, il y a pire que moi : le programme officiel.&lt;/p&gt;
+
+&lt;p&gt;Ça doit être une malédiction ! La couverture du programme officiel du Vendée Globe doit porter malheur ! La couverture a au fil des années mis en avant les voiliers suivants :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;em&gt;Fujicolor III&lt;/em&gt; en 1992. Loïck Peyron a abandonné après quelques jours de course parce que son bateau se délaminait.&lt;/li&gt;
+
+&lt;li&gt;&lt;em&gt;Groupe LG 2&lt;/em&gt; de Gerry Roufs en 1996. Disparus dans l&amp;#8217;océan indien.&lt;/li&gt;
+
+&lt;li&gt;&lt;em&gt;Sill et Veolia&lt;/em&gt; de Roland Jourdain en 2004. Quille fendue dans l&amp;#8217;océan indien. Abandon.&lt;/li&gt;
+
+&lt;li&gt;&lt;em&gt;Groupe Bel&lt;/em&gt; de Kito de Pavant en 2008. Dématage et abandon après une journée de course.&lt;/li&gt;
+
+&lt;li&gt;&lt;em&gt;Safran&lt;/em&gt; de Marc Guillemot en 2012. Il a perdu sa quille hier après 6 heures de course et a abandonné à son retour aux Sables d&amp;#8217;Olonne.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il y a deux exceptions : Michel Desjoyaux et son PRB en 2000 qui ont remporté la course et Philippe Jeantot dont le Crédit Agricole 4 était tout petit sur la une du programme de 1989 et a tout de même terminé 4&lt;sup&gt;e&lt;/sup&gt; du premier Vendée Globe Challenge. Mais bon Desjoyaux est exceptionnel, on l&amp;#8217;a bien compris.&lt;/p&gt;
+
+&lt;p&gt;À mon avis, &lt;em&gt;Voiles et Voiliers&lt;/em&gt; devrait renoncer à mettre un bateau en couverture du programme.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Suivre le Vendée Globe sans flash</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/11-10/Vendee_Globe.html"/>
+  <updated>2012-11-10T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/11-10/Vendee_Globe</id>
+  <content type="html">&lt;p&gt;Hop, départ du Vendée Globe 2012. Comme d&amp;#8217;habitude, la cartographie se fait dans une application flash. C&amp;#8217;est lourd, ça ne marche pas sur mon téléphone et ça fait souffler mon ordinateur comme une baleine ! J&amp;#8217;ai ressorti mon &lt;a href='https://bitbucket.org/manu/vg/'&gt;script python pour fabriquer des cartes statiques&lt;/a&gt; qui donne des &lt;a href='http://velsheda.lateralis.org/cartes/vg_carte.jpg'&gt;cartes plus ou moins jolies&lt;/a&gt;. Et pour être moderne (et apprendre à utiliser les API de cartographie), j&amp;#8217;ai aussi fait deux versions en javascript : &lt;a href='https://bitbucket.org/manu/vendeejs/'&gt;vendeejs&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Exemple de carte statique' src='/cartes/vg_vi.jpg' /&gt;&lt;/p&gt;
+
+&lt;p&gt;En bref trois cartes des positions des bateaux du Vendée Globe :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='/cartes/vg_carte.jpg'&gt;carte jpg statique (mais à jour)&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='/vg/nokia.html'&gt;carte dynamique v1&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='/vgjs/leaflet.html'&gt;carte dynamique v2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Les versions javascript utilisent&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;d&amp;#8217;une part l&amp;#8217;&lt;a href='http://api.maps.nokia.com/en/index.html'&gt;API de cartographie nokia&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;d&amp;#8217;autre part l&amp;#8217;&lt;a href='http://leaflet.cloudmade.com/'&gt;API Leaflet&lt;/a&gt; avec des tuiles &lt;a href='http://www.esri.com/getting-started/developers'&gt;ESRI&lt;/a&gt;. Les icones des bateaux ne sont pas terribles, mais j&amp;#8217;ai fait une version plus jolie accessible en enlevant &amp;#8220;js&amp;#8221; dans l&amp;#8217;adresse.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;J&amp;#8217;ai découvert que ce n&amp;#8217;était plus possible de charger un fichier html sur un autre serveur&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; depuis un script javascript alors que j&amp;#8217;aimerais le faire pour récupérer le classement. Ceci pour éviter les &lt;a href='https://fr.wikipedia.org/wiki/Cross-site_scripting'&gt;attaques XSS&lt;/a&gt;. J&amp;#8217;ai aussi redécouvert que javascript est vraiment un langage désagréable pour programmer. Même si j&amp;#8217;ai codé ce script à l&amp;#8217;arrache, je trouve que les erreurs pourraient être un peu mieux expliquées, que concaténer et additionner avec le même opérateur dans un langage où les types sont aussi mous qu&amp;#8217;en javascript, c&amp;#8217;est une mauvaise idée, bref que python est quand même beaucoup plus sympa.&lt;/p&gt;
+&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
+&lt;p&gt;sauf si c&amp;#8217;était un serveur que j&amp;#8217;administre auquel cas je pourrais faire du &lt;a href='https://en.wikipedia.org/wiki/Cross-Origin_Resource_Sharing'&gt;CORS&lt;/a&gt;, ce qui n&amp;#8217;est pas le cas pour &lt;a href='http://www.vendeeglobe.org/'&gt;http://www.vendeeglobe.org/&lt;/a&gt;.&lt;/p&gt;
+&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry><title>Deux bugs et un contournement pour mon cybook</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/10-10/bug_cybook.html"/>
+  <updated>2012-10-10T18:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/10-10/bug_cybook</id>
+  <content type="html">&lt;p&gt;Depuis quelques temps je rencontrais deux &amp;#8220;bugs&amp;#8221; sur mon livre cybook orizon qui se corrigeaient parfois tout seul. J&amp;#8217;ai maintenant compris pourquoi cela arrivait et trouvé un moyen de contourner le bug.&lt;/p&gt;
+
+&lt;h2 id='les_bugs'&gt;Les bugs&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;D&amp;#8217;une part quand j&amp;#8217;ajoute un nouveau livre à ma bibliothèque, le redémarrage prend un peu de temps (pour fabriquer une vignette de la couverture). C&amp;#8217;est parfaitement normal. Mais, ça ne devrait arriver qu&amp;#8217;une fois, or récemment, ça se produisait à chaque allumage (après extinction, pas après mise en veille). Et le temps était loin d&amp;#8217;être négligeable, ce qui rendait la chose fort désagréable.&lt;/li&gt;
+
+&lt;li&gt;L&amp;#8217;écran d&amp;#8217;accueil montre normalement les cinq derniers livres lus. Mais de temps en temps, il montre le livre que je lis à ce moment et quatre livres qui ne changent plus. Mais ça se corrigeait parfois tout seul avant de recommencer.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id='la_cause'&gt;La cause&lt;/h2&gt;
+
+&lt;p&gt;Quand la batterie s&amp;#8217;épuise, la date revient en 2010. Ce qui fait que les vignettes sont plus vieilles que les livres (donc la liseuse pense que le fichier a été mis à jour et qu&amp;#8217;il faut donc refabriquer la vignette). Et pour les livres récents, même chose, le deuxième livre le plus récent que j&amp;#8217;ai lu date d&amp;#8217;avant ceux où la liseuse a perdu la date.&lt;/p&gt;
+
+&lt;h2 id='contournement'&gt;Contournement&lt;/h2&gt;
+
+&lt;p&gt;Deux possibilités : soit connecter le livre par wifi, ce qui va le remettre à l&amp;#8217;heure. Soit à la main en ajoutant dans le dossier &lt;code&gt;system&lt;/code&gt; un fichier rtc.dat contenant la date et l&amp;#8217;heure au bon format : la &lt;a href='http://www.mobileread.com/forums/showpost.php?p=168344&amp;amp;postcount=1'&gt;procédure est parfaitement expliquée sur mobileread&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id='conclusion'&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;Deux bugs compris et contournés (à défaut de corrigés). Je suis content.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>C'est la rentrée, j'ai besoin de nouveaux gadgets</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/09-13/Rentr%C3%A9e-gadgets.html"/>
+  <updated>2012-09-13T18:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/09-13/Rentrée-gadgets</id>
+  <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&amp;#8211; Qui veut mon nouveau &lt;em&gt;Kindle Fire HD&lt;/em&gt; ?&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211; Frais, il est frais mon &lt;em&gt;iPhone 5&lt;/em&gt; !&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211; Demandez le &lt;em&gt;KoboGlo&lt;/em&gt; !&lt;/p&gt;
+
+&lt;p&gt;&amp;#8211; Votre vieux &lt;em&gt;Nokia&lt;/em&gt; est rayé, achetez le nouveau &lt;em&gt;920&lt;/em&gt;, 50% plus résistant aux coups de fourchette !&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;On se croirait sur le marché un jour d&amp;#8217;été face aux camelots qui tiennent à me vendre qui une poële qui ira dormir dans un placard, qui un four révolutionnaire, qui des chaussures à un prix défiant toute concurrence. Tous les marchands de gadgets&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; électroniques se sont donné le mot pour essayer de me fourguer leur camelote.&lt;/p&gt;
+
+&lt;p&gt;S&amp;#8217;il ne s&amp;#8217;y mettaient pas tous en même temps, je n&amp;#8217;aurais pas l&amp;#8217;impression de trop-plein que j&amp;#8217;ai là. Et s&amp;#8217;ils ne faisaient pas tous le même genre de conférence, ça pourrait peut-être passer. Mais ce n&amp;#8217;est pas comme ça qu&amp;#8217;on me convaincra que je dois changer les appareils que j&amp;#8217;ai ou acheter un représentant de ceux que je n&amp;#8217;ai pas. Il faudrait que quelque chose de vraiment intéressant et nouveau ait été présenté, sinon, ça me fait le même effet qu&amp;#8217;un show de constructeur de voitures et je n&amp;#8217;entends pas souvent de phrases du genre « Tiens Peugeot a changé la forme des phares de sa 308, il me la faut absolument »&amp;#8230;&lt;/p&gt;
+&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
+&lt;p&gt;Gadget : « objet amusant et nouveau, parfois dénué d&amp;#8217;utilité » me dit le &lt;em&gt;petit Robert&lt;/em&gt;. Nouveau, je ne suis pas sur, mais dénué d&amp;#8217;utilité, je le crains.&lt;/p&gt;
+&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry><title>Bragelonne 200000</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/09-12/bragelonne200.html"/>
+  <updated>2012-09-12T16:01:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/09-12/bragelonne200</id>
+  <content type="html">&lt;p&gt;L&amp;#8217;éditeur Bragelonne est un des précurseurs du livre numérique. Et ils ont pris parti contre les DRM. Et ils publient du bon (et aussi pas mal de mauvais). Alors quand en plus ils font des offres commerciales, je saute de joie. Et donc, après &lt;a href='http://www.fantasy.fr/articles/view/11998/une-operation-pour-les-10-ans-de-bragelonne'&gt;10 ans, 10 livres 10 euros&lt;/a&gt; qu&amp;#8217;ils ont repris pour leurs 11 ans et leurs 12 ans. Après &lt;a href='http://blog.epagine.fr/index.php/2012/04/le-succes-de-loperation-100k-bragelonne-sur-le-reseau-epagine/'&gt;Opérations 100k : 100 livres numériques à moins de 1 euro&lt;/a&gt; pour fêter leurs 100 000 livres numériques vendus. Voici &lt;a href='http://bragelonne-le-blog.fantasyblog.fr/archives/1131'&gt;Opération 200k&lt;/a&gt; pour fêter la barre des 200 000 livres numériques.&lt;/p&gt;
+
+&lt;p&gt;J&amp;#8217;ai déjà repéré Black-Out de Connie Willis (prix Hugo, Nebula et Locus 2011, rien que ça) et quelques autres (en particulier des séries que j&amp;#8217;ai découvertes avec l&amp;#8217;opération 100k et dont la suite est proposée).&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>ePub en couleurs</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/09-08/epub_couleur.html"/>
+  <updated>2012-09-08T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/09-08/epub_couleur</id>
+  <content type="html">&lt;p&gt;Pourquoi ? Mais pourquoi ?&lt;/p&gt;
+
+&lt;p&gt;Pourquoi quelqu&amp;#8217;un mettrait dans le style des paragraphes d&amp;#8217;un livre électronique l&amp;#8217;instruction d&amp;#8217;écrire en gris ?&lt;/p&gt;
+
+&lt;p&gt;Je suis tombé là-dessus :&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='nt'&gt;p&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+    &lt;span class='o'&gt;...&lt;/span&gt;
+    &lt;span class='k'&gt;color&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt;&lt;span class='m'&gt;#4c4c4c&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt;
+    &lt;span class='o'&gt;...&lt;/span&gt;
+&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Ce livre est fait pour être lu sur une liseuse. Il n&amp;#8217;y a pas si longtemps, ces appareils n&amp;#8217;affichaient que 4 niveaux de gris. Maintenant c&amp;#8217;est un peu plus, mais le contraste reste visiblement inférieur à celui des livres papier (même quand on qualifie la liseuse de &amp;#8220;paperwhite&amp;#8221;). Alors réduire volontairement la lisibilité me paraît la dernière des idioties.&lt;/p&gt;
+
+&lt;p&gt;Et finalement la supériorité du livre numérique sur le livre papier tient peut-être dans l&amp;#8217;option &lt;em&gt;Styles originaux&lt;/em&gt; qui, désactivée, permet de ne pas subir les lubies des éditeurs (auteurs, stylistes ou autres) qui tiennent à ce que leur livre soit lu en rose sur fond rouge.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Shell and programming paradigms</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/05-21/Shell.html"/>
+  <updated>2012-05-21T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/05-21/Shell</id>
+  <content type="html">&lt;p&gt;The shell is usually the interface through which the user communicates with applications and files (graphically as in Gnome Shell or textually as with bash for example). It is quite important to be able to compose the activities. In bash composing essentially means using pipes to use the output of a program as the input of another one.&lt;/p&gt;
+
+&lt;p&gt;Let us illustrate how important this concept is with two citations:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;A long time ago, the original neckbeards decided that it was a good idea to chain together small programs that each performed a specific task, and that the universal interface between them should be text.&lt;/p&gt;
+
+&lt;p&gt;Ted Dziuba &lt;a href='http://teddziuba.com/2011/10/node-js-is-cancer.html'&gt;http://teddziuba.com/2011/10/node-js-is-cancer.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Text streams are a valuable universal format because they&amp;#8217;re easy for human beings to read, write, and edit without specialized tools. These formats are (or can be designed to be) transparent.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://catb.org/~esr/writings/taoup/html/textualitychapter.html'&gt;http://catb.org/~esr/writings/taoup/html/textualitychapter.html&lt;/a&gt; Eric S. Raymond in &lt;em&gt;The Art of Unix Programming&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;However text is quickly problematic when data is structured: the formatting in columns for human reading is not the best when you want to select a given column and the width is not consistent or some cells can be empty). So composing commands often goes through some text plumbing (making commands such as &lt;code&gt;vipe&lt;/code&gt; terribly useful. Also, the scripting language associated with shells can be quite painful to use (inconsistency: &lt;code&gt;fi&lt;/code&gt; ends if statements but &lt;code&gt;done&lt;/code&gt; for while and for).&lt;/p&gt;
+
+&lt;p&gt;To account for that latter problem, two approaches have been tried:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Creating a shell with a coherent language: &lt;a href='http://fishshell.com/'&gt;fish&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;Using a shell rooted into already put to test languages: python for &lt;a href='http://ipython.org/'&gt;ipython&lt;/a&gt;, perl for &lt;a href='http://www.pardus.nl/projects/zoidberg/'&gt;zoidberg&lt;/a&gt;&amp;#8230;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;For the former problem, having a better programming language mitigates the problem but does not solve it. ipython has an interesting way of putting output data in structured tables for intelligent grepping and cutting. Other projects solve it in their own way and explore what a modern shell can be &lt;em&gt;e.g.&lt;/em&gt; &lt;a href='http://acko.net/blog/on-termkit/'&gt;termkit&lt;/a&gt;, &lt;a href='http://code.google.com/p/hotwire-shell/'&gt;hotwire&lt;/a&gt; or powershell.&lt;/p&gt;
+
+&lt;h2 id='object_or_typed_shell'&gt;Object or typed Shell&lt;/h2&gt;
+
+&lt;p&gt;Powershell is probably the first to have ventured in what an object shell can be. This makes it possible to have pipelines such as:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Get-ChildItem C:\Scripts | Where-Object {$_.Length -gt 200KB} | Sort-Object Length&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;Get-ChildItem&lt;/code&gt; lists the content of a directory (like &lt;code&gt;dir&lt;/code&gt; or &lt;code&gt;ls&lt;/code&gt;). The result has a length attributes on which it is possible to filter or to sort.&lt;/p&gt;
+
+&lt;p&gt;Obviously, commands need to be rewritten, to expose an API, to define the equality of objects, which attributes are comparable and how&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;ipython achieves the same effect but may be used with normal commands as it tries to be smart in interpreting what a tabular output means.&lt;/p&gt;
+
+&lt;p&gt;I began implementing my own shell programmed in lua (I already did a C one as a student project years ago) with the objective of having typed answers. Some choices:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;output of commands is a table of hashtables (the only structure in lua)&lt;/li&gt;
+
+&lt;li&gt;to get stdout, it goes through a generic pretty-printer&lt;/li&gt;
+
+&lt;li&gt;in a linux system, ps is no more work than ls, as ps is just a specific exploration of &lt;code&gt;/proc&lt;/code&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='rdbm_shell'&gt;RDBM Shell&lt;/h2&gt;
+
+&lt;p&gt;Grepping is a selection. Cutting (and analogous awk commands) is projection. Sorting is sorting. Join, combine are joins.&lt;/p&gt;
+
+&lt;p&gt;A shell could very well be controlled as a Relational Database.&lt;/p&gt;
+
+&lt;h2 id='functional_shell'&gt;Functional Shell&lt;/h2&gt;
+
+&lt;p&gt;shell is curryfied! Aliases are partial evaluations. Why should shell not be functional?&lt;/p&gt;
+
+&lt;p&gt;Type of commands:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;cd: path -&amp;gt; ()&lt;/code&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;code&gt;ls: Maybe path -&amp;gt; [[infos]]&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Type of command separators:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;;: (&amp;#39;a -&amp;gt; &amp;#39;c) -&amp;gt; (() -&amp;gt; &amp;#39;c) -&amp;gt; &amp;#39;a -&amp;gt; &amp;#39;c&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;;&lt;/code&gt; is probably what Haskell&amp;#8217;s &lt;code&gt;&amp;gt;&amp;gt;&lt;/code&gt; stands for.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;pipe: (&amp;#39;a -&amp;gt; &amp;#39;b) -&amp;gt; (&amp;#39;b -&amp;gt; &amp;#39;c) -&amp;gt; &amp;#39;a -&amp;gt; &amp;#39;c&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;pipe is composition of commands: in haskell, pipe would be written &lt;code&gt;&amp;gt;&amp;gt;=&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This is better detailed in &lt;a href='http://okmij.org/ftp/Computation/monadic-shell.html'&gt;UNIX Pipes as IO Monads&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But shell is essentially variadic, which is not a functional trait. Look at the signature of &lt;code&gt;zip&lt;/code&gt;or &lt;code&gt;tar&lt;/code&gt; for example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;	zip: path -&amp;gt; path -&amp;gt; path -&amp;gt; path ... -&amp;gt; path -&amp;gt; ()&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Or logically &lt;code&gt;zip: path -&amp;gt; [path] -&amp;gt; ()&lt;/code&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Journée contre les DRM</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/05-04/No_DRM_Day.html"/>
+  <updated>2012-05-04T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/05-04/No_DRM_Day</id>
+  <content type="html">&lt;p&gt;Le 4 mai 2012 est la &lt;a href='http://www.defectivebydesign.org/dayagainstdrm'&gt;journée internationale contre les DRM&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://www.april.org/drm'&gt;&lt;img src='http://media.april.org/icones/drm/banniere_journee_drm.png' /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://shop.oreilly.com/category/deals/day-against-drm.do'&gt;O&amp;#8217;reilly participe en mettant ses livres à moitié prix&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry><title>Prix unique du livre</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/04-09/Prix_unique_2.html"/>
+  <updated>2012-04-09T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/04-09/Prix_unique_2</id>
+  <content type="html">&lt;p&gt;Grumff.&lt;/p&gt;
+
+&lt;p&gt;Moi qui croyais &lt;a href='/journal/2011/06-23/Prix_unique.html'&gt;naïvement&lt;/a&gt; que les livres étaient au même prix partout, voilà que je me fais avoir : j&amp;#8217;ai acheté &lt;em&gt;Étoiles Mortes&lt;/em&gt; de Jean-Claude Dunyach chez ePagine et je me rends compte qu&amp;#8217;il est 10% moins cher chez amazon. La preuve en images :&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='ePagine' src='/journal/images/epagine.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='Amazon' src='/journal/images/amzn.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Je remarque que contrairement aux autres livres numériques sur amazon, celui-ci ne porte pas la mention &amp;#8220;Ce prix a été fixé par l&amp;#8217;éditeur.&amp;#8221;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Pensées</title>
+  <link href="http://velsheda.lateralis.org/journal/2012/02-22/Citation.html"/>
+  <updated>2012-02-22T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2012/02-22/Citation</id>
+  <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;Le grand homme est toujours tranquille, le petit toujours nerveux.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Confucius&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+ </entry>
+ 
+ <entry><title>Auteurs dans le domaine public en 2012</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/12-27/Auteurs_domaine_public_2012.html"/>
+  <updated>2011-12-27T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/12-27/Auteurs_domaine_public_2012</id>
+  <content type="html">&lt;p&gt;Avec le changement d&amp;#8217;année, le domaine public va s&amp;#8217;enrichir des auteurs européens morts en 1941. Un petit tour sur wikipedia donne cette liste : &lt;a href='http://fr.wikipedia.org/wiki/1941_en_litt%C3%A9rature#Principaux_d.C3.A9c.C3.A8s'&gt;http://fr.wikipedia.org/wiki/1941_en_litt%C3%A9rature#Principaux_d.C3.A9c.C3.A8s&lt;/a&gt;. James Joyce, Virginia Woolf ou Maurice Leblanc entrent dans le domaine public le 1er janvier 2012. On pourra donc dans quelques jours télécharger légalement (comme les canadiens le peuvent depuis vingt ans) toutes les aventures d&amp;#8217;Arsène Lupin depuis la &lt;a href='http://beq.ebooksgratuits.com/'&gt;bibliothèque électronique du Québec&lt;/a&gt; ou sur &lt;a href='http://fr.wikisource.org/wiki/Maurice_Leblanc'&gt;wikisource&lt;/a&gt; (c&amp;#8217;était le dernier moment pour sortir &lt;a href='http://www.amazon.fr/dp/2350133028/'&gt;vingt histoires originales&lt;/a&gt; qui sont en fait le contenu de &lt;em&gt;Arsène Lupin, gentleman cambrioleur&lt;/em&gt; et &lt;em&gt;Arsène Lupin contre Herlock Sholmès&lt;/em&gt;).&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Écrire simplement un ePub</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/12-10/Ecrire_epub_simplement.html"/>
+  <updated>2011-12-10T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/12-10/Ecrire_epub_simplement</id>
+  <content type="html">&lt;p&gt;Dans un précédent article, j&amp;#8217;ai prétendu expliquer &lt;a href='/journal/2011/05-27/Ecrire_en_epub.html'&gt;comment créer un epub&lt;/a&gt; mais ai surtout parlé de ce qu&amp;#8217;est un fichier epub. Aujourd&amp;#8217;hui, comment écrire un tel fichier depuis zéro.&lt;/p&gt;
+
+&lt;p&gt;Comment écrit-on un texte sur un ordinateur ? Il y a deux écoles : d&amp;#8217;une part le logiciel de traitement de texte (microsoft word, libreoffice writer, apple pages&amp;#8230;) d&amp;#8217;autre part un langage de formatage (html, tex, markdown, mediawiki, restructuredtext, &amp;#8230;) dans un éditeur de texte (gedit, textmate, vim, emacs, bloc-note, piratepad&amp;#8230;). Je ne ferai pas de commentaire sur ces deux choix, il est possible de fabriquer un epub depuis un traitement de texte ou à partir d&amp;#8217;un texte brut.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Libreoffice + plugin &lt;a href='http://extensions.services.openoffice.org/en/project/Writer2ePub'&gt;writer2epub&lt;/a&gt;. Si vous êtes plutôt traitement de texte, voici un choix intéressant. Vous pouvez reprendre un texte déjà écrit dans votre traitement de texte préféré, l&amp;#8217;ouvrir avec libreoffice et fabriquer un epub automatiquement.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='https://code.google.com/p/sigil/'&gt;Sigil&lt;/a&gt;. Il est possible d&amp;#8217;écrire directement le document dans sigil, éditeur d&amp;#8217;epub. On peut utiliser sigil comme un traitement de texte ou comme un éditeur de texte en allant modifier directement le code html et le code CSS.&lt;/li&gt;
+
+&lt;li&gt;Conversion html ou xhtml puis sigil. Solution intermédiaire : si le document à transformer est au format html ou xhtml ou peut facilement être transformé en l&amp;#8217;un de ces formats, on peut ensuite les insérer dans sigil en tant que nouveaux chapitres, sigil se chargeant d&amp;#8217;inclure les images et les feuilles de style liées. Ça permet par exemple de faire un recueil d&amp;#8217;articles glanés sur le web.&lt;/li&gt;
+
+&lt;li&gt;Markdown avec &lt;a href='http://johnmacfarlane.net/pandoc/'&gt;pandoc&lt;/a&gt;. La solution que j&amp;#8217;utilise. J&amp;#8217;écris dans mon éditeur de texte favori du code &lt;a href='https://en.wikipedia.org/wiki/Markdown'&gt;markdown&lt;/a&gt; agrémenté de notes de bas de pages, de tableaux et éventuellement de mathématiques et je convertis à l&amp;#8217;aide de pandoc. Pandoc peut également transformer des choses écrites en tex, en restructuredtext ou en html en epub (ou en html, tex, groff, rtf ou plein d&amp;#8217;autres formats).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Il existe d&amp;#8217;autres solutions (scripts maison, &lt;a href='http://www.atlantiswordprocessor.com/fr/'&gt;atlantis&lt;/a&gt;, &lt;a href='http://www.calibre-ebook.com/'&gt;calibre&lt;/a&gt;, &lt;a href='http://www.apple.com/iwork/pages/'&gt;Pages&lt;/a&gt;, quarkXpress, &lt;a href='http://www.pouleouoeuf.org/'&gt;la poule ou l&amp;#8217;œuf&lt;/a&gt;, &amp;#8230;). Si aucune des 3 ou 4 propositions ci-dessus ne convient, peut-être faudra-t-il se tourner vers une de ces solutions, mais ayant essayé l&amp;#8217;approche scripts maison ainsi que calibre, je préfère largement pandoc, sigil et éventuellement writer2epub.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Sélection de nouvelles en français disponibles sur le net</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/12-01/nouvelles_selectionnees.html"/>
+  <updated>2011-12-01T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/12-01/nouvelles_selectionnees</id>
+  <content type="html">&lt;p&gt;Quelques nouvelles en français que j&amp;#8217;ai aimées, trouvées sur le web, gratuites (celle du Bélial&amp;#8217; ne le restera pas) et parfois sous licence permissive :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://quarante-deux.org/recits/jeury/conspiration/poudre.html'&gt;La poudre jaune du temps&lt;/a&gt; de &lt;em&gt;Michel Jeury&lt;/em&gt; chez &lt;a href='http://quarante-deux.org/'&gt;quarante-deux xlii&lt;/a&gt;.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.angle-mort.fr/fiction/le-jardin-des-silences-melanie-fazi/'&gt;Le jardin des silences&lt;/a&gt; de &lt;em&gt;Mélanie Fazi&lt;/em&gt; chez &lt;a href='http://www.angle-mort.fr/'&gt;angle mort&lt;/a&gt;, sous CC BY-NC-ND.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.angle-mort.fr/fiction/sale-n-ted-kosmatka/'&gt;Sale n&amp;#8230;&lt;/a&gt; de &lt;em&gt;Ted Kosmatka&lt;/em&gt; chez &lt;a href='http://www.angle-mort.fr/'&gt;angle mort&lt;/a&gt; traduit par &lt;em&gt;Pierre-Paul Durastanti&lt;/em&gt;, sous CC BY-NC-ND.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.benjaminrosenbaum.com/stories/relancer.l.horloge.html'&gt;Relancer l&amp;#8217;horloge&lt;/a&gt; de &lt;em&gt;Benjamin Rosenbaum&lt;/em&gt; chez &lt;a href='http://www.moutons-electriques.fr/livre.php?p=intro&amp;amp;n=93'&gt;Fiction 10&lt;/a&gt; traduit par &lt;em&gt;Sonia Quémener&lt;/em&gt;, original en anglais sous CC BY-NC-SA.&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.belial.fr/claude-ecken/en-sa-tour-annabelle'&gt;En sa tour, Annabelle&lt;/a&gt; de &lt;em&gt;Claude Ecken&lt;/em&gt; chez &lt;a href='http://e.belial.fr/'&gt;Le Bélial&amp;#8217;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry><title>Transat Jacques Vabre cartographiée sans flash</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/11-03/Transat_Jacques_Vabre.html"/>
+  <updated>2011-11-03T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/11-03/Transat_Jacques_Vabre</id>
+  <content type="html">&lt;p&gt;La transat Jacques Vabre est partie hier. Pour voir où sont les voiliers, le site propose uniquement une application flash. J&amp;#8217;ai commis un petit script qui fabrique des cartes sur lesquelles sont reportées les positions des bateaux : &lt;a href='https://bitbucket.org/manu/vg/overview'&gt;programme smap&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;La commande&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;./smap.py -c class40 jacquesvabre.py&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;produit une carte comme&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://velsheda.lateralis.org/cartes/choc_11_2009-11-07_09.jpg'&gt;&lt;img src='/journal/images/jv.jpg' /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;À l&amp;#8217;origine, j&amp;#8217;avais écrit ce programme pour le Vendée Globe 2008-2009. Je l&amp;#8217;ai rendu plus générique pour suivre d&amp;#8217;autres courses depuis (Barcelona World Race, St Gilles Croix de Vie - Saint Petersbourg - Saint Gilles, la route du rhum, la route du chocolat&amp;#8230;)&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Kindle et DRM</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/10-23/Kindle_DRM.html"/>
+  <updated>2011-10-23T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/10-23/Kindle_DRM</id>
+  <content type="html">&lt;p&gt;&lt;em&gt;Faut-il acheter un Kindle ?&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ma réponse est simple : &lt;strong&gt;non&lt;/strong&gt;. L&amp;#8217;appareil (le Kindle 4 vendu en France) a un excellent rapport qualité prix : son écran est ce qu&amp;#8217;il y a de mieux (comme les Sony, Kobo (futur fnacbook), Nook), il n&amp;#8217;est pas tactile (comme le Cybook Opus et en général tous les vieux readers) mais il est à un prix imbattable (99€). Mais ce n&amp;#8217;est pas l&amp;#8217;absence de tactile et de clavier qui fait son plus gros défaut. Son plus gros défaut est qu&amp;#8217;il ne lit que les livres achetés chez Amazon ! Achèteriez-vous une voiture pour laquelle vous ne pouvez acheter d&amp;#8217;essence chez un seul distributeur ? Un aspirateur pour lequel la grande distribution ne peut vous vendre de sacs de rechange ?&lt;/p&gt;
+
+&lt;p&gt;Le Kindle c&amp;#8217;est ça : il ne lit pas le format standard que tous les autres livres électroniques lisent et que toutes les librairies en ligne vendent (ePub). Il lit le format amazon (azw) vendu uniquement par amazon, fabriqué exclusivement par amazon. Pire, les livres en question ne sont pas vendus mais loués et peuvent être supprimés sans préavis (ils l&amp;#8217;ont déjà fait dans l&amp;#8217;&lt;a href='http://fr.wikipedia.org/wiki/Amazon_Kindle#L.27Affaire_1984'&gt;affaire 1984&lt;/a&gt;), ils ne peuvent être prêtés à des possesseurs d&amp;#8217;autres lecteurs et évidemment, si vous voulez changer d&amp;#8217;appareils, tous vos achats sont perdus. Oh il y a une application Kindle pour lire ces livres sur iPad ou sous Windows, mais ça ne marche pas sur ma tablette (ni android ni iOS), sur mon e-reader ou sur mon ordinateur (GNU/Linux). Bref, comme les iPad, les Kindles sont des prisons dorées.&lt;/p&gt;
+
+&lt;p&gt;Alors heureusement, la &lt;a href='http://europa.eu/rapid/pressReleasesAction.do?reference=SPEECH/11/660&amp;amp;format=HTML&amp;amp;aged=0&amp;amp;language=EN&amp;amp;guiLanguage=en'&gt;commission européenne s&amp;#8217;empare du problème de l&amp;#8217;interopérabilité&lt;/a&gt; (en même temps que de celui de la TVA sur les livres numériques). Mais &lt;a href='http://www.bibliobernt.net/Kindle-progres-ou-predation'&gt;il sera bientôt trop tard&lt;/a&gt; : amazon risque bien de tuer les autres acteurs du libre numérique (constructeurs d&amp;#8217;e-readers et libraires mais aussi éditeurs).&lt;/p&gt;
+
+&lt;p&gt;Le problème cependant est plus large qu&amp;#8217;Amazon : le problème est le verrou numérique (les DRM). Le verrou numérique, c&amp;#8217;est ce qui permet à l&amp;#8217;éditeur de croire que le lecteur ne pourra pas &amp;#8220;pirater&amp;#8221; le livre (ici pirater peut être remplacé par prêter). L&amp;#8217;éditeur est prêt à payer très cher&lt;sup id='fnref:1'&gt;&lt;a href='#fn:1' rel='footnote'&gt;1&lt;/a&gt;&lt;/sup&gt; pour cette sécurité (évidemment, cela se répercute dans le prix que paie l&amp;#8217;acheteur) alors que le DRM n&amp;#8217;empêche nullement le &amp;#8220;piratage&amp;#8221; (le téléchargement sur les réseaux pair-à-pair) voire même l&amp;#8217;augmente. Le verrou numérique, c&amp;#8217;est aussi ce qui empêche un lecteur de posséder ses livres. J&amp;#8217;ai déjà cité 1984 pour les Kindle, mais il y a pire : &lt;a href='http://www.wired.com/beyond_the_beyond/2011/08/dead-media-beat-microsoft-reader/'&gt;Microsoft arrête son service reader&lt;/a&gt; en clair, l&amp;#8217;unique logiciel ayant le droit de lire les fichiers &lt;code&gt;.lit&lt;/code&gt; va disparaître, ne fonctionnera pas sur les ordinateurs du futur, les livres seront illisibles !&lt;/p&gt;
+
+&lt;p&gt;Conclusion : Je boycotte les libraires (Amazon, Barnes &amp;amp; Noble, Apple) et les éditeurs (Actes Sud, Belfond, Gallimard, &amp;#8230; voir la &lt;a href='http://lecteursencolere.com/blacklist-editors/'&gt;liste noire&lt;/a&gt;) vendant des livres verrouillés. Il reste de bons appareils (Bookeen, iRiver, Kobo, Pocketbook, Sony) et de bonnes librairies.&lt;/p&gt;
+&lt;div class='footnotes'&gt;&lt;hr /&gt;&lt;ol&gt;&lt;li id='fn:1'&gt;
+&lt;p&gt;70000$ pour les DRMs d&amp;#8217;Adobe d&amp;#8217;après &lt;a href='http://www.tierslivre.net/spip/spip.php?article2693'&gt;François Bon&lt;/a&gt;.&lt;/p&gt;
+&lt;a href='#fnref:1' rev='footnote'&gt;&amp;#8617;&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry><title>Les tablettes et le futur de l'informatique ?</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/10-12/Tablettes.html"/>
+  <updated>2011-10-12T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/10-12/Tablettes</id>
+  <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;When we were an agrarian nation, all cars were trucks, because that’s what you needed… PCs are going to be like trucks. They’re still going to be around. They’re still going to have a lot of value. But they’re going to be used by one out of x people.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Steve Jobs&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Si je suis d&amp;#8217;accord (et triste) sur la conclusion que l&amp;#8217;ordinateur risque d&amp;#8217;être supplanté par d&amp;#8217;autres appareils, je n&amp;#8217;approuve absolument pas la comparaison voiture/camion. La tablette n&amp;#8217;est pas une voiture. La tablette est à l&amp;#8217;ordinateur ce que le train est à la voiture. Le train est moins fatigant, ne demande que peu d&amp;#8217;apprentissage, fait rapidement ce que le plus grand nombre lui demande. Mais il ne va que là où la SNCF a estimé rentable d&amp;#8217;aller. Pour aller plus loin, vous avez besoin d&amp;#8217;une voiture. Il se révèle plus cher à l&amp;#8217;usage : si on veut être plusieurs à l&amp;#8217;utiliser, il faut payer une autre place&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;Les tablettes seraient en train de révolutionner l&amp;#8217;informatique nous dit-on. Non, elles sont en train de tuer l&amp;#8217;informatique. Ces dernières années ont vu l&amp;#8217;ordinateur entrer chez tout le monde. On pouvait espérer voir la capacité à programmer se démocratiser. On me dira que tout le monde n&amp;#8217;a pas besoin de savoir programmer, comme on pouvait dire il y a quelques siècles que seule une faible part de la population avait besoin de savoir lire. L&amp;#8217;ordinateur est un appareil versatile, universel, programmable. La tablette devrait être tout cela mais elle éloigne ces possibilités de l&amp;#8217;utilisateur, les réservant à la caste des développeurs professionnels. Bref, c&amp;#8217;est la fin de l&amp;#8217;ordinateur personnel.&lt;/p&gt;
+
+&lt;p&gt;Si la tablette s&amp;#8217;impose, une occasion magnifique aura été définitivement perdue.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Kindle Fire, Kindle Touch, Amazon bientôt en France</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/10-03/Kindle_fire.html"/>
+  <updated>2011-10-03T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/10-03/Kindle_fire</id>
+  <content type="html">&lt;p&gt;Les nouveaux Kindle d&amp;#8217;amazon ont été présentés vendredi dernier. Du Kindle original au Kindle 3 (la génération précédente), la nature de l&amp;#8217;appareil n&amp;#8217;a pas beaucoup changé : un écran eInk et un clavier. Cette fois il y a du neuf (les claviers disparaissent !). Au programme, &lt;a href='http://aldus2006.typepad.fr/mon_weblog/2011/09/amazon-kindle-la-gamme-compl%C3%A8te.html'&gt;3 nouveaux appareils&lt;/a&gt; :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;le Kindle tout court. Un reader 6 pouces sans écran tactile et sans clavier (une sorte de cybook opus en plus grand pour le même prix), vendu 79$ aux USA avec une offre de publicité, 30$ de plus sans pub ou partout dans le monde (ça semble faire 119€ pour la France).&lt;/li&gt;
+
+&lt;li&gt;Le Kindle Touch. On dirait un Nook Touch, Sony PRS-T1, Cybook Orizon ou Kobo Touch. Ligne, caractéristiques, prix, c&amp;#8217;est tout quasi pareil : 139 ou 149$, écran tactile 6&amp;#8221; et presque aucun bouton à l&amp;#8217;exception d&amp;#8217;un truc sous l&amp;#8217;écran. À l&amp;#8217;exception du cybook, ils ont d&amp;#8217;ailleurs tous le même écran.&lt;/li&gt;
+
+&lt;li&gt;Le Kindle Fire. Une tablette tactile à mi-chemin entre un nook color et un archos 70. Le prix n&amp;#8217;est pas aussi impressionnant que le reader à 79$ : des tablettes à moins de 200$, ça existe &lt;a href='http://arnovatech.com/products/g1/arn_7/index.html?country=fr&amp;amp;lang=fr'&gt;par exemple&lt;/a&gt;. On peut penser que l&amp;#8217;amazon Fire vaut mieux que ça cependant.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id='kindle_touch'&gt;Kindle Touch&lt;/h3&gt;
+
+&lt;p&gt;Les reader sont des readers amazon avec l&amp;#8217;avantage classique : ils sont techniquement bons et ont un très bon rapport qualité-prix ; et l&amp;#8217;énorme inconvénient qui va avec : ils ne savent pas lire les livres électroniques achetés ailleurs que chez amazon ! Oui bien sur, on peut convertir un epub en ce que le Kindle lit, mais il y a une nette distorsion de concurrence là. Ils ont un autre inconvénient (partagé avec Le nook de Barnes &amp;amp; Noble) : le Kindle Touch n&amp;#8217;est vendu qu&amp;#8217;aux USA, ce qui pour B&amp;amp;N est justifiable (ils ne vendent rien en dehors des USA) ne l&amp;#8217;est guère pour amazon. Mais cela changera surement d&amp;#8217;ici peu vu que amazon devrait débarquer en France avant la fin de l&amp;#8217;année. Cependant, les allemands et les anglais qui ont déjà une librairie électronique amazon n&amp;#8217;ont pas plus droit au Kindle Touch que les français.&lt;/p&gt;
+
+&lt;h3 id='kindle_fire'&gt;Kindle Fire&lt;/h3&gt;
+
+&lt;p&gt;Le Kindle Fire a son propre système basé sur &lt;a href='http://www.android.com/'&gt;android 2.3&lt;/a&gt;. Un fork propriétaire d&amp;#8217;un système libre. Dommage. Et surtout un environnement fermé : pas d&amp;#8217;accès à l&amp;#8217;android market pour installer des applications. Le navigateur, silk, a donné lieu à pas mal de &lt;a href='http://www.blogeee.net/2011/09/amazon-kindle-fire-plus-un-portail-quune-tablette/chapter/7/'&gt;discussions&lt;/a&gt; : il n&amp;#8217;est pas neutre. Comme opera mini, les pages lues sur la tablette sont lues sur un serveur amazon, compressées (potentiellement expurgées&amp;#8230;) avant d&amp;#8217;être envoyées sur la tablette. Bref, l&amp;#8217;utilisateur est prisonnier et ne voit de l&amp;#8217;extérieur que ce qu&amp;#8217;on veut bien qu&amp;#8217;il voit.&lt;/p&gt;
+
+&lt;p&gt;La raison de cette fermeture est assez évidente : comme pour les readers, il n&amp;#8217;est pas question que le client aille voir ailleurs. S&amp;#8217;il achète quelque chose, cela doit passer par amazon (Apple a la même politique pour les iPhone, iPad). Et cette politique est justifiée par les prix des appareils : d&amp;#8217;après &lt;a href='http://www.electronista.com/articles/11/10/01/ihs.says.amazon.kindle.fire.costs.210.to.make/'&gt;des sources&lt;/a&gt;, le kindle fire est vendu moins cher que ce qu&amp;#8217;il coûte à produire. La plus-value attendue par amazon étant sur le contenu (les actionnaires d&amp;#8217;amazon n&amp;#8217;ont pas l&amp;#8217;air de le comprendre cependant (du 28 septembre au 3 octobre, l&amp;#8217;action a perdu presque 10%)). C&amp;#8217;est le classique modèle des albums Panini : on vous offre l&amp;#8217;album dans l&amp;#8217;espoir que vous dépensiez des milles et des cents pour le remplir d&amp;#8217;images. Et je suppose que c&amp;#8217;est le genre de distorsion de concurrence que l&amp;#8217;Europe n&amp;#8217;approuve pas : les fabriquants européens de tablette et de livres électroniques (archos, bookeen) ne vendent pas de contenu et ne peuvent donc pas lutter contre un vendeur de matériels qui fait payer ce matériel par les auteurs et les éditeurs&amp;#8230;&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Get contacts from LinkedIn, Google Plus, Ldap together with lbdb</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/10-02/lbdb.html"/>
+  <updated>2011-10-02T23:59:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/10-02/lbdb</id>
+  <content type="html">&lt;p&gt;As many people in internet era, I have contacts on various networks. Facebook, LinkedIn, GooglePlus, Work, Mail Agent, Phone&amp;#8230; And I want to be able to contact all these people by mail. Unfortunately, It is a pain to go to the good website, find the directory, search for the mail address, and eventually copy and paste it in my mailer.&lt;/p&gt;
+
+&lt;p&gt;My Mail User Agent being &lt;a href='http://www.mutt.org/'&gt;mutt&lt;/a&gt;, I searched for a solution that would work well with it. I had a look at the add-ons for thunderbird but did not find what I am looking for.&lt;/p&gt;
+
+&lt;p&gt;I use &lt;a href='http://www.spinnaker.de/lbdb/'&gt;lbdb&lt;/a&gt; (the little brother database). It is able to read a lot of different kind of address books, including Mac OS X&amp;#8217;s addressbook, gpg keyring, vcf files and ldap directories. There is no specific module to access the facebook, linkedin or google databases. However, Google and LinkedIn both allow the user to download the directory of their contact as a vcf file (or other formats). I saved those files as &lt;code&gt;~/.lbdb/linkedin.vcf&lt;/code&gt; and &lt;code&gt;~/.lbdb/gmail.vcf&lt;/code&gt;. My configuration file for lbdb (saved as &lt;code&gt;~/.lbdb/lbdbrc&lt;/code&gt;) is as follows:&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='python'&gt;&lt;span class='n'&gt;METHODS&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;m_ldap m_abook m_inmail m_gpg m_muttalias m_vcf&amp;quot;&lt;/span&gt;
+&lt;span class='n'&gt;VCF_FILES&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;$HOME/.lbdb/linkedin.vcf $HOME/.lbdb/gmail.vcf&amp;quot;&lt;/span&gt;
+&lt;span class='n'&gt;MUTT_DIRECTORY&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;$HOME/.mutt&amp;quot;&lt;/span&gt;
+&lt;span class='n'&gt;MUTTALIAS_FILES&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;~/.mail_aliases muttrc alias&amp;quot;&lt;/span&gt;
+&lt;span class='n'&gt;LDAP_NICKS&lt;/span&gt;&lt;span class='o'&gt;=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;loria uhp&amp;quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;My workplaces (loria and uhp) have a ldap server, which I configure in a &lt;code&gt;~/.lbdb/ldap.rc&lt;/code&gt; file&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='perl'&gt;&lt;span class='c1'&gt;# -*- perl -*-&lt;/span&gt;
+
+&lt;span class='nv'&gt;%ldap_server_db&lt;/span&gt; &lt;span class='o'&gt;=&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;
+ &lt;span class='s'&gt;&amp;#39;loria&amp;#39;&lt;/span&gt; &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='s'&gt;&amp;#39;annuaire.inria.fr:9009&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;dc=rocq-annu,dc=inria,dc=fr&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;
+             &lt;span class='s'&gt;&amp;#39;uid cn sn mail&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;uid cn sn mail ou l roomNumber telephoneNumber&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;
+             &lt;span class='s'&gt;&amp;#39;${mail}&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;${cn}&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;${ou} ${l} ${roomNumber} ☎:${telephoneNumber}&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;],&lt;/span&gt;
+ &lt;span class='s'&gt;&amp;#39;uhp&amp;#39;&lt;/span&gt;   &lt;span class='o'&gt;=&amp;gt;&lt;/span&gt; &lt;span class='p'&gt;[&lt;/span&gt;&lt;span class='s'&gt;&amp;#39;ldap.uhp-nancy.fr&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;dc=uhp-nancy,dc=fr&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;
+             &lt;span class='s'&gt;&amp;#39;uid cn sn mail&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;uid cn sn mail ou l&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;
+             &lt;span class='s'&gt;&amp;#39;${mail}&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;${cn}&amp;#39;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s'&gt;&amp;#39;${ou} ${l}&amp;#39;&lt;/span&gt; &lt;span class='p'&gt;]&lt;/span&gt;
+&lt;span class='p'&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Yes it contains a phone character (☎). Which spits messages such as&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;John.Smith@example.com	John Smith	B242	☎:12 3456 7890&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What&amp;#8217;s missing?&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Facebook. Obviously, as I cannot export my facebook contacts, I cannot feed them to lbdb.&lt;/li&gt;
+
+&lt;li&gt;Google Plus. The contacts for which I have email addresses on Google Plus are those to whom I sent or from whom I received mails &lt;em&gt;via&lt;/em&gt; GMail. Well, as I don&amp;#8217;t want to share my email addresses to all people who have me in their circles, it seems reasonable.&lt;/li&gt;
+
+&lt;li&gt;Auto-update. GMail and LinkedIn contacts don&amp;#8217;t get updated each time I add someone. Too bad.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;Note: Most of that can be done with many mailer (ldap and vcf files are accessible). If one solves point 3, it would be great.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Lecteur d'epub</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/09-26/epub-reader.html"/>
+  <updated>2011-09-26T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/09-26/epub-reader</id>
+  <content type="html">&lt;p&gt;Existe-t-il un logiciel de lecture des fichiers ePub sous linux qui soit complètement satisfaisant ? J&amp;#8217;en ai essayé plusieurs mais je n&amp;#8217;ai pas trouvé mon bonheur. Les concurrents : &lt;a href='https://addons.mozilla.org/en-US/firefox/addon/epubreader/'&gt;epubreader&lt;/a&gt;, &lt;a href='http://www.lucidor.org/lucidor/'&gt;lucidor&lt;/a&gt;, &lt;a href='http://widgets.opera.com/widget/15552/'&gt;ebook reader for opera&lt;/a&gt;, &lt;a href='http://code.google.com/p/aranduka/'&gt;aranduka&lt;/a&gt;, &lt;a href='http://calibre-ebook.com/'&gt;calibre&lt;/a&gt; et &lt;a href='http://fbreader.org/'&gt;FBReader&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id='fbreader'&gt;FBReader&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://fbreader.org/'&gt;FBReader&lt;/a&gt; explore un dossier et classe les livres contenus par auteur ou genre. Ensuite, il permet de lire le fichier plutôt pas mal. Malheureusement, il zappe beaucoup du style des fichiers. Ce pourrait être un avantage pour éviter les mises en page lourdes qui peuvent arriver à condition que la configuration de base soit excellente ou la configuration facile, ce n&amp;#8217;est pas le cas.&lt;/p&gt;
+
+&lt;p&gt;Cependant, fbreader est le logiciel que je continue à utiliser pour regarder des livres.&lt;/p&gt;
+
+&lt;h3 id='calibre'&gt;Calibre&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://calibre-ebook.com/'&gt;calibre&lt;/a&gt; gère la bibliothèque, la synchronisation avec le livre électronique et la conversion entre différents formats de livres numériques. Il possède aussi un visualiseur simple. Et particulièrement mauvais : au changement de page, des lignes apparaissent à moitié ou parfois à la fois en dernière ligne d&amp;#8217;une page et en première de la suivante. En plus, il est lent (il a même une animation lente, moche, inutile pour le changement de page). Bref, calibre n&amp;#8217;est pas du tout la solution pour lire un ePub.&lt;/p&gt;
+
+&lt;h3 id='aranduka'&gt;Aranduka&lt;/h3&gt;
+
+&lt;p&gt;Je ne sais pas tout ce qu&amp;#8217;est censé faire &lt;a href='http://code.google.com/p/aranduka/'&gt;aranduka&lt;/a&gt;, mais c&amp;#8217;est prometteur. Son lecteur d&amp;#8217;epub fonctionne. Son défaut est qu&amp;#8217;il ne sait pas faire la pagination (chaque chapitre est présentée comme une seule très longue page).&lt;/p&gt;
+
+&lt;h3 id='ebook_reader_for_opera'&gt;Ebook reader for Opera&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://widgets.opera.com/widget/15552/'&gt;ebook reader for opera&lt;/a&gt; est un widget pour le navigateur Opera. Logique, il s&amp;#8217;agit d&amp;#8217;afficher du html/xhtml, qui mieux qu&amp;#8217;un navigateur pour faire ça ? Mais ce widget est malcommode et ne gère pas la pagination.&lt;/p&gt;
+
+&lt;h3 id='lucidor'&gt;Lucidor&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='http://www.lucidor.org/lucidor/'&gt;lucidor&lt;/a&gt; est à Firefox ce que Ebook Reader est à Opera. Défaut : pas de pagination.&lt;/p&gt;
+
+&lt;h3 id='okular'&gt;Okular&lt;/h3&gt;
+
+&lt;p&gt;Le lecteur/éditeur de pdf de KDE, &lt;a href='http://okular.kde.org/'&gt;okular&lt;/a&gt; sait lire les epub. Je n&amp;#8217;ai pas trouvé comment augmenter la taille de la police.&lt;/p&gt;
+
+&lt;h3 id='epubreader'&gt;Epubreader&lt;/h3&gt;
+
+&lt;p&gt;Une extension pour firefox : &lt;a href='https://addons.mozilla.org/en-US/firefox/addon/epubreader/'&gt;epubreader&lt;/a&gt;. Sa bibliothèque n&amp;#8217;est pas trop commode, mais niveau lecteur, il a l&amp;#8217;air le plus abouti et agréable : il fait des pages, il comprend les styles mieux que fbreader, il permet d&amp;#8217;outrepasser les thèmes du livre.&lt;/p&gt;
+
+&lt;h3 id='bookworm'&gt;bookworm&lt;/h3&gt;
+
+&lt;p&gt;Cas à part, &lt;a href='http://bookworm.oreilly.com/'&gt;bookworm&lt;/a&gt; est un lecteur d&amp;#8217;epub en ligne. Il est &lt;a href='http://code.google.com/p/threepress/'&gt;open source&lt;/a&gt; et peut donc être installé sur n&amp;#8217;importe quel serveur. Bookworm ne gère pas la pagination.&lt;/p&gt;
+
+&lt;h3 id='epubtopdf'&gt;epubtopdf&lt;/h3&gt;
+
+&lt;p&gt;Ça ne répond absolument pas à la problématique de départ mais ça peut être intéressant tout de même, je me suis fait un &lt;a href='https://bitbucket.org/manu/epubinfo/src/21c36398f143/epubtopdf.sh'&gt;script shell epubtopdf&lt;/a&gt; qui dépend de wkhtmltopdf pour transformer du html en pdf et de pdfjam pour accoler les différents pdf produits. Certaines images ne passent pas (à cause d&amp;#8217;un bug dans wkhtmltopdf). Je trouve le résultat plus joli que celui de calibre.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Livre sur la place</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/09-19/Livre-sur-la-place.html"/>
+  <updated>2011-09-19T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/09-19/Livre-sur-la-place</id>
+  <content type="html">&lt;p&gt;Le week-end dernier avait lieu à Nancy le &lt;a href='http://www.lelivresurlaplace.fr/'&gt;livre sur la place&lt;/a&gt;. L&amp;#8217;occasion de voir certains de mes auteurs préférés, de leur faire signer mes livres, d&amp;#8217;acheter leurs dernières oeuvres et d&amp;#8217;échanger quelques mots avec eux.&lt;/p&gt;
+
+&lt;p&gt;Je ne suis pas fanatique de l&amp;#8217;autographe mais c&amp;#8217;est un prétexte pour aborder un écrivain. C&amp;#8217;est aussi assez troublant de voir devant quels auteurs se forment les queues (ce week-end, La palme m&amp;#8217;a semblé aller à David Foenkinos, à Boulet et à Maliki).&lt;/p&gt;
+
+&lt;p&gt;Comment on signe un livre numérique ? Il y a bien des projets &lt;a href='http://kindlegraph.com/'&gt;Kindlegraph&lt;/a&gt; ou &lt;a href='http://www.autography.com/'&gt;autography&lt;/a&gt;, mais ce n&amp;#8217;est guère convaincant. Quel prétexte va permettre à un lecteur numérique de rencontrer ses auteurs ?&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>epub et métadonnées</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/09-01/Epub_et_metadonnees.html"/>
+  <updated>2011-09-01T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/09-01/Epub_et_metadonnees</id>
+  <content type="html">&lt;p&gt;Comme je l&amp;#8217;ai déjà dit &lt;a href='/journal/2011/05-27/Ecrire_en_epub.html'&gt;précédemment&lt;/a&gt;, un fichier epub est en réalité une archive zip ayant une structure et un contenu bien défini. Tout d&amp;#8217;abord, il contient un fichier nommé &lt;code&gt;mimetype&lt;/code&gt; contenant le texte &lt;code&gt;application/epub+zip&lt;/code&gt;, premier fichier dans l&amp;#8217;archive, sauvegardé sans compression. Pourquoi ? Tout simplement pour que les octets 30 à 57 du fichier contiennent exactement le texte &lt;code&gt;mimetypeapplication/epub+zip&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Les autres fichiers peuvent être compressés et n&amp;#8217;ont pas à respecter d&amp;#8217;ordre.&lt;/p&gt;
+
+&lt;p&gt;Deuxième fichier obligatoire : &lt;code&gt;META-INF/container.xml&lt;/code&gt;. Ce fichier semble avoir pour unique intérêt de dire où se trouve et comment se nomme le fichier de squelette (opf). Il est donc inutile de parcourir tous les fichiers à la recherche d&amp;#8217;un fichier opf et cela permet de ne pas se tromper quand il y en a plusieurs&amp;#8230; Expérience vécue : après avoir trouvé un fichier .opf, je m&amp;#8217;aperçois qu&amp;#8217;il ne contient absolument pas ce qu&amp;#8217;il devrait et je comprends ma douleur en voyant qu&amp;#8217;il s&amp;#8217;agit de &lt;code&gt;__MACOSX/OEBPS/._content.opf&lt;/code&gt; c&amp;#8217;est-à-dire un fichier caché créé par un mac et qui n&amp;#8217;a rien à faire dans un livre que je viens d&amp;#8217;acheter, n&amp;#8217;est-ce pas Bragelonne&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;Le fichier qui m&amp;#8217;intéresse aujourd&amp;#8217;hui : le fichier opf. Celui-ci contient d&amp;#8217;une part les métadonnées (titre, auteur(s), date de publication, etc.), d&amp;#8217;autre part les fichiers utiles de l&amp;#8217;archive ainsi que l&amp;#8217;ordre dans lequel on parcourra le texte.&lt;/p&gt;
+
+&lt;p&gt;Par exemple (extrait de http://jean-claude.dunyach.pagesperso-orange.fr/Articles/Article.epub, je laisse le lecteur trouver le nom de l&amp;#8217;auteur et le titre de l&amp;#8217;article tout seul) :&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='xml'&gt;&lt;span class='cp'&gt;&amp;lt;?xml version=&amp;quot;1.0&amp;quot; encoding=&amp;quot;UTF-8&amp;quot;?&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;package&lt;/span&gt; &lt;span class='na'&gt;xmlns=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;http://www.idpf.org/2007/opf&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;version=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;2.0&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;unique-identifier=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;BookId&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;metadata&lt;/span&gt; &lt;span class='na'&gt;xmlns:dc=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;http://purl.org/dc/elements/1.1/&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;xmlns:opf=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;http://www.idpf.org/2007/opf&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;dc:title&amp;gt;&lt;/span&gt;Le livre va-t-il sombrer dans la mer numérique ?&lt;span class='nt'&gt;&amp;lt;/dc:title&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;dc:creator&lt;/span&gt; &lt;span class='na'&gt;opf:file-as=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Dunyach, Jean-Claude&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;opf:role=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;aut&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;Jean-Claude Dunyach&lt;span class='nt'&gt;&amp;lt;/dc:creator&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;dc:subject&amp;gt;&lt;/span&gt;ebook&lt;span class='nt'&gt;&amp;lt;/dc:subject&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;dc:description&amp;gt;&lt;/span&gt;Une réflexion sur l&amp;#39;avenir du livre numérique&lt;span class='nt'&gt;&amp;lt;/dc:description&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;dc:publisher&amp;gt;&lt;/span&gt;Moi-même&lt;span class='nt'&gt;&amp;lt;/dc:publisher&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;dc:date&amp;gt;&lt;/span&gt;2010-10-22&lt;span class='nt'&gt;&amp;lt;/dc:date&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;dc:identifier&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;BookId&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;V 1.01&lt;span class='nt'&gt;&amp;lt;/dc:identifier&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;dc:language&amp;gt;&lt;/span&gt;fr&lt;span class='nt'&gt;&amp;lt;/dc:language&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;dc:rights&amp;gt;&lt;/span&gt;Creative Commons 2.0&lt;span class='nt'&gt;&amp;lt;/dc:rights&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;meta&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;price&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;content=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;0&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;meta&lt;/span&gt; &lt;span class='na'&gt;name=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;cover&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;content=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;img1&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;/metadata&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;manifest&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;ncx&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;toc.ncx&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;media-type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;application/x-dtbncx+xml&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;style&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;style.css&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;media-type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;text/css&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;id001&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;001.html&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;media-type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;application/xhtml+xml&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;id002&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;002.html&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;media-type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;application/xhtml+xml&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;id003&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;003.html&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;media-type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;application/xhtml+xml&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;img1&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;images/img1.jpg&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;media-type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;image/jpeg&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;img2&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;images/img2.png&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;media-type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;image/png&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;item&lt;/span&gt; &lt;span class='na'&gt;id=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;img3&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;images/img3.png&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;media-type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;image/png&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;/manifest&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;spine&lt;/span&gt; &lt;span class='na'&gt;toc=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;ncx&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;itemref&lt;/span&gt; &lt;span class='na'&gt;idref=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;id001&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;linear=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;no&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;itemref&lt;/span&gt; &lt;span class='na'&gt;idref=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;id002&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;itemref&lt;/span&gt; &lt;span class='na'&gt;idref=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;id003&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;/spine&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;guide&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;reference&lt;/span&gt; &lt;span class='na'&gt;type=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;cover&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;title=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;Cover image&amp;quot;&lt;/span&gt; &lt;span class='na'&gt;href=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;001.html&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;/&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;/guide&amp;gt;&lt;/span&gt;
+&lt;span class='nt'&gt;&amp;lt;/package&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;On trouve donc bien les informations promises (des dc:machin) et on apprend qu&amp;#8217;il y a 3 fichiers html à commencer par celui ayant l&amp;#8217;identifiant &lt;code&gt;id001&lt;/code&gt; qui se trouve être le fichier &lt;code&gt;001.html&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Quatrième fichier important et malheureusement mal exploité par certains éditeurs, la table des matières : &lt;code&gt;toc.ncx&lt;/code&gt;. Mais ce sera pour un prochain épisode.&lt;/p&gt;
+
+&lt;p&gt;Pour en revenir aux métadonnées, je me suis confectionné un petit programme &lt;a href='https://bitbucket.org/manu/epubinfo'&gt;epubinfo&lt;/a&gt; pour les lire et modifier. Je l&amp;#8217;utilise en particulier pour changer les dates de publications (je classe les livres en fonction de cette date), corriger les noms d&amp;#8217;auteur (par exemple le nom de famille d&amp;#8217;&lt;em&gt;Alexandre Dumas fils&lt;/em&gt; n&amp;#8217;est pas &lt;em&gt;fils&lt;/em&gt;) et mettre la bonne langue (ce qui permet à mon &lt;a href='http://bookeen.com/fr/cybook/?id=2'&gt;reader&lt;/a&gt; de faire la césure comme il faut) sans ouvrir un vrai éditeur d&amp;#8217;epub lourd (sigil) ni le faire complètement à la main.&lt;/p&gt;
+
+&lt;p&gt;Ensuite, je compte utiliser ce programme pour classer mes livres de façon un peu plus intelligente qu&amp;#8217;actuellement (un dossier par auteur dans lequel les fichiers sont classés par date de publication) en groupant plusieurs auteurs dans un même dossier tant que cela représente moins de 12 livres par exemple mais sans séparer les livres d&amp;#8217;un même auteur en deux dossiers différents.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Prix du livre</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/06-23/Prix_unique.html"/>
+  <updated>2011-06-23T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/06-23/Prix_unique</id>
+  <content type="html">&lt;p&gt;Jadis un gouvernement inventa pour sauver les libraires le &lt;a href='http://fr.wikipedia.org/wiki/Prix_unique_du_livre'&gt;prix unique du livre&lt;/a&gt;. Le supermarché (culturel ou non) ne pouvait ainsi pas étouffer le petit libraire par des prix contre lesquels ce dernier ne pouvait combattre. Par contre, diverses éditions d&amp;#8217;un même livre peuvent avoir des prix différents (grands formats, livres de poche, éditions de luxe ou éditions collector avec commentaire du réalisateur (ah non, je confonds avec les dévédés)).&lt;/p&gt;
+
+&lt;p&gt;Aujourd&amp;#8217;hui, le livre numérique est un nouveau terrain de batailles tarifaires. Enfin peut-être pas assez vu que certains éditeurs préfèrent vendre les livres numériques plus chers que les livres papiers pour financer la lutte contre le piratage. La grande nouveauté, c&amp;#8217;est le livre offert aux possesseurs d&amp;#8217;iTruc mais pas aux autres : &lt;a href='http://bragelonne-le-blog.fantasyblog.fr/post/2/6621'&gt;Legende&lt;/a&gt; ! Et &lt;em&gt;a priori&lt;/em&gt;, il ne s&amp;#8217;agit même pas d&amp;#8217;éditions différentes vu que iBooks lit les ePub comme ma liseuse à moi. Mais je croyais que les parlementaires avaient étendu la loi du prix unique aux livres numériques : &lt;a href='http://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000024079563&amp;amp;fastPos=1&amp;amp;fastReqId=188551743&amp;amp;categorieLien=id&amp;amp;oldAction=rechTexte'&gt;JO&lt;/a&gt;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Comment créer un epub</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/05-27/Ecrire_en_epub.html"/>
+  <updated>2011-05-27T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/05-27/Ecrire_en_epub</id>
+  <content type="html">&lt;p&gt;Un epub est une archive zip contenant essentiellement des fichiers de contenu html (ou xhtml ou xml), des fichiers de style CSS, éventuellement des images et des polices et des fichiers décrivant l&amp;#8217;ordre, les propriétés des autres (une sorte de table des matières). Sigil est un bon outil pour écrire et modifier un epub sans se poser trop de questions.&lt;/p&gt;
+
+&lt;p&gt;Les fichiers html sont écrits de façon classique mais en évitant les informations de forme qui doivent aller dans les css et en maximisant la structuration (un paragraphe est dans un &lt;code&gt;&amp;lt;p&amp;gt;...&amp;lt;/p&amp;gt;&lt;/code&gt;, des titres en h1, h2, h3. Donc pour centrer un paragraphe, pour des exergues ou pour les mises en reliefs, il faut mettre le texte dans un &lt;code&gt;div&lt;/code&gt; ou un &lt;code&gt;span&lt;/code&gt; (ou éventuellement un &lt;code&gt;em&lt;/code&gt;) et mettre les règles dans le fichier CSS).&lt;/p&gt;
+
+&lt;p&gt;Quelques règles css pour faire un texte qui me plaît :&lt;/p&gt;
+
+&lt;p&gt;&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='k'&gt;@page&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='nt'&gt;margin&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='nt'&gt;3mm&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nt'&gt;p&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='k'&gt;text-align&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='k'&gt;justify&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='k'&gt;margin&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='m'&gt;1ex&lt;/span&gt; &lt;span class='m'&gt;0&lt;/span&gt; &lt;span class='m'&gt;0&lt;/span&gt; &lt;span class='m'&gt;0&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='k'&gt;line-height&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='m'&gt;1&lt;/span&gt;&lt;span class='o'&gt;.&lt;/span&gt;&lt;span class='m'&gt;3&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nt'&gt;p&lt;/span&gt;&lt;span class='o'&gt;+&lt;/span&gt;&lt;span class='nt'&gt;p&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='k'&gt;text-indent&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='m'&gt;2em&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;&lt;/p&gt;
+
+&lt;p&gt;Le &lt;code&gt;@page&lt;/code&gt; s&amp;#8217;applique au contenu paginé et permet de définir le formatage des &amp;#8220;pages&amp;#8221; sur le reader. Ici, j&amp;#8217;ai mis des marges, on peut aussi régler les veuves et orphelins. J&amp;#8217;apprécie que le texte soit justifié, que les paragraphes soient séparés verticalement, que les lignes d&amp;#8217;un paragraphes soient un peu espacées et que les paragraphes qui en suivent un autre soient indentés.&lt;/p&gt;
+
+&lt;p&gt;Pour le style des titres de chapitre c&amp;#8217;est plus fluctuant. Je choisis des choses simples. Un peu comme le style Gibson du &lt;a href='http://epubzengarden.com/'&gt;ePub Zen Garden&lt;/a&gt;. Ce qui peut donner des choses comme ce qui suit.&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='html'&gt;&lt;span class='nt'&gt;&amp;lt;h3&amp;gt;&amp;lt;span&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;nchap&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;I&lt;span class='nt'&gt;&amp;lt;/span&amp;gt;&lt;/span&gt;
+    &lt;span class='nt'&gt;&amp;lt;span&lt;/span&gt; &lt;span class='na'&gt;class=&lt;/span&gt;&lt;span class='s'&gt;&amp;quot;chaptitle&amp;quot;&lt;/span&gt;&lt;span class='nt'&gt;&amp;gt;&lt;/span&gt;Titre de chapitre&lt;span class='nt'&gt;&amp;lt;/span&amp;gt;&amp;lt;/h3&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Et dans le css&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='css'&gt;&lt;span class='nt'&gt;h3&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='k'&gt;text-align&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='k'&gt;center&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nc'&gt;.nchap&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='k'&gt;font-style&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='k'&gt;italic&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nc'&gt;.nchap&lt;/span&gt;&lt;span class='nd'&gt;:before&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='k'&gt;content&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;Chapitre &amp;quot;&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='k'&gt;text-transform&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='k'&gt;none&lt;/span&gt;&lt;span class='p'&gt;;&lt;/span&gt; &lt;span class='k'&gt;font-style&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='k'&gt;italic&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;span class='nc'&gt;.chaptitle&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;&lt;span class='k'&gt;display&lt;/span&gt;&lt;span class='o'&gt;:&lt;/span&gt; &lt;span class='k'&gt;block&lt;/span&gt;&lt;span class='p'&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Pour plus d&amp;#8217;infos, on pourra lire un &lt;a href='http://www.hxa.name/articles/content/epub-guide_hxa7241_2007.html'&gt;guide sur le format epub&lt;/a&gt; et par exemple comment mettre un &lt;a href='http://blog.threepress.org/2009/11/20/best-practices-in-epub-cover-images/'&gt;couverture dans un epub&lt;/a&gt; (tout le blog est fort intéressant).&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Livres numériques et droits d'auteur</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/05-08/Livres_numeriques_et_droits_dauteur.html"/>
+  <updated>2011-05-08T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/05-08/Livres_numeriques_et_droits_dauteur</id>
+  <content type="html">&lt;p&gt;Pour alimenter mon livre électronique, il me faut des contenus. Je suis un gros lecteur de polars et romans noirs, j&amp;#8217;aime bien également la science fiction, donc j&amp;#8217;ai acheté et cherché des livres gratuits dans ces styles.&lt;/p&gt;
+
+&lt;p&gt;La science fiction se trouve en abondance. Sous la forme de magazines (&lt;a href='http://www.angle-mort.fr/'&gt;Angle mort&lt;/a&gt;), de nouvelles en français (&lt;a href='http://quarante-deux.org/les_Recits_de_l%27espace/'&gt;quarante-deux&lt;/a&gt;) ou en anglais (&lt;a href='http://www.infinityplus.co.uk/stories/'&gt;infinityplus&lt;/a&gt;, &lt;a href='http://www.infinitematrix.net/'&gt;infinite matrix&lt;/a&gt;), même offertes par l&amp;#8217;éditeur &lt;a href='http://blog.belial.fr/'&gt;Le Belial&amp;#8217;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Les policiers sont moins pléthoriques. Il existe une collection mauvais genres chez &lt;a href='http://publie.net'&gt;publie.net&lt;/a&gt;. Il y en a chez &lt;a href='http://www.inlibroveritas.net/lire/categories/romans_nouvelles/policier/'&gt;in libro veritas&lt;/a&gt; (merci a. delon de me l&amp;#8217;avoir signalé). Le masque ou gallimard proposent des titres qui m&amp;#8217;intéressent, mais ils sont deux fois plus chers que le livre de poche correspondant et sont verrouillés &lt;a href='http://oyo.chapitre.com/ebook/shop/searcharticle.jsp?articleId=66002'&gt;un exemple&lt;/a&gt; &lt;a href='http://www.epagine.fr/9782072307430-zulu-ferey-caryl/'&gt;ou deux&lt;/a&gt;. Mais pas de magazines, pas de nouvelles récentes offertes. Et pourtant, il me semble que la &amp;#8220;révolution littéraire numérique&amp;#8221; devrait ouvrir les portes à la création de magazines de nouvelles comme angle mort. Il me semble que le coût principal de ce genre de publications devait être l&amp;#8217;impression et la distribution qui devient négligeable aujourd&amp;#8217;hui.&lt;/p&gt;
+
+&lt;p&gt;Finalement, du côté policier/mystère, je remonte aux origines du genre. Ça tombe bien, elles sont dans le domaine public. Cela inclut Émile Gaboriau, Gaston Leroux mais pas encore Maurice Leblanc. Cela inclut un certain nombre d&amp;#8217;auteurs américains. Je puise dans le début de la &lt;a href='http://www.detective-fiction.com/queens-quorum.htm'&gt;liste des 125 plus importants livres du genre établie par Ellery Queen&lt;/a&gt;. Et je me familiarise avec les lois sur le droit d&amp;#8217;auteur. Ce n&amp;#8217;est pas d&amp;#8217;une limpidité excessive mais mes investigations m&amp;#8217;amènent aux points suivants :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;D&amp;#8217;après l&amp;#8217;article L123-1 du code de la propriété intellectuelle, les œuvres publiées du vivant de leur auteur tombent dans le domaine public 70 ans après la mort de celui-ci. Plus précisément elles entrent dans le domaine public le 1er janvier suivant le 70ème anniversaire de la mort. Donc les livres de Maurice Leblanc seront dans le domaine public le 1er janvier 2012. Il y a des exceptions, par exemple si l&amp;#8217;auteur est &amp;#8220;mort pour la patrie&amp;#8221;.&lt;/li&gt;
+
+&lt;li&gt;Mieux (article L123-12 du code de la propriété intellectuelle), dans le cas d&amp;#8217;œuvres d&amp;#8217;auteurs étrangers à l&amp;#8217;union européenne publiées hors union européenne, si la loi du pays d&amp;#8217;origine de l&amp;#8217;œuvre est plus favorable que la loi française, c&amp;#8217;est elle qui s&amp;#8217;applique. Cela signifie que les livres publiés aux États-Unis avant 1924 sont dans le domaine public quelle que soit la date de la mort de leur auteur. Que ceux publiés au Canada sont dans le domaine public 50 ans après la mort de leur auteur.&lt;/li&gt;
+
+&lt;li&gt;Les publications dans des journaux sont des cas spéciaux, le droit d&amp;#8217;auteur pourrait ne courir que 70 ans à partir de la publication, mais cela ne s&amp;#8217;applique peut-être qu&amp;#8217;au cas d&amp;#8217;articles d&amp;#8217;auteur inconnu.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Conclusions, certaines œuvres de Maurice Leblanc ou Sax Rohmer sont dans le domaine public aux États Unis, mais aucune ne l&amp;#8217;est en France (quoique, vu que les nouvelles et romans de Leblanc ont été publiées en journaux avant d&amp;#8217;être publiées en livre). Les œuvres d&amp;#8217;Howard P. Lovecraft sont dans le domaine public en France mais pas aux États Unis (évidemment, pour les traductions, c&amp;#8217;est plus compliqué). &lt;em&gt;Tarzan of the apes&lt;/em&gt; est dans le domaine public aux États-Unis, donc en France, mais pas &lt;em&gt;Tarzan at Earth&amp;#8217;s core&lt;/em&gt; (qui est cependant dans le domaine public en Australie et au Canada). &lt;em&gt;Trente arpents&lt;/em&gt; de Ringuet est dans le domaine public au Canada, donc en France (je ne connais quasiment pas d&amp;#8217;écrivains québecois, donc j&amp;#8217;en ai pris un au hasard).&lt;/p&gt;
+
+&lt;p&gt;Enfin, pour rechercher les ebooks qui sont dans le domaine public aux États-Unis, &lt;a href='http://openlibrary.org/'&gt;openlibrary&lt;/a&gt; est un bon premier pas (il propose même un lien pour lire le livre en ligne avec le lecteur d&amp;#8217;&lt;a href='http://archive.org'&gt;archive.org&lt;/a&gt; qui malheureusement ne marche pas sur mon joujou). Et ensuite, un moteur de recherche comme &lt;a href='http://www.inkmesh.com/'&gt;inkmesh&lt;/a&gt;, avec lequel il ne reste qu&amp;#8217;à choisir le site sur lequel télécharger le titre en sachant que les epub de mobileread sont meilleurs que ceux manybooks et gutenberg qui sont nettement mieux que ceux de archive.org (mais merci à eux de cataloguer et à google et microsoft de scanner tout ça).&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Nouveau jouet</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/04-22/Nouveau_jouet.html"/>
+  <updated>2011-04-22T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/04-22/Nouveau_jouet</id>
+  <content type="html">&lt;p&gt;Je me suis acheté un nouveau jouet : un livre électronique (ebook-reader, liseuse, livrel ?). Je me suis donc mis à lire des livres numériques (e-books). Avec un nouveau jouet viennent des nouveaux outils et de nouvelles sources d&amp;#8217;information et de contenu. Voici un catalogue de sites intéressants (des blogs aux éditeurs en passant par les logiciels indispensables pour créer des livres numériques ou gérer la bibliothèque).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Blogs et informations&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://aldus2006.typepad.fr/'&gt;Aldus&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.ebouquin.fr/'&gt;eBouquin&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.actualitte.com/'&gt;ActuaLitté&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Librairies, éditeurs, magazines&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://www.angle-mort.fr/'&gt;Angle Mort&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.bragelonne.fr/'&gt;Bragelonne&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://e.belial.fr/'&gt;e-Belial&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.epagine.fr/'&gt;ePagine&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.feedbooks.com/'&gt;FeedBooks&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Constructeurs&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://www.bookeen.com/fr/'&gt;Bookeen&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.iriver.com/product/list.asp?pCode=002'&gt;iRiver&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.pocketbook.fr/'&gt;PocketBook&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.sony.fr/hub/ebook-reader'&gt;Sony&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;Logiciels et outils&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href='http://fbreader.org/'&gt;FBreader&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://calibre-ebook.com/'&gt;Calibre&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://code.google.com/p/sigil/'&gt;Sigil&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://bookworm.oreilly.com/'&gt;Bookworm&lt;/a&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;a href='http://www.instapaper.com/'&gt;instapaper&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Bon, j&amp;#8217;ai de la lecture en retard (les œuvres de Gaston Leroux, Marcel Proust ou Émile Gaboriau sont dans le domaine public par exemple).&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Roman de gare</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/03-14/Citations.html"/>
+  <updated>2011-03-14T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/03-14/Citations</id>
+  <content type="html">&lt;blockquote&gt;
+&lt;p&gt;&amp;#8220;Le roman de gare, c&amp;#8217;est ce qu&amp;#8217;on trouve dans les gares : SAS, Danielle Steel, Houellebecq.&amp;#8221;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Jean-Bernard Pouy&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;</content>
+ </entry>
+ 
+ <entry><title>A Pu TV</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/02-02/A_Pu_TV.html"/>
+  <updated>2011-02-02T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/02-02/A_Pu_TV</id>
+  <content type="html">&lt;p&gt;Mon fournisseur d&amp;#8217;accès à Internet (Free) ayant décidé après l&amp;#8217;augmentation de TVA (pas véritablement une augmentation, plutôt une uniformisation : un produit ayant deux taux de TVA différents sur la même facture, c&amp;#8217;était quand même bizarre) de faire de la réception de la télévision une option payante, j&amp;#8217;ai préféré désactiver cette option. Donc pour le même prix qu&amp;#8217;avant, j&amp;#8217;ai un service en moins&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;Donc je cherche les moyens de regarder quand même ce qui pourrait m&amp;#8217;intéresser à la télévision. Et chanceux que je suis, les chaînes me proposent des services de télévision de rattrapage. Et les services des chaînes que j&amp;#8217;ai envie de suivre peuvent être vus sans flash.&lt;/p&gt;
+
+&lt;p&gt;Commençons par arte et son service &lt;a href='http://plus7.arte.tv'&gt;arte + 7&lt;/a&gt;. Le site web utilise des plugins dont je ne dispose pas mais il y a mieux : un &lt;a href='http://gitorious.org/totem-plugin-arte'&gt;plugin pour totem&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Ensuite, France Télévisions et leur site &lt;a href='http://www.pluzz.fr/'&gt;pluzz&lt;/a&gt;. Leur site ne me satisfait pas pour les mêmes raisons que celui d&amp;#8217;arte. Il existe un &lt;a href='http://blog.rom1v.com/2010/07/pluzz-fr-france-televisions-lance-son-service-de-tv-de-rattrapage-non-lisible/'&gt;script shell&lt;/a&gt; mais cela oblige à parcourir le site avant de pouvoir regarder quoi que ce soit. J&amp;#8217;ai donc décidé de créer à mon tour un &lt;a href='https://bitbucket.org/manu/totem-plugin-pluzz/wiki/Home'&gt;plugin totem pour pluzz&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Je peux ainsi voir la météo, des journaux télévisés divers et quelques films (arte les propose, pas France Télévisions semble-t-il). Pour le reste, il y a youtube avec youtube-dl et minitube, il y a miro pour les podcasts. Il faudra aussi que je cherche comment recevoir des chaînes étrangères sans utiliser flash (BBC, NHK et RTP par exemple).&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Écrire coréen et japonais</title>
+  <link href="http://velsheda.lateralis.org/journal/2011/01-05/Ecrire-coreen.html"/>
+  <updated>2011-01-05T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2011/01-05/Ecrire-coreen</id>
+  <content type="html">&lt;p&gt;Suite à un court séjour en Corée, je veux absolument pouvoir écrire du hangul en particulier pour pouvoir écrire 태 (je le mets en signature, ça remplace mes initiales (ça se prononce tae ou taï mais ce n&amp;#8217;est pas pire que éh). Et je veux aussi pouvoir écrire du japonais. Ma liste de langues que j&amp;#8217;aimerais apprendre s&amp;#8217;étoffe : en plus du japonais (日本語) et du portugais (português) voici le coréen (한굴말).&lt;/p&gt;
+
+&lt;p&gt;L&amp;#8217;alphabet coréen est assez intéressant, il a été créé par le roi de Corée Sejong (un roi scientifique à qui sont aussi attribués un cadran solaire évolué et un pluviomètre) et est d&amp;#8217;après les coréens le meilleur du monde. Cela pourrait expliquer les performances en lecture des coréens. Au vu des lignes précédentes, ma quête pour écrire a manifestement été couronnée de succès. Cependant, je ne suis pas tout à fait satisfait. D&amp;#8217;un côté, j&amp;#8217;ai essayé &lt;a href='http://code.google.com/p/uim/'&gt;uim&lt;/a&gt; qui marche très bien mais les icônes de notification soit prennent trop de place soit sont compressées en un petit carré et donc illisibles. D&amp;#8217;autre part, j&amp;#8217;ai essayé &lt;a href='http://code.google.com/p/ibus/'&gt;ibus&lt;/a&gt; plus moderne plus modulaire, plus mieux. Il marche très bien, il a une petite icône suffisante mais il a un bug, à moins que ce soit xterm et urxvt, il m&amp;#8217;empêche de taper des circonflexes et des trémas. En fait, il semble que toutes les touches mortes ne résistent pas (pas de æ non plus donc). C&amp;#8217;est triste parce que je continue d&amp;#8217;écrire plus en français qu&amp;#8217;en ces écritures bizarres et que le circonflexe sert tout de même beaucoup !&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Naviguer autrement avec luakit</title>
+  <link href="http://velsheda.lateralis.org/journal/2010/11-25/Naviguer-autrement-avec-luakit.html"/>
+  <updated>2010-11-25T09:57:11+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2010/11-25/Naviguer-autrement-avec-luakit</id>
+  <content type="html">&lt;p&gt;Je teste régulièrement des navigateurs pour remplacer celui qui est mon préféré depuis presque 10 ans : opera. Firefox n&amp;#8217;a jamais réussi à me convaincre. Je ne sais pas trop pourquoi epiphany ne ma plaît pas. Midori est sympathique mais manque d&amp;#8217;un gestionnaire de mots de passe et parfois de stabilité. Chromium, bah, il est moche et a le même défaut que firefox : les extensions. Et voilà qu&amp;#8217;opera est en train de gonfler (consomme plus de mémoire que firefox !) et ajoute des extensions aussi. Franchement, à quoi servent les extensions ? À modifier les sites que je visite ? Il y a les userscripts pour ça. À avoir de vraies applications bâties sur le navigateur ? Opera a déjà unite et widgets pour ça. Bref, exit Opera.&lt;/p&gt;
+
+&lt;p&gt;J&amp;#8217;ai été intéressé par &lt;a href='http://www.uzbl.org/'&gt;uzbl&lt;/a&gt; il y a quelques temps mais je ne m&amp;#8217;y suis pas adapté (et je n&amp;#8217;ai pas eu le courage d&amp;#8217;adapter sa configuration à mes goûts). Mais l&amp;#8217;idée du navigateur minimal avec un vrai moteur me séduisait. C&amp;#8217;est sur la liste de diffusion d&amp;#8217;&lt;a href='http://awesome.naquadah.org'&gt;awesome&lt;/a&gt; que j&amp;#8217;ai appris l&amp;#8217;existence de luakit qui m&amp;#8217;a plu au premier abord.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href='http://luakit.org/'&gt;luakit&lt;/a&gt; est un navigateur en kit en lua (basé sur webkit). Les fichiers de configuration permettent de définir tout ce qu&amp;#8217;on veut en plus, il suffit de savoir lire lua (et il n&amp;#8217;y a rien de compliqué dans lua). Et en fait les configurations par défaut sont très bien.&lt;/p&gt;
+
+&lt;p&gt;Luakit possède même un gestionnaire de mots de passe (formfiller). Je mets mon login et mon mot de passe, je tape &amp;#8216;zn&amp;#8217; et un fichier texte qui va être sauvegardé dans &lt;code&gt;~/.local/share/luakit/forms/url&lt;/code&gt; apparaît avec les infos en question. Après, &amp;#8216;zl&amp;#8217; remplira les champs avec les mêmes infos. (Aide-mémoire : l pour load, n pour new (et aussi e pour edit et a pour add)).&lt;/p&gt;
+
+&lt;p&gt;Deux défauts tout de même :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;pas de mouse gestures. Mais en fait luakit marche très bien sans souris, donc ça ne me manque pas trop.&lt;/li&gt;
+
+&lt;li&gt;les téléchargements : luakit utilise wget pour télécharger (c&amp;#8217;est fondamentalement très bien). Le problème est qu&amp;#8217;il n&amp;#8217;y a pas de suivi possible : pas de barre de progression, pas de notification de fin de téléchargement. Pour la notification, j&amp;#8217;ai échangé get contre un script perso qui fait un notify-send à la fin du téléchargement.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Pour finir, quelques modifications de la configuration que j&amp;#8217;ai faites&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='lua'&gt;&lt;span class='c1'&gt;-- binds.lua&lt;/span&gt;
+&lt;span class='n'&gt;add_cmds&lt;/span&gt;&lt;span class='p'&gt;({&lt;/span&gt;
+    &lt;span class='c1'&gt;-- Tabs&lt;/span&gt;
+    &lt;span class='n'&gt;cmd&lt;/span&gt;&lt;span class='p'&gt;({&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;buffernext&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;bn&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;},&lt;/span&gt;       &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;    &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;prev_tab&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt; &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt;
+    &lt;span class='n'&gt;cmd&lt;/span&gt;&lt;span class='p'&gt;({&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;bufferprevious&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;bp&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;},&lt;/span&gt;   &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;    &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;next_tab&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt; &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='p'&gt;})&lt;/span&gt;
+
+&lt;span class='n'&gt;add_binds&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;normal&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='p'&gt;{&lt;/span&gt;
+    &lt;span class='c1'&gt;-- Tabs&lt;/span&gt;
+    &lt;span class='n'&gt;key&lt;/span&gt;&lt;span class='p'&gt;({&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;Control&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;},&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;Left&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;        &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;    &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;prev_tab&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt; &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt;
+    &lt;span class='n'&gt;key&lt;/span&gt;&lt;span class='p'&gt;({&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;Control&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;},&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;Right&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;       &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;    &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;next_tab&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt; &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt;
+    &lt;span class='c1'&gt;-- standard back/forward combo&lt;/span&gt;
+    &lt;span class='n'&gt;key&lt;/span&gt;&lt;span class='p'&gt;({&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;Mod1&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;},&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;Left&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;           &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;    &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;back&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;     &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt;
+    &lt;span class='n'&gt;key&lt;/span&gt;&lt;span class='p'&gt;({&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;Mod1&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;},&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;Right&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt;          &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;    &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;forward&lt;/span&gt;&lt;span class='p'&gt;()&lt;/span&gt;  &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt;
+    &lt;span class='c1'&gt;-- readability&lt;/span&gt;
+    &lt;span class='n'&gt;buf&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;^gor$&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;eval_js&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;javascript:(function(){readStyle=...})();&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;javascript&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt;
+    &lt;span class='c1'&gt;-- instapaper&lt;/span&gt;
+    &lt;span class='n'&gt;buf&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;^goi$&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;eval_js&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;javascript:function...;void(0)&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;javascript&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt;
+    &lt;span class='c1'&gt;-- delicious&lt;/span&gt;
+    &lt;span class='n'&gt;buf&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;^god$&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;eval_js&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;javascript:(function(){location.href=&amp;#39;http://www.delicious.com/save?url=&amp;#39;+encodeURIComponent(window.location.href)+&amp;#39;&amp;amp;title=&amp;#39;+encodeURIComponent(document.title)+&amp;#39;&amp;amp;v=5&amp;amp;jump=yes&amp;#39;})()&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;javascript&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt;
+&lt;span class='p'&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+&lt;p&gt;Les &lt;code&gt;javascript:...&lt;/code&gt; correspondent au lien javascript donné par le bookmarklet.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;&lt;strong&gt;Update&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Luakit ayant un peu évolué, les lignes ci-dessus pour les appels javascript ne sont plus corrects : il faut remplacer &lt;code&gt;w:eval_js&lt;/code&gt; par &lt;code&gt;w.view:eval_js&lt;/code&gt; et le second argument est déprécié. Ce qui donne des lignes du genre&lt;/p&gt;
+&lt;div class='highlight'&gt;&lt;pre&gt;&lt;code class='lua'&gt;&lt;span class='n'&gt;buf&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;^gor$&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;,&lt;/span&gt; &lt;span class='k'&gt;function&lt;/span&gt; &lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='n'&gt;w&lt;/span&gt;&lt;span class='p'&gt;.&lt;/span&gt;&lt;span class='n'&gt;view&lt;/span&gt;&lt;span class='p'&gt;:&lt;/span&gt;&lt;span class='n'&gt;eval_js&lt;/span&gt;&lt;span class='p'&gt;(&lt;/span&gt;&lt;span class='s2'&gt;&amp;quot;&lt;/span&gt;&lt;span class='s'&gt;javascript:(function(){_readableOptions=...;})()&amp;quot;&lt;/span&gt;&lt;span class='p'&gt;)&lt;/span&gt; &lt;span class='k'&gt;end&lt;/span&gt;&lt;span class='p'&gt;),&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;</content>
+ </entry>
+ 
+ <entry><title>Google also fails on standards</title>
+  <link href="http://velsheda.lateralis.org/journal/2010/11-19/Google-also-fails-on-standard.html"/>
+  <updated>2010-11-19T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2010/11-19/Google-also-fails-on-standard</id>
+  <content type="html">&lt;p&gt;The google chrome team published a webbook entitled &lt;a href='http://www.20thingsilearned.com/'&gt;&amp;#8220;20 things I learned about browsers &amp;amp; the web&amp;#8221;&lt;/a&gt;. It&amp;#8217;s nice and pretty with beautiful drawings and interesting content. However, there was a distasteful yellow header on the page while I was viewing the page in my current browser of choice: &lt;a href='http://luakit.org/'&gt;luakit&lt;/a&gt; telling me that I needed a modern browser to see the book and all its features:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='luakit' src='http://velsheda.lateralis.org/journal/images/luakit_20.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Well, luakit may not support everything I guessed. Let us use firefox (well technically, iceweasel but it&amp;#8217;s just firefox with another name, it should be recognized as firefox by any intelligent website). Same verdict:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='iceweasel' src='http://velsheda.lateralis.org/journal/images/iceweasel_20.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;OK, I followed the link at the top telling me what modern browsers meant. It listed firefox but also opera. I like opera. And I have the latest alpha of it. Just let me launch it and&amp;#8230; nothing better:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='opera' src='http://velsheda.lateralis.org/journal/images/opera_20.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;So I guess they do user-agent sniffing and they are bad at it. Let us try luakit with chrome&amp;#8217;s user-agent string. Hey it works! And there is a new feature: some kind of red bookmark that shows sharing possibility when I hover it&amp;#8230;&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='luakit as chrome' src='http://velsheda.lateralis.org/journal/images/luakit_as_chrome_20.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;Conclusion: still the same: sniffing user-agent is bad: it prevents my browser from doing what it can do and you pretend it cannot. Please don&amp;#8217;t do it (and if you are Apple or Google, be fair to your competitors).&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Regrouper les sources</title>
+  <link href="http://velsheda.lateralis.org/journal/2010/11-07/regrouper-les-sources.html"/>
+  <updated>2010-11-07T00:00:00+01:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2010/11-07/regrouper-les-sources</id>
+  <content type="html">&lt;p&gt;Il m&amp;#8217;arrive d&amp;#8217;écrire des choses que je publie à divers endroits : sur &lt;a href='https://linuxfr.org/'&gt;linuxfr&lt;/a&gt; pour ce qui ne concerne pas le libre, sur &lt;a href='http://last.fm'&gt;last.fm&lt;/a&gt; pour ce qui a trait à la musique, sur un hébergeur de blogues pour quelques trucs, sur &lt;a href='http://www.goodreads.com'&gt;goodreads&lt;/a&gt; pour mes lectures, sur des hébergeurs de code pour d&amp;#8217;autres trucs. Il m&amp;#8217;arrive également de laisser des commentaires sur différents sites (forums, blogs, journaux, bugzillas&amp;#8230;). Et je me dis que je devrais regrouper tout ça, pour moi et éventuellement pour mes amis.&lt;/p&gt;
+
+&lt;p&gt;Regrouper mes écrits indépendants sur ma page web, je saurais le faire éventuellement en postant d&amp;#8217;une façon différente (avec &lt;a href='http://tarpipe.com/'&gt;tarpipe&lt;/a&gt; par exemple). Regrouper mes commentaires et les conversations afférentes, ça me pose par contre plus de problèmes. Alors, il existe &lt;a href='http://disqus.com'&gt;disqus&lt;/a&gt; et équivalents mais linuxfr n&amp;#8217;en est pas équipé et n&amp;#8217;est pas le seul. Peut-être mon navigateur web devrait-il s&amp;#8217;occuper de se souvenir de ce que je poste et être capable d&amp;#8217;en faire quelque chose.&lt;/p&gt;
+
+&lt;p&gt;Mais d&amp;#8217;un autre côté, je ne souhaite pas regrouper tout cela. Je ne pense pas que ce que j&amp;#8217;écris sur tel ou tel site intéressera ceux qui me connaissent sur un autre site. En cherchant, il est possible de recoller les informations de mes différentes présences en ligne, mais ce n&amp;#8217;est pas tout simple et je ne tiens pas à le simplifier trop.&lt;/p&gt;
+
+&lt;p&gt;Après ce long préambule, deux questions :&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Comment faites-vous pour gérer vos écrits et vos commentaires, les retrouver facilement ?&lt;/li&gt;
+
+&lt;li&gt;Pour ou contre un blog unique pour tout regrouper ?&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry><title>Apple and standards, Fail!</title>
+  <link href="http://velsheda.lateralis.org/journal/2010/06-05/Apple-and-standards-Fail.html"/>
+  <updated>2010-06-05T00:00:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2010/06-05/Apple-and-standards-Fail</id>
+  <content type="html">&lt;p&gt;OK, Apple, that&amp;#8217;s nice that safari supports html5. It is good that apple promotes standards. But please, don&amp;#8217;t cripple others experience based on your assumptions. I don&amp;#8217;t use safari but my browser is quite good with html5. (Depending on the moment, my browser is midori, opera or iceweasel. Safari is not a choice since although I have a PC, safari for PC seems to only come in windows flavor).&lt;/p&gt;
+
+&lt;p&gt;What made me react: &lt;a href='http://www.apple.com/html5'&gt;http://www.apple.com/html5&lt;/a&gt; presents demos of what can be done with html5. Great I&amp;#8217;ll test. Result:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='midori warning' src='http://velsheda.lateralis.org/journal/images/m2.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, you noticed that my browser was not safari but failed to notice that Safari will not install on my operating system. Fail. More importantly, this is standard you are talking about, it means that it does not require a specific browser but should work with all browsers implementing said standards. Whatever, I let midori identify itself as safari and everything works fine:&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt='midori succeeding' src='http://velsheda.lateralis.org/journal/images/m1.png' /&gt;&lt;/p&gt;
+
+&lt;p&gt;This demo does not show how safari supports web standard, I would need a screencast for that (or an iPad, not provided with your website). However I saw the demo and I am pleased with what can be done with web standards. Conclusion, it just works in my own browser. Safari does not work on my platform so why don&amp;#8217;t you allow me to experience your nice website/demo.&lt;/p&gt;
+
+&lt;p&gt;The same goes against &lt;a href='http://jilion.com/sublime/video'&gt;http://jilion.com/sublime/video&lt;/a&gt; I have to mask the identity of my browser to use the video player. I don&amp;#8217;t have flash but my browsers play html5 nicely. Why do you sniff the identity of my browser to prevent me from seeing your awesome work? Don&amp;#8217;t you know that sniffing browsers is bad and that the correct way to do is to test browser abilities rather than name? Check &lt;a href='http://www.happyworm.com/jquery/jplayer/HTML5.Audio.Support/'&gt;http://www.happyworm.com/jquery/jplayer/HTML5.Audio.Support/&lt;/a&gt; they know what my browser can play and allow me to use it the way I want. So Apple, jilion and others, unless you want to come back to dark ages of &lt;a href='http://www.opera.com/press/releases/2003/02/14/'&gt;bork&lt;/a&gt;, you should maybe have a look at things like &lt;a href='http://diveintohtml5.org/detect.html#video-formats'&gt;http://diveintohtml5.org/detect.html#video-formats&lt;/a&gt; that tells me &amp;#8220;Your browser can play both Ogg Theora and H.264 video. Hey, you can play WebM video, too!&amp;#8221;.&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry><title>Is Homebrew the missing package manager for OS X?</title>
+  <link href="http://velsheda.lateralis.org/journal/2010/05-10/Is_Homebrew_the_missing_package_manager_for_OS_X.html"/>
+  <updated>2010-05-10T13:38:00+02:00</updated>
+  <id>http://velsheda.lateralis.org/journal//2010/05-10/Is_Homebrew_the_missing_package_manager_for_OS_X</id>
+  <content type="html">&lt;p&gt;Once upon a time, in OSX land, there were three package managers: fink (the old one inspired by debian&amp;#8217;s apt); macports (inspired by FreeBSD&amp;#8217;s ports); pkgsrc (the ancient one which is originally for netBSD but works everywhere). There also was a port of gentoo portage for osx. And recently appeared homebrew, subtitled &amp;#8220;The missing package manager for OS X&amp;#8221; or &amp;#8220;MacPorts driving you to drink? Try Homebrew!&amp;#8221;. So obviously, it tries to be a macports replacement in a place where macports is not the only reigning package manager.&lt;/p&gt;
+
+&lt;p&gt;As I used macports and got involved in its development by writing portfiles, I got interested in how homebrew may be better. So I read the &lt;a href='http://mxcl.github.com/homebrew/'&gt;homebrew website&lt;/a&gt; and began comparing:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Homebrew is the easiest and most flexible way to install the UNIX tools Apple didn&amp;#8217;t include with OS X.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ brew install wget&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Not really easier than &lt;code&gt;port install wget&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Packages are installed into their own isolated prefixes and then symlinked into /usr/local.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Compare this to macports where packages are installed into their own isolated prefixes and then hardlinked into /opt/local. So it boils down to hardlink versus symlink?&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Just extract the tarball and straight away you have a working Homebrew installation.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Lies, one also need to install Xcode and launch a ruby script. In macports, you also have to install Xcode but not to extract the tarball as there are mpkgs&amp;#8230;&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Create new Homebrew packages in seconds.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ brew create http://foo.com/bar-1.0.tgz&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Created /usr/local/Library/Formula/bar.rb&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Nice. There exists an automatic scripts for creating perl portfiles, but as far as I know nothing for simple classical packages. Well it is true that &lt;code&gt;port cat wget &amp;gt; Portfile; $EDITOR Portfile&lt;/code&gt; is not that difficult.&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Easily adapt Homebrew formula to your needs. And since it&amp;#8217;s all Git underneath your changes are merged automatically with upstream updates.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ brew edit wget # opens in TextMate!&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Or you could easily adapt portfiles to your needs. And since it&amp;#8217;s all svn underneath your changes are merged automatically with macports updates.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ port edit wget # opens in your favorite editor&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Homebrew formula are simple Ruby scripts:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;require &amp;#39;formula&amp;#39;
+
+class Wget &amp;lt; Formula
+  homepage &amp;#39;http://www.gnu.org/wget/&amp;#39;
+  url &amp;#39;http://ftp.gnu.org/wget-1.12.tar.gz&amp;#39;
+  md5 &amp;#39;308a5476fc096a8a525d07279a6f6aa3&amp;#39;
+
+  def install
+    system &amp;quot;./configure --prefix=#{prefix}&amp;quot;
+    system &amp;#39;make install&amp;#39;
+  end
+end&lt;/code&gt;&lt;/pre&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Whereas Portfiles are simple tcl scripts which in easy cases are just a list of keys/values.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;PortSystem 1.0
+name            clive
+version         0.4.5
+description     A console line client for livejournal.
+long_description      This is a console UNIX client for updating weblogs. \
+                      It is designed to be used interactively or as a \
+                      UNX-style filter on the command line.
+maintainers     nomaintainer
+categories      net
+platforms       darwin 
+homepage        http://sourceforge.net/projects/ljclive/
+master_sites    sourceforge:ljclive
+checksums       md5 1ed5e499501e6af761d56727b49aa273
+depends_lib     port:libiconv&lt;/code&gt;&lt;/pre&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Homebrew complements OS X. Install your gems with gem, and their dependencies with brew.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;And be ensnared in a mess of conflicting files, some installed by your package manager, some by gems/cpan/python, some by you. A mess from which you won&amp;#8217;t know what you may safely remove. Or choose to use a serious package manager. Also, I would like to know if homebrew checks that programs indeed install in /usr/local and do not leave things in uncalled places.&lt;/p&gt;
+
+&lt;p&gt;So in the end, unless if I was thinking in ruby, macports is still better for me, and even if beaten in ease of use, pkgsrc stays the reliable one. But in the end, Everybody is reinventing the wheel of the package manager. I&amp;#8217;m aware that macports does not always behave as wanted. I agree that pkgsrc is not as easy as osx users need. I know that fink is sometimes lagging and I&amp;#8217;m sure that homebrew with its 770 recipes is far from being as wide as macports with its 6865 ports and so much from debian and its more than 30000 packages.&lt;/p&gt;</content>
+ </entry>
+ 
+</feed>

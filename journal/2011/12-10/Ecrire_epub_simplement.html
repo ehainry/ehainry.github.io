@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Écrire simplement un ePub [velsheda]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/plus.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/pygments.css" type="text/css" media="screen, projection" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<meta name="author" content="EH" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-c">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+</div>
+<div class="collapse navbar-collapse" id="menu-c">
+<ul class="nav navbar-nav">
+<li><a href="/journal/archive.html">Archive</a></li>
+<li><a href="/journal/categories.html">Categories</a></li>
+<li><a href="/journal/about.html">Contact</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
+<ul class="dropdown-menu">
+	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
+	<li><a href="http://www.goodreads.com/user/show/2385793">Goodreads</a></li>
+	<li><a href="http://last.fm/">Last.fm</a></li>
+	<li><a href="https://linuxfr.org/">DLFP</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10">
+ <h2>Écrire simplement un ePub</h2>
+ <!--<span id="tag">fr, ebook, and epub</span>-->
+ <span id="tag">
+   
+   <a href="/journal/categories.html#fr">fr</a>,
+   
+   <a href="/journal/categories.html#ebook">ebook</a>,
+   
+   <a href="/journal/categories.html#epub">epub</a>,
+   </span>
+ <p>Dans un précédent article, j&#8217;ai prétendu expliquer <a href='/journal/2011/05-27/Ecrire_en_epub.html'>comment créer un epub</a> mais ai surtout parlé de ce qu&#8217;est un fichier epub. Aujourd&#8217;hui, comment écrire un tel fichier depuis zéro.</p>
+
+<p>Comment écrit-on un texte sur un ordinateur ? Il y a deux écoles : d&#8217;une part le logiciel de traitement de texte (microsoft word, libreoffice writer, apple pages&#8230;) d&#8217;autre part un langage de formatage (html, tex, markdown, mediawiki, restructuredtext, &#8230;) dans un éditeur de texte (gedit, textmate, vim, emacs, bloc-note, piratepad&#8230;). Je ne ferai pas de commentaire sur ces deux choix, il est possible de fabriquer un epub depuis un traitement de texte ou à partir d&#8217;un texte brut.</p>
+
+<ul>
+<li>Libreoffice + plugin <a href='http://extensions.services.openoffice.org/en/project/Writer2ePub'>writer2epub</a>. Si vous êtes plutôt traitement de texte, voici un choix intéressant. Vous pouvez reprendre un texte déjà écrit dans votre traitement de texte préféré, l&#8217;ouvrir avec libreoffice et fabriquer un epub automatiquement.</li>
+
+<li><a href='https://code.google.com/p/sigil/'>Sigil</a>. Il est possible d&#8217;écrire directement le document dans sigil, éditeur d&#8217;epub. On peut utiliser sigil comme un traitement de texte ou comme un éditeur de texte en allant modifier directement le code html et le code CSS.</li>
+
+<li>Conversion html ou xhtml puis sigil. Solution intermédiaire : si le document à transformer est au format html ou xhtml ou peut facilement être transformé en l&#8217;un de ces formats, on peut ensuite les insérer dans sigil en tant que nouveaux chapitres, sigil se chargeant d&#8217;inclure les images et les feuilles de style liées. Ça permet par exemple de faire un recueil d&#8217;articles glanés sur le web.</li>
+
+<li>Markdown avec <a href='http://johnmacfarlane.net/pandoc/'>pandoc</a>. La solution que j&#8217;utilise. J&#8217;écris dans mon éditeur de texte favori du code <a href='https://en.wikipedia.org/wiki/Markdown'>markdown</a> agrémenté de notes de bas de pages, de tableaux et éventuellement de mathématiques et je convertis à l&#8217;aide de pandoc. Pandoc peut également transformer des choses écrites en tex, en restructuredtext ou en html en epub (ou en html, tex, groff, rtf ou plein d&#8217;autres formats).</li>
+</ul>
+
+<p>Il existe d&#8217;autres solutions (scripts maison, <a href='http://www.atlantiswordprocessor.com/fr/'>atlantis</a>, <a href='http://www.calibre-ebook.com/'>calibre</a>, <a href='http://www.apple.com/iwork/pages/'>Pages</a>, quarkXpress, <a href='http://www.pouleouoeuf.org/'>la poule ou l&#8217;œuf</a>, &#8230;). Si aucune des 3 ou 4 propositions ci-dessus ne convient, peut-être faudra-t-il se tourner vers une de ces solutions, mais ayant essayé l&#8217;approche scripts maison ainsi que calibre, je préfère largement pandoc, sigil et éventuellement writer2epub.</p>
+<div class="date">Écrit le 10 December 2011 par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+</div>
+<div class="col-sm-2">
+  <a href="/journal/index.html">Index</a><br />
+  Next: <a href="/journal/2011/12-27/Auteurs_domaine_public_2012.html">Auteurs dans le domaine public en 2012</a><br />
+  Prev: <a href="/journal/2011/12-01/nouvelles_selectionnees.html">Sélection de nouvelles en français disponibles sur le net</a><br />
+</div>
+</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

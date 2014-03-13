@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8" />
+<title>Is Homebrew the missing package manager for OS X? [velsheda]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/plus.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/pygments.css" type="text/css" media="screen, projection" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<meta name="author" content="EH" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+</div>
+<div class="collapse navbar-collapse" id="menu-collapse">
+<ul class="nav navbar-nav">
+<li><a href="/journal/archive.html">Archive</a></li>
+<li><a href="/journal/categories.html">Categories</a></li>
+<li><a href="/journal/about.html">Contact</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
+<ul class="dropdown-menu">
+	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
+	<li><a href="http://www.goodreads.com/user/show/2385793">Goodreads</a></li>
+	<li><a href="http://last.fm/">Last.fm</a></li>
+	<li><a href="https://linuxfr.org/">DLFP</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10">
+ <h2>Is Homebrew the missing package manager for OS X?</h2>
+ <span id="tag">en</span>
+ <p>Once upon a time, in OSX land, there were three package managers: fink (the old one inspired by debian&#8217;s apt); macports (inspired by FreeBSD&#8217;s ports); pkgsrc (the ancient one which is originally for netBSD but works everywhere). There also was a port of gentoo portage for osx. And recently appeared homebrew, subtitled &#8220;The missing package manager for OS X&#8221; or &#8220;MacPorts driving you to drink? Try Homebrew!&#8221;. So obviously, it tries to be a macports replacement in a place where macports is not the only reigning package manager.</p>
+
+<p>As I used macports and got involved in its development by writing portfiles, I got interested in how homebrew may be better. So I read the <a href='http://mxcl.github.com/homebrew/'>homebrew website</a> and began comparing:</p>
+
+<blockquote>
+<p>Homebrew is the easiest and most flexible way to install the UNIX tools Apple didn&#8217;t include with OS X.</p>
+
+<pre><code>$ brew install wget</code></pre>
+</blockquote>
+
+<p>Not really easier than <code>port install wget</code></p>
+
+<blockquote>
+<p>Packages are installed into their own isolated prefixes and then symlinked into /usr/local.</p>
+</blockquote>
+
+<p>Compare this to macports where packages are installed into their own isolated prefixes and then hardlinked into /opt/local. So it boils down to hardlink versus symlink?</p>
+
+<blockquote>
+<p>Just extract the tarball and straight away you have a working Homebrew installation.</p>
+</blockquote>
+
+<p>Lies, one also need to install Xcode and launch a ruby script. In macports, you also have to install Xcode but not to extract the tarball as there are mpkgs&#8230;</p>
+
+<blockquote>
+<p>Create new Homebrew packages in seconds.</p>
+
+<pre><code>$ brew create http://foo.com/bar-1.0.tgz</code></pre>
+
+<p>Created /usr/local/Library/Formula/bar.rb</p>
+</blockquote>
+
+<p>Nice. There exists an automatic scripts for creating perl portfiles, but as far as I know nothing for simple classical packages. Well it is true that <code>port cat wget &gt; Portfile; $EDITOR Portfile</code> is not that difficult.</p>
+
+<blockquote>
+<p>Easily adapt Homebrew formula to your needs. And since it&#8217;s all Git underneath your changes are merged automatically with upstream updates.</p>
+
+<pre><code>$ brew edit wget # opens in TextMate!</code></pre>
+</blockquote>
+
+<p>Or you could easily adapt portfiles to your needs. And since it&#8217;s all svn underneath your changes are merged automatically with macports updates.</p>
+
+<pre><code>$ port edit wget # opens in your favorite editor</code></pre>
+
+<blockquote>
+<p>Homebrew formula are simple Ruby scripts:</p>
+
+<pre><code>require &#39;formula&#39;
+
+class Wget &lt; Formula
+  homepage &#39;http://www.gnu.org/wget/&#39;
+  url &#39;http://ftp.gnu.org/wget-1.12.tar.gz&#39;
+  md5 &#39;308a5476fc096a8a525d07279a6f6aa3&#39;
+
+  def install
+    system &quot;./configure --prefix=#{prefix}&quot;
+    system &#39;make install&#39;
+  end
+end</code></pre>
+</blockquote>
+
+<p>Whereas Portfiles are simple tcl scripts which in easy cases are just a list of keys/values.</p>
+
+<pre><code>PortSystem 1.0
+name            clive
+version         0.4.5
+description     A console line client for livejournal.
+long_description      This is a console UNIX client for updating weblogs. \
+                      It is designed to be used interactively or as a \
+                      UNX-style filter on the command line.
+maintainers     nomaintainer
+categories      net
+platforms       darwin 
+homepage        http://sourceforge.net/projects/ljclive/
+master_sites    sourceforge:ljclive
+checksums       md5 1ed5e499501e6af761d56727b49aa273
+depends_lib     port:libiconv</code></pre>
+
+<blockquote>
+<p>Homebrew complements OS X. Install your gems with gem, and their dependencies with brew.</p>
+</blockquote>
+
+<p>And be ensnared in a mess of conflicting files, some installed by your package manager, some by gems/cpan/python, some by you. A mess from which you won&#8217;t know what you may safely remove. Or choose to use a serious package manager. Also, I would like to know if homebrew checks that programs indeed install in /usr/local and do not leave things in uncalled places.</p>
+
+<p>So in the end, unless if I was thinking in ruby, macports is still better for me, and even if beaten in ease of use, pkgsrc stays the reliable one. But in the end, Everybody is reinventing the wheel of the package manager. I&#8217;m aware that macports does not always behave as wanted. I agree that pkgsrc is not as easy as osx users need. I know that fink is sometimes lagging and I&#8217;m sure that homebrew with its 770 recipes is far from being as wide as macports with its 6865 ports and so much from debian and its more than 30000 packages.</p>
+<div class="date">Written on 10 May 2010 by <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+</div>
+<div class="col-sm-2">
+  <a href="/journal/index.html">Index</a><br />
+  Next: <a href="/journal/2010/06-05/Apple-and-standards-Fail.html">Apple and standards, Fail!</a><br />
+  
+</div>
+</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

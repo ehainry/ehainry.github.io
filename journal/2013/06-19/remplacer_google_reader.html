@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>Remplacer Google Reader [velsheda]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/plus.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/pygments.css" type="text/css" media="screen, projection" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<meta name="author" content="EH" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-c">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+</div>
+<div class="collapse navbar-collapse" id="menu-c">
+<ul class="nav navbar-nav">
+<li><a href="/journal/archive.html">Archive</a></li>
+<li><a href="/journal/categories.html">Categories</a></li>
+<li><a href="/journal/about.html">Contact</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
+<ul class="dropdown-menu">
+	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
+	<li><a href="http://www.goodreads.com/user/show/2385793">Goodreads</a></li>
+	<li><a href="http://last.fm/">Last.fm</a></li>
+	<li><a href="https://linuxfr.org/">DLFP</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10">
+ <h2>Remplacer Google Reader</h2>
+ <!--<span id="tag">fr</span>-->
+ <span id="tag">
+   
+   <a href="/journal/categories.html#fr">fr</a>,
+   </span>
+ <p>Le RSS<sup id='fnref:1'><a href='#fn:1' rel='footnote'>1</a></sup> (Really Simple Syndication) est un format de données (comme html) qui permet de rassembler un ensemble d&#8217;articles comme un magazine le ferait. Ce format est particulièrement intéressant pour les blogs puisqu&#8217;il permet de s&#8217;abonner et ainsi de suivre quand de nouveaux articles sont publiés. L&#8217;intérêt par rapport à la page d&#8217;accueil du site est que l&#8217;on peut agréger plusieurs flux rss et donc surveiller de nombreux blogs, magazines à la fois. <a href='http://inessential.com/2013/03/14/why_i_love_rss_and_you_do_too'>RSS c&#8217;est aussi beaucoup plus</a>. Un gros avantage (et inconvénient si on se place de l&#8217;autre côté) est que l&#8217;on peut ainsi lire le contenu d&#8217;un site sans le visiter, donc sans subir de publicités intrusives.</p>
+
+<p>Google, avec <em>Google Reader</em> propose un service en ligne permettant de s&#8217;abonner et de lire des flux dans une interface pratique (on peut regrouper des flux par thème ou par importance, marquer des articles pour les lire plus tard ou les partager). Mais Google a décidé de fermer <em>Google Reader</em>. Et oui, quand on a pour business de vendre de la publicité ciblée, l&#8217;avantage du RSS est un terrible obstacle (et n&#8217;est sans doute pas contrebalancé par la quantité d&#8217;information qu&#8217;on acquiert en connaissant ce que lit le client). Comme je l&#8217;utilisais assidûment (un des rares services google dont j&#8217;étais dépendant), il me faut un remplaçant. Et des remplaçants, beaucoup se sont déclarés : voici par exemple une <a href='http://getgini.com/google-reader-alternatives'>liste non exhaustive</a>.</p>
+
+<p>Parmi ces possibilités, un choix doit être fait entre une solution hébergée, auto-hébergé et un client natif. L&#8217;avantage de l&#8217;hébergé étant que la gestion du service est déléguée, l&#8217;avantage de l&#8217;auto-hébergé que l&#8217;on n&#8217;est pas dépendant du bon vouloir du fournisseur de service (donc pas de fermeture du service comme avec Google Reader. L&#8217;avantage du client natif est qu&#8217;il n&#8217;y a ni gestion ni dépendance, mais il manque a priori la possibilité de lire sur plusieurs appareils sans retomber sur les articles déjà lus. Les solutions hébergées ou auto-hébergées doivent bien entendu être accessibles par un navigateur web et lisibles sur smartphone.</p>
+
+<p>Sous linux, j&#8217;apprécie <a href='http://lzone.de/liferea/'>liferea</a> et <a href='http://newsbeuter.org/'>newsbeuter</a> comme clients natifs. Mais j&#8217;ai finalement opté pour <a href='https://feedhq.org/'>Feedhq</a>, c&#8217;est-à-dire une solution hébergée mais open-source donc que je peux auto-héberger si l&#8217;envie m&#8217;en prend.</p>
+
+<p>En réalité j&#8217;utilise une solution mixte, une sorte de meilleur des deux mondes : un service hébergé et synchronisation depuis un client natif. En l&#8217;occurence, j&#8217;ai choisi newsbeuter (le mutt des lecteurs RSS) qui pouvait se synchroniser avec google reader (c&#8217;est-à-dire récupérer les flux et le statut lu ou non) et peut le faire aussi avec tiny tiny rss. Liferea a les mêmes capacités de synchronisation, sous iOS ou Android, pléthore de lecteurs RSS sont aussi conçu pour se synchroniser avec <em>google reader</em> ou <em>tiny tiny rss</em>. <a href='https://feedhq.org/blog/3-supporting-google-reader-api'>FeedHQ implémente la même API que google reader</a>, d&#8217;autres services font de même, par exemple, feedly ou feedbin et potentiellement seront bien supportés par les clients natifs (ou le sont déjà).</p>
+
+<p>En parallèle, j&#8217;utilise rawdog et rss2email pour quelques flux. En gros, pour des flux riches en images et pas trop fréquents, j&#8217;utilise rawdog qui produit une page web (et j&#8217;ai bidouillé la configuration pour avoir une page &#8220;responsive&#8221; c&#8217;est-à-dire qui s&#8217;adapte joliment aux téléphones avec la plate-forme <a href='http://www.getskeleton.com/'>skeleton</a> : mes fichiers de configuration sont <a href='https://bitbucket.org/manu/rawdog/src'>disponibles</a>). Et pour des flux de textes longs, j&#8217;utilise rss2email qui comme son nom l&#8217;indique m&#8217;envoie des mails contenant les nouveaux articles.</p>
+<div class='footnotes'><hr /><ol><li id='fn:1'>
+<p>Je confonds RSS et ATOM qui ont le même but et sont en général également supportés par les logiciels de RSS.</p>
+<a href='#fnref:1' rev='footnote'>&#8617;</a></li></ol></div>
+<div class="date">Écrit le 19 June 2013 par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+</div>
+<div class="col-sm-2">
+  <a href="/journal/index.html">Index</a><br />
+  Next: <a href="/journal/2013/08-24/fin_de_vie_orizon.html">Livre en fin de vie</a><br />
+  Prev: <a href="/journal/2013/03-14/publicite_mensongere.html">Publicité mensongère</a><br />
+</div>
+</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>
