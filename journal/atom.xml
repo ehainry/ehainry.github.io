@@ -3,7 +3,7 @@
  <title>Velsheda</title>
  <link href="http://velsheda.lateralis.org/journal/atom.xml" rel="self"/>
  <link href="http://velsheda.lateralis.org/journal/"/>
- <updated>2014-03-13T15:53:35+01:00</updated>
+ <updated>2014-03-13T16:08:14+01:00</updated>
  <id>http://velsheda.lateralis.org/journal/</id>
  <author><name>Emmanuel Hainry</name><email>ehainry@laposte.net</email></author>
  
@@ -134,9 +134,9 @@ Categories=Game;&lt;/code&gt;&lt;/pre&gt;
   <link href="http://velsheda.lateralis.org/journal/2012/11-23/ameliorations.html"/>
   <updated>2012-11-23T00:00:00+01:00</updated>
   <id>http://velsheda.lateralis.org/journal//2012/11-23/ameliorations</id>
-  <content type="html">&lt;p&gt;J&amp;#8217;ai &lt;a href='/journal/2012/11-10/Vendee_Globe.html'&gt;donc&lt;/a&gt; réalisé des programmes pour voir les positions des bateaux du Vendée Globe. Trois versions &lt;a href='/cartes/vg_carte.jpg'&gt;statique&lt;/a&gt;, &lt;a href='/vg/nokia.html'&gt;dynamique nokia&lt;/a&gt; et &lt;a href='/vgjs/leaflet.html'&gt;dynamique leaflet&lt;/a&gt; qui donnent respectivement des choses ressemblant à&lt;/p&gt;
+  <content type="html">&lt;p&gt;J&amp;#8217;ai &lt;a href='/journal/2012/11-10/Vendee_Globe.html'&gt;donc&lt;/a&gt; réalisé des programmes pour voir les positions des bateaux du Vendée Globe. Trois versions &lt;a href='/journal/images/vg_carte.jpg'&gt;statique&lt;/a&gt;, &lt;a href='/vg/nokia.html'&gt;dynamique nokia&lt;/a&gt; et &lt;a href='/vgjs/leaflet.html'&gt;dynamique leaflet&lt;/a&gt; qui donnent respectivement des choses ressemblant à&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='statique mini' src='/cartes/vg_vi.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt='statique mini' src='/journal/images/vg_vi.jpg' /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;img alt='dynamique nokia' src='/journal/images/nokia.jpg' /&gt;&lt;/p&gt;
 
@@ -214,12 +214,12 @@ Categories=Game;&lt;/code&gt;&lt;/pre&gt;
   <id>http://velsheda.lateralis.org/journal//2012/11-10/Vendee_Globe</id>
   <content type="html">&lt;p&gt;Hop, départ du Vendée Globe 2012. Comme d&amp;#8217;habitude, la cartographie se fait dans une application flash. C&amp;#8217;est lourd, ça ne marche pas sur mon téléphone et ça fait souffler mon ordinateur comme une baleine ! J&amp;#8217;ai ressorti mon &lt;a href='https://bitbucket.org/manu/vg/'&gt;script python pour fabriquer des cartes statiques&lt;/a&gt; qui donne des &lt;a href='http://velsheda.lateralis.org/cartes/vg_carte.jpg'&gt;cartes plus ou moins jolies&lt;/a&gt;. Et pour être moderne (et apprendre à utiliser les API de cartographie), j&amp;#8217;ai aussi fait deux versions en javascript : &lt;a href='https://bitbucket.org/manu/vendeejs/'&gt;vendeejs&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img alt='Exemple de carte statique' src='/cartes/vg_vi.jpg' /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt='Exemple de carte statique' src='/journal/images/vg_vi.jpg' /&gt;&lt;/p&gt;
 
 &lt;p&gt;En bref trois cartes des positions des bateaux du Vendée Globe :&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;a href='/cartes/vg_carte.jpg'&gt;carte jpg statique (mais à jour)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href='/journal/images/vg_carte.jpg'&gt;carte jpg statique (mais à jour)&lt;/a&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;a href='/vg/nokia.html'&gt;carte dynamique v1&lt;/a&gt;&lt;/li&gt;
 
