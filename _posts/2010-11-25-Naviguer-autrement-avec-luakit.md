@@ -18,6 +18,7 @@ J'ai été intéressé par [uzbl](http://www.uzbl.org/) il y a quelques temps ma
 Luakit possède même un gestionnaire de mots de passe (formfiller). Je mets mon login et mon mot de passe, je tape 'zn' et un fichier texte qui va être sauvegardé dans `~/.local/share/luakit/forms/url` apparaît avec les infos en question. Après, 'zl' remplira les champs avec les mêmes infos. (Aide-mémoire : l pour load, n pour new (et aussi e pour edit et a pour add)).
 
 Deux défauts tout de même :
+
 * pas de mouse gestures. Mais en fait luakit marche très bien sans souris, donc ça ne me manque pas trop.
 * les téléchargements : luakit utilise wget pour télécharger (c'est fondamentalement très bien). Le problème est qu'il n'y a pas de suivi possible : pas de barre de progression, pas de notification de fin de téléchargement. Pour la notification, j'ai échangé get contre un script perso qui fait un notify-send à la fin du téléchargement.
 

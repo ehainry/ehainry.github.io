@@ -17,11 +17,13 @@ Hop, départ du Vendée Globe 2012. Comme d'habitude, la cartographie se fait da
 
 
 En bref trois cartes des positions des bateaux du Vendée Globe :
+
 * [carte jpg statique (mais à jour)](/images/vg_carte.jpg)
 * [carte dynamique v1](/vg/nokia.html)
 * [carte dynamique v2](/vgjs/leaflet.html)
 
 Les versions javascript utilisent
+
 * d'une part l'[API de cartographie nokia](http://api.maps.nokia.com/en/index.html)
 * d'autre part l'[API Leaflet](http://leaflet.cloudmade.com/) avec des tuiles [ESRI](http://www.esri.com/getting-started/developers). Les icones des bateaux ne sont pas terribles, mais j'ai fait une version plus jolie accessible en enlevant "js" dans l'adresse.
 

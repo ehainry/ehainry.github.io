@@ -7,6 +7,7 @@ categories:
 ---
 
 Les nouveaux Kindle d'amazon ont été présentés vendredi dernier. Du Kindle original au Kindle 3 (la génération précédente), la nature de l'appareil n'a pas beaucoup changé : un écran eInk et un clavier. Cette fois il y a du neuf (les claviers disparaissent !). Au programme, [3 nouveaux appareils](http://aldus2006.typepad.fr/mon_weblog/2011/09/amazon-kindle-la-gamme-compl%C3%A8te.html) :
+
 * le Kindle tout court. Un reader 6 pouces sans écran tactile et sans clavier (une sorte de cybook opus en plus grand pour le même prix), vendu 79$ aux USA avec une offre de publicité, 30$ de plus sans pub ou partout dans le monde (ça semble faire 119€ pour la France).
 * Le Kindle Touch. On dirait un Nook Touch, Sony PRS-T1, Cybook Orizon ou Kobo Touch. Ligne, caractéristiques, prix, c'est tout quasi pareil : 139 ou 149$, écran tactile 6'' et presque aucun bouton à l'exception d'un truc sous l'écran. À l'exception du cybook, ils ont d'ailleurs tous le même écran.
 * Le Kindle Fire. Une tablette tactile à mi-chemin entre un nook color et un archos 70. Le prix n'est pas aussi impressionnant que le reader à 79$ : des tablettes à moins de 200$, ça existe [par exemple](http://arnovatech.com/products/g1/arn_7/index.html?country=fr&lang=fr). On peut penser que l'amazon Fire vaut mieux que ça cependant.

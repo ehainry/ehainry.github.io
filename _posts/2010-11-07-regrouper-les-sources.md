@@ -31,5 +31,6 @@ mes différentes présences en ligne, mais ce n'est pas tout simple et je ne
 tiens pas à le simplifier trop.
 
 Après ce long préambule, deux questions : 
+
 * Comment faites-vous pour gérer vos écrits et vos commentaires, les retrouver facilement ?
 * Pour ou contre un blog unique pour tout regrouper ?
