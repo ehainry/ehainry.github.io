@@ -48,8 +48,8 @@
 </div>
 <div class="col-sm-2">
   <a href="/index.html">Index</a><br />
-  {% if page.next %}Next: <a href="/{{ page.next.url }}">{{ page.next.title }}</a><br />{% endif %}
-  {% if page.previous %}Prev: <a href="/{{ page.previous.url }}">{{ page.previous.title }}</a><br />{% endif %}
+  {% if page.next %}Next: <a href="{{ page.next.url }}">{{ page.next.title }}</a><br />{% endif %}
+  {% if page.previous %}Prev: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a><br />{% endif %}
 </div>
 </div>
 </div>
