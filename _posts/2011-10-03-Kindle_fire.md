@@ -28,13 +28,7 @@ amazon n'ont pas plus droit au Kindle Touch que les français.
 
 ### Kindle Fire
 
-Le Kindle Fire a son propre système basé sur [android 2.3](http://www.android.com/).
-Un fork propriétaire d'un système libre.
-Dommage.
-Et surtout un environnement fermé : pas d'accès à l'android market pour installer des applications.
-Le navigateur, silk, a donné lieu à pas mal de
-[discussions](http://www.blogeee.net/2011/09/amazon-kindle-fire-plus-un-portail-quune-tablette/chapter/7/)
-: il n'est pas neutre.
+Le Kindle Fire a son propre système basé sur [android 2.3](http://www.android.com/). Un fork propriétaire d'un système libre. Dommage. Et surtout un environnement fermé : pas d'accès à l'android market pour installer des applications. Le navigateur, silk, a donné lieu à pas mal de [discussions](http://www.blogeee.net/2011/09/amazon-kindle-fire-plus-un-portail-quune-tablette/chapter/7/) : il n'est pas neutre.
 Comme opera mini, les pages lues sur la tablette sont
 lues sur un serveur amazon, compressées (potentiellement expurgées...) avant
 d'être envoyées sur la tablette.
