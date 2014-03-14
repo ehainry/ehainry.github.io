@@ -1,0 +1,78 @@
+@font-face {font-family: "Philosopher"; src: url('../fonts/Philosopher/Philosopher.eot?#iefix') format('embedded-opentype'), url("../fonts/Philosopher/Philosopher.ttf") format("truetype"), url("../fonts/Philosopher/Philosopher.woff") format("woff"), url("../fonts/Philosopher/Philosopher.svg") format("svg"); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'LeagueGothic'; src: url('../fonts/League_Gothic/League_Gothic-webfont.eot'); src: url('../fonts/League_Gothic/League_Gothic-webfont.eot?#iefix') format('eot'), url('../fonts/League_Gothic/League_Gothic-webfont.woff') format('woff'), url('../fonts/League_Gothic/League_Gothic-webfont.ttf') format('truetype'), url('../fonts/League_Gothic/League_Gothic-webfont.svg#webfontbDMP4rcs') format('svg'); font-weight: normal; font-style: normal;}
+
+body {color:#333;
+	/*border-bottom: solid 2px #f94;*/
+	background-color: #fff;
+	font-family: serif;
+	line-height: 1.25;
+}
+h1 {color: #66f; font-family:'LeagueGothic', sans-serif; font-weight: 400; font-size: 2em}
+h2 {margin:30px 30px 0px 0px;
+	font-family: 'LeagueGothic', sans-serif;
+	font-weight: 400;
+	font-size: 2em;
+	line-height:1.2;
+	color:#55a;
+}
+h2 a {color:#00c; text-decoration:none;}
+h3 {margin:15px 0px 0px 10px;
+	font-family: 'LeagueGothic', sans-serif;
+	font-weight: 400;
+	font-size:1.5em;
+	line-height:18px;
+	color:#449;
+}
+div.site>p {margin:0px;text-align: justify}
+div.site>p+p {text-indent:2em;}
+a {color:#00c; text-decoration:none; font-weight:400}
+a:link {color:#f20}
+a:visited {color:#a00}
+ul {list-style: square}
+img {border:0px}
+div.indexb {
+	padding: 10px;
+	background-color: white;
+	background-image: url(elephant.jpg);
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+div.site {padding:10px;
+	max-width:52em;
+	border-style:dashed;
+	border-color:#ddd;
+	border-width:0px 2px 0px 0px;
+	background-color: white;
+	background-image: url(elephant.jpg);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+.code {background-color: lightyellow; font-family: monospace}
+div.code {margin: 4px;
+	border-left: 1px solid black;
+	padding-left: 11px;
+}
+.post {background-color: #ddf; display: inline-block; max-width: 22.2em; margin: 0.3em; padding: .5em; vertical-align: top; border-radius: 0px 30px 0px 0px}
+.post h2 {margin: 0px 0px 1em 0px;}
+blockquote {background-color: lightyellow; border-left: 2px solid yellow; padding-left: 5px;}
+table.center {text-align: center; margin-left: auto; margin-right: auto}
+table {border-collapse: collapse;}
+td {border: 1px solid black; padding: 5px;}
+.chapeau {font-family: 'LeagueGothic', sans-serif;
+	font-weight: 400;
+	margin-top: 0em;
+	text-align: center;
+	font-size: 4em;
+	color: #555;
+}
+.chapeau>a {color: #555; font-weight: bold}
+.title {margin-top: 0em;
+	text-align: left;
+	font-size: larger;
+	font-weight: bold;
+	color: #55a;
+}
+.postdate {font-family: "Monospace"}
+.date {margin-top: 1em; font-size: 75%; border-top: solid thin; max-width: 25em}
+.foot {float: right; text-align: right}
+span#tag {margin: 1em 1em 1em 1em; font-size: small; color: #765}

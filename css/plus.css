@@ -1,0 +1,25 @@
+@font-face {font-family: "Philosopher"; src: url('../fonts/Philosopher/Philosopher.eot?#iefix') format('embedded-opentype'), url("../fonts/Philosopher/Philosopher.ttf") format("truetype"), url("../fonts/Philosopher/Philosopher.woff") format("woff"), url("../fonts/Philosopher/Philosopher.svg") format("svg"); font-weight: normal; font-style: normal;}
+@font-face {font-family: 'LeagueGothic'; src: url('../fonts/League_Gothic/League_Gothic-webfont.eot'); src: url('../fonts/League_Gothic/League_Gothic-webfont.eot?#iefix') format('eot'), url('../fonts/League_Gothic/League_Gothic-webfont.woff') format('woff'), url('../fonts/League_Gothic/League_Gothic-webfont.ttf') format('truetype'), url('../fonts/League_Gothic/League_Gothic-webfont.svg#webfontbDMP4rcs') format('svg'); font-weight: normal; font-style: normal;}
+
+h1, h2, h3 {font-weight: 400; font-family:'LeagueGothic', sans-serif}
+h1 {font-size: 2em}
+h2 {
+	font-size: 2em;
+	line-height:1.2;
+}
+h3 {
+	font-size:1.5em;
+	color:#449;
+}
+p {font-size: 16px; font-family: serif;text-align: justify}
+p+p {text-indent:2em;}
+.postdate {font-family: "Monospace"}
+.date {margin-top: 1em; font-size: 75%; border-top: solid thin; max-width: 25em}
+.foot {float: right; text-align: right}
+#tag {margin: 1em 1em 1em 1em; font-size: small; color: #765}
+/*.navbar-inverse {background-color: #323}*/
+.navbar-inverse .navbar-brand {color: #f84}
+.navbar-inverse .navbar-nav > li > a {color: #f84}
+.container-fluid {max-width: 1024px}
+.panel-footer, .panel-heading {background-color: #fb9 !important}
+.panel-heading a {color: #136}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8" />
+<title>{{ page.title }} [velsheda]</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../../css/bootstrap.min.css" rel="stylesheet">
+<link href="../../css/plus.css" rel="stylesheet">
+<link rel="stylesheet" href="../../css/pygments.css" type="text/css" media="screen, projection" />
+<link rel="icon" type="image/png" href="/icon.png" />
+<meta name="author" content="EH" />
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+<div class="container">
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu-c">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+</div>
+<div class="collapse navbar-collapse" id="menu-c">
+<ul class="nav navbar-nav">
+<li><a href="/journal/archive.html">Archive</a></li>
+<li><a href="/journal/categories.html">Categories</a></li>
+<li><a href="/journal/about.html">Contact</a></li>
+<li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
+<ul class="dropdown-menu">
+	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
+	<li><a href="http://www.goodreads.com/user/show/2385793">Goodreads</a></li>
+	<li><a href="http://last.fm/">Last.fm</a></li>
+	<li><a href="https://linuxfr.org/">DLFP</a></li>
+</ul></li>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-10">
+ <h2>{{ page.title }}</h2>
+ <!--<span id="tag">{{ page.categories | array_to_sentence_string }}</span>-->
+ <span id="tag">
+   {% for category in page.categories %}
+   <a href="/journal/categories.html#{{ category }}">{{ category }}</a>,
+   {% endfor %}</span>
+ {{ content }}
+<div class="date">Écrit le {{ page.date | date_to_long_string }} par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+</div>
+<div class="col-sm-2">
+  <a href="/journal/index.html">Index</a><br />
+  {% if page.next %}Next: <a href="/journal{{ page.next.url }}">{{ page.next.title }}</a><br />{% endif %}
+  {% if page.previous %}Prev: <a href="/journal{{ page.previous.url }}">{{ page.previous.title }}</a><br />{% endif %}
+</div>
+</div>
+</div>
+<script src="../../js/jquery.min.js"></script>
+<script src="../../js/bootstrap.min.js"></script>
+</body>
+</html>

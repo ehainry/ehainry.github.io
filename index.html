@@ -1,0 +1,22 @@
+---
+layout: default
+title: "Velsheda"
+---
+
+<h1>Blog posts: {{ site.posts | size }} Posts</h1>
+<div class="row" id="list">
+	{% for post in site.posts %}
+	<div class="post col-md-4">
+		<div class="panel panel-default">
+			<div class="panel-heading">
+	<h2><a href="/journal{{ post.url }}">{{ post.title }}</a></h2> 
+			</div>
+			<div class="panel-body">
+	<p>{{ post.content | strip_html | truncatewords: 66 }}<a href="/journal{{ post.url }}"> (suite)</a></p>
+			</div>
+			<div class="panel-footer">{{ post.date | date: "%d %b %Y" }} - <span class="tag">{{ post.categories | array_to_sentence_string }}</span></div>
+		</div>
+	</div>
+	{% endfor %}
+
+</div>

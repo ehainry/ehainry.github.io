@@ -1,0 +1,11 @@
+---
+layout: default
+title: "[Velsheda] Archives"
+---
+
+<h1>Blog posts: {{ site.posts | size }} Posts</h1>
+<div id="list">
+<ul>
+	{% for post in site.posts %}<li><span class="postdate">{{ post.date | date: "%d %b %Y" }}</span>: <a href="/journal{{ post.url }}">{{ post.title }}</a></li>{% endfor %}
+</ul>
+</div>
