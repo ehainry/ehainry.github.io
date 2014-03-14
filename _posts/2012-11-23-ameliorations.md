@@ -9,17 +9,17 @@ categories:
 - vendee globe
 ---
 
-J'ai [donc](/journal/2012/11-10/Vendee_Globe.html) réalisé des programmes pour
+J'ai [donc](/2012/11-10/Vendee_Globe.html) réalisé des programmes pour
 voir les positions des bateaux du Vendée Globe. Trois versions
-[statique](/journal/images/vg_carte.jpg), [dynamique nokia](/vg/nokia.html) et
+[statique](/images/vg_carte.jpg), [dynamique nokia](/vg/nokia.html) et
 [dynamique leaflet](/vgjs/leaflet.html) qui donnent respectivement des choses
 ressemblant à
 
-![statique mini](/journal/images/vg_vi.jpg)
+![statique mini](/images/vg_vi.jpg)
 
-![dynamique nokia](/journal/images/nokia.jpg)
+![dynamique nokia](/images/nokia.jpg)
 
-![dynamique leaflet](/journal/images/leaflet.jpg)
+![dynamique leaflet](/images/leaflet.jpg)
 
 J'ai plusieurs idées de modifications et améliorations mais je ne sais
 pas encore trop comment les réaliser ou si ce serait vraiment intéressant.

@@ -7,7 +7,7 @@ categories:
 - epub
 ---
 
-Dans un précédent article, j'ai prétendu expliquer [comment créer un epub](/journal/2011/05-27/Ecrire_en_epub.html) mais ai surtout parlé de ce qu'est un fichier epub. Aujourd'hui, comment écrire un tel fichier depuis zéro.
+Dans un précédent article, j'ai prétendu expliquer [comment créer un epub](/2011/05-27/Ecrire_en_epub.html) mais ai surtout parlé de ce qu'est un fichier epub. Aujourd'hui, comment écrire un tel fichier depuis zéro.
 
 Comment écrit-on un texte sur un ordinateur ? Il y a deux écoles : d'une part le logiciel de traitement de texte (microsoft word, libreoffice writer, apple pages...) d'autre part un langage de formatage (html, tex, markdown, mediawiki, restructuredtext, ...) dans un éditeur de texte (gedit, textmate, vim, emacs, bloc-note, piratepad...). Je ne ferai pas de commentaire sur ces deux choix, il est possible de fabriquer un epub depuis un traitement de texte ou à partir d'un texte brut.
 

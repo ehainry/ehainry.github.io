@@ -8,7 +8,7 @@ categories:
 - propriétés
 ---
 
-Comme je l'ai déjà dit [précédemment](/journal/2011/05-27/Ecrire_en_epub.html), un fichier epub est en réalité une archive zip ayant une structure et un contenu bien défini. Tout d'abord, il contient un fichier nommé `mimetype` contenant le texte `application/epub+zip`, premier fichier dans l'archive, sauvegardé sans compression. Pourquoi ? Tout simplement pour que les octets 30 à 57 du fichier contiennent exactement le texte `mimetypeapplication/epub+zip`.
+Comme je l'ai déjà dit [précédemment](/2011/05-27/Ecrire_en_epub.html), un fichier epub est en réalité une archive zip ayant une structure et un contenu bien défini. Tout d'abord, il contient un fichier nommé `mimetype` contenant le texte `application/epub+zip`, premier fichier dans l'archive, sauvegardé sans compression. Pourquoi ? Tout simplement pour que les octets 30 à 57 du fichier contiennent exactement le texte `mimetypeapplication/epub+zip`.
 
 Les autres fichiers peuvent être compressés et n'ont pas à respecter d'ordre.
 

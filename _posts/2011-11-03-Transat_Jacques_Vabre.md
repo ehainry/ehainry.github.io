@@ -16,6 +16,6 @@ La commande
 
 produit une carte comme 
 
-[<img src="/journal/images/jv.jpg">](http://velsheda.lateralis.org/cartes/choc_11_2009-11-07_09.jpg)
+[<img src="/images/jv.jpg">](http://velsheda.lateralis.org/cartes/choc_11_2009-11-07_09.jpg)
 
 À l'origine, j'avais écrit ce programme pour le Vendée Globe 2008-2009. Je l'ai rendu plus générique pour suivre d'autres courses depuis (Barcelona World Race, St Gilles Croix de Vie - Saint Petersbourg - Saint Gilles, la route du rhum, la route du chocolat...)

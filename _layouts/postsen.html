@@ -20,13 +20,13 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-<a class="navbar-brand" href="/journal/index.html">Velsheda</a>
+<a class="navbar-brand" href="/index.html">Velsheda</a>
 </div>
 <div class="collapse navbar-collapse" id="menu-collapse">
 <ul class="nav navbar-nav">
-<li><a href="/journal/archive.html">Archive</a></li>
-<li><a href="/journal/categories.html">Categories</a></li>
-<li><a href="/journal/about.html">Contact</a></li>
+<li><a href="/archive.html">Archive</a></li>
+<li><a href="/categories.html">Categories</a></li>
+<li><a href="/about.html">Contact</a></li>
 <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
 <ul class="dropdown-menu">
 	<li><a href="https://bitbucket.org/manu">Bitbucket</a></li>
@@ -47,9 +47,9 @@
 <div class="date">Written on {{ page.date | date_to_long_string }} by <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
 </div>
 <div class="col-sm-2">
-  <a href="/journal/index.html">Index</a><br />
-  {% if page.next %}Next: <a href="/journal{{ page.next.url }}">{{ page.next.title }}</a><br />{% endif %}
-  {% if page.previous %}Prev: <a href="/journal{{ page.previous.url }}">{{ page.previous.title }}</a><br />{% endif %}
+  <a href="/index.html">Index</a><br />
+  {% if page.next %}Next: <a href="/{{ page.next.url }}">{{ page.next.title }}</a><br />{% endif %}
+  {% if page.previous %}Prev: <a href="/{{ page.previous.url }}">{{ page.previous.title }}</a><br />{% endif %}
 </div>
 </div>
 </div>

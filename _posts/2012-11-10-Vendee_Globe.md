@@ -13,11 +13,11 @@ categories:
 Hop, départ du Vendée Globe 2012. Comme d'habitude, la cartographie se fait dans une application flash. C'est lourd, ça ne marche pas sur mon téléphone et ça fait souffler mon ordinateur comme une baleine ! J'ai ressorti mon [script python pour fabriquer des cartes statiques](https://bitbucket.org/manu/vg/) qui donne des [cartes plus ou moins jolies](http://velsheda.lateralis.org/cartes/vg_carte.jpg). Et pour être moderne (et apprendre à utiliser les API de cartographie), j'ai aussi fait deux versions en javascript : [vendeejs](https://bitbucket.org/manu/vendeejs/).
 
 
-![Exemple de carte statique](/journal/images/vg_vi.jpg)
+![Exemple de carte statique](/images/vg_vi.jpg)
 
 
 En bref trois cartes des positions des bateaux du Vendée Globe :
-* [carte jpg statique (mais à jour)](/journal/images/vg_carte.jpg)
+* [carte jpg statique (mais à jour)](/images/vg_carte.jpg)
 * [carte dynamique v1](/vg/nokia.html)
 * [carte dynamique v2](/vgjs/leaflet.html)
 
