@@ -28,14 +28,17 @@ amazon n'ont pas plus droit au Kindle Touch que les français.
 
 ### Kindle Fire
 
-Le Kindle Fire a son propre système basé sur [android
-2.3](http://www.android.com/). Un fork propriétaire d'un système libre.
-Dommage. Et surtout un environnement fermé : pas d'accès à l'android market
-pour installer des applications. Le navigateur, silk, a donné lieu à pas mal de
+Le Kindle Fire a son propre système basé sur [android 2.3](http://www.android.com/).
+Un fork propriétaire d'un système libre.
+Dommage.
+Et surtout un environnement fermé : pas d'accès à l'android market pour installer des applications.
+Le navigateur, silk, a donné lieu à pas mal de
 [discussions](http://www.blogeee.net/2011/09/amazon-kindle-fire-plus-un-portail-quune-tablette/chapter/7/)
-: il n'est pas neutre. Comme opera mini, les pages lues sur la tablette sont
+: il n'est pas neutre.
+Comme opera mini, les pages lues sur la tablette sont
 lues sur un serveur amazon, compressées (potentiellement expurgées...) avant
-d'être envoyées sur la tablette. Bref, l'utilisateur est prisonnier et ne voit
+d'être envoyées sur la tablette.
+Bref, l'utilisateur est prisonnier et ne voit
 de l'extérieur que ce qu'on veut bien qu'il voit.
 
 La raison de cette fermeture est assez évidente : comme pour les readers, il n'est pas question que le client aille voir ailleurs. S'il achète quelque chose, cela doit passer par amazon (Apple a la même politique pour les iPhone, iPad). Et cette politique est justifiée par les prix des appareils : d'après [des sources](http://www.electronista.com/articles/11/10/01/ihs.says.amazon.kindle.fire.costs.210.to.make/), le kindle fire est vendu moins cher que ce qu'il coûte à produire. La plus-value attendue par amazon étant sur le contenu (les actionnaires d'amazon n'ont pas l'air de le comprendre cependant (du 28 septembre au 3 octobre, l'action a perdu presque 10%)). C'est le classique modèle des albums Panini : on vous offre l'album dans l'espoir que vous dépensiez des milles et des cents pour le remplir d'images. Et je suppose que c'est le genre de distorsion de concurrence que l'Europe n'approuve pas : les fabriquants européens de tablette et de livres électroniques (archos, bookeen) ne vendent pas de contenu et ne peuvent donc pas lutter contre un vendeur de matériels qui fait payer ce matériel par les auteurs et les éditeurs...
