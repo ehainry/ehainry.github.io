@@ -15,7 +15,7 @@ En pratique, il est affiché dès que ldd renvoie un message d'erreur pour une d
 Ce n'est donc pas le bon message d'erreur.
 En lançant ldd avec les mêmes paramètres (c'est-à-dire avec la variable `LD_LIBRARY_PATH` contenant les chemins vers les bibliothèques steam), le vrai message d'erreur était
 
-   bash: symbol lookup error: /lib/i386-linux-gnu/libncurses.so.5: undefined symbol: _nc_putchar
+    bash: symbol lookup error: /lib/i386-linux-gnu/libncurses.so.5: undefined symbol: _nc_putchar
 
 Message lui aussi étonnant puisque bash n'est pas le shell que j'utilise.
 J'ai ainsi appris que `ldd` était un script shell et que le bash d'une debian testing utilisait une version de ncurses différente de celle de steam...
