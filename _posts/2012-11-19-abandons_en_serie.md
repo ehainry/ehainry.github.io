@@ -40,5 +40,5 @@ Bref, il reste du chemin à faire et une belle course à suivre.
 
 
 [^1]: Jean-Pierre Dick (Virbac Paprec 3), François Gabart (Macif), Armel
-Le Cléac'h (Banque Populaire), Vincent Riou (PRB) et Bernard Stamm
-(Cheminées Poujoulat).
+    Le Cléac'h (Banque Populaire), Vincent Riou (PRB) et Bernard Stamm
+    (Cheminées Poujoulat).
