@@ -11,6 +11,7 @@ h3 {
 	font-size:1.5em;
 	color:#449;
 }
+.row li {font-size: 16px; font-family: serif}
 p {font-size: 16px; font-family: serif;text-align: justify}
 p+p {text-indent:2em;}
 .postdate {font-family: "Monospace"}
