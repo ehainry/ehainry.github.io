@@ -1,6 +1,6 @@
 ---
 layout: posts
-title: "Steam sous debian plante"
+title: "Steam sous debian plantait"
 date: 2014-04-27 20:34:00+02:00
 categories:
 - linux
@@ -23,4 +23,4 @@ J'ai ainsi appris que `ldd` était un script shell et que le bash d'une debian t
 Le correctif a simplement consisté à installer `bash-static` (qui comme son nom l'indique n'utilise pas de bibliothèque partagées) et changer les premières lignes des scripts shell lançant les jeux en remplaçant `#!/bin/bash` par `#!/bin/bash-static`...
 Et tous les jeux se lancent de nouveau.
 
-Je me demande par contre s'il ne serait pas plus futé de la part de Debian de ne mettre que des programmes statiques dans `/bin` comme le fait je crois netBSD, ce qui aurait permis d'éviter ce petit désagrément et limiterait le risque qu'une mise à jour d'une bibliothèque casse un utilitaire indispensable.
+Je me demande par contre s'il ne serait pas plus futé de la part de Debian de ne mettre que des programmes statiques dans `/bin` comme le fait, je crois, netBSD, ce qui aurait permis d'éviter ce petit désagrément et limiterait le risque qu'une mise à jour d'une bibliothèque casse un utilitaire indispensable.
