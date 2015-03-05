@@ -13,8 +13,8 @@ h3 {
 }
 .row li {font-size: 16px; font-family: serif}
 p {font-size: 16px; font-family: serif;text-align: justify}
-img {max-width: 100%}
 p+p {text-indent:2em;}
+p img {max-width: 90%; text-indent: -1em}
 .post {display: inline-table}
 .postdate {font-family: "Monospace"}
 .date {margin-top: 1em; font-size: 75%; border-top: solid thin; max-width: 25em}
