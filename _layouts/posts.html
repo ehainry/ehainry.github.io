@@ -51,8 +51,8 @@
 <div class="date">Écrit le {{ page.date | date_to_long_string }} par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
 </div>
 <div class="col-sm-2">
-  <a href="/index.html">Index</a><br />
-  {% if page.next %}Next: <a href="{{ page.next.url }}">{{ page.next.title }}</a><br />{% endif %}
+  <a href="/index.html">Index</a><br /><br />
+  {% if page.next %}Next: <a href="{{ page.next.url }}">{{ page.next.title }}</a><br /><br />{% endif %}
   {% if page.previous %}Prev: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a><br />{% endif %}
 </div>
 </div>
