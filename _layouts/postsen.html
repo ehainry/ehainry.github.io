@@ -42,7 +42,7 @@
 <div class="row">
 <div class="col-sm-10">
  <h2>{{ page.title }}</h2>
- <span id="tag">{{ page.categories | array_to_sentence_string }}</span>
+ <div id="tag">{{ page.categories | array_to_sentence_string }}</div>
  {{ content }}
 <div class="date">Written on {{ page.date | date_to_long_string }} by <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
 </div>

@@ -43,10 +43,10 @@
 <div class="col-sm-10">
  <h2>{{ page.title }}</h2>
  <!--<span id="tag">{{ page.categories | array_to_sentence_string }}</span>-->
- <span id="tag">
+ <div id="tag">
    {% for category in page.categories %}
-   <a href="/categories.html#{{ category }}">{{ category }}</a>,
-   {% endfor %}</span>
+   &emdash;&nbsp;<a href="/categories.html#{{ category }}">{{ category }}</a>&nbsp;
+   {% endfor %}</div>
  {{ content }}
 <div class="date">Écrit le {{ page.date | date_to_long_string }} par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
 </div>
