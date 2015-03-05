@@ -12,7 +12,7 @@ h3 {
 	color:#449;
 }
 .row li {font-size: 16px; font-family: serif}
-p {font-size: 16px; font-family: serif;text-align: justify}
+p {font-size: 16px; font-family: serif;text-align: justify; max-width: 100%}
 p+p {text-indent:2em;}
 .post {display: inline-table}
 .postdate {font-family: "Monospace"}
