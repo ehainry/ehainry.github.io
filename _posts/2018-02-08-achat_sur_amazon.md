@@ -1,4 +1,10 @@
-Un Achat Sur Amazon
+---
+layout: posts
+title: "Un achat sur Amazon"
+categories:
+- fr
+- amazon
+---
 
 J'ai récemment essayé de faire un achat sur amazon : un appareil que je voulais était moins cher chez Amazon que chez les autres boutiques en ligne que j'ai testées.
 
