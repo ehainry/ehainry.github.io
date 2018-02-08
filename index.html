@@ -4,9 +4,9 @@ title: "Velsheda"
 ---
 
 <h1>Blog posts: {{ site.posts | size }} Posts</h1>
-<div class="row" id="list">
+<div class="fbox" id="list">
 	{% for post in site.posts %}
-	<div class="post col-md-4">
+	<div class="post">
 		<div class="panel panel-default">
 			<div class="panel-heading">
 	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2> 

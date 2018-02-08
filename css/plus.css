@@ -15,7 +15,8 @@ h3 {
 p {font-size: 16px; font-family: serif;text-align: justify}
 p+p {text-indent:1em;}
 img {max-width: 90%}
-.post {display: inline-table}
+.fbox {display: flex; flex-wrap: wrap; justify-content: space-around}
+.post {display: inline-table; max-width: 20em}
 .postdate {font-family: "Monospace"}
 .date {margin-top: 1em; font-size: 75%; border-top: solid thin; max-width: 25em}
 .foot {float: right; text-align: right}
