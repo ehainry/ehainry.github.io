@@ -10,11 +10,11 @@ OK, Apple, that's nice that safari supports html5. It is good that apple promote
 
 What made me react: [http://www.apple.com/html5](http://www.apple.com/html5) presents demos of what can be done with html5. Great I'll test. Result:
 
-![midori warning](http://ehainry.github.io/images/m2.png)
+![midori warning](https://ehainry.github.io/images/m2.png)
 
 So, you noticed that my browser was not safari but failed to notice that Safari will not install on my operating system. Fail. More importantly, this is standard you are talking about, it means that it does not require a specific browser but should work with all browsers implementing said standards. Whatever, I let midori identify itself as safari and everything works fine:
 
-![midori succeeding](http://ehainry.github.io/images/m1.png) 
+![midori succeeding](https://ehainry.github.io/images/m1.png) 
 
 This demo does not show how safari supports web standard, I would need a screencast for that (or an iPad, not provided with your website). However I saw the demo and I am pleased with what can be done with web standards. Conclusion, it just works in my own browser. Safari does not work on my platform so why don't you allow me to experience your nice website/demo.
 
