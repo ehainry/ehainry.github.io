@@ -1,11 +1,11 @@
 ---
 layout: posts
-title: "Authentification à deux facteurs"
+title: "Authentification à deux facteurs : andOTP"
 categories:
 - fr
 ---
 
-# 2FA qu'est-ce que c'est
+# 2FA qu'est-ce que c'est ?
 
 Les mots de passe, même longs et de sécurité élevée, ne sont pas parfaitement sûrs.
 Ils peuvent par exemple apparaître suite à un piratage, une faille technique (heartbleed) ou humaine (il m'est arrivé de taper un mot de passe dans un moteur de recherche au lieu de la fenêtre voisine), ou être contournés.
@@ -41,6 +41,11 @@ Surtout le code est libre (visible et modifiable sur github), l'application est 
 
 Il reste un problème : le second facteur d'HumbleBundle est uniquement compatible avec Authy !
 Pourquoi ne veulent-ils pas utiliser l'algorithme TOTP ?
+
+# Sauvegarde et migration
+
+Pour sauvegarder mes secrets, je les conserve comme dit précédemment dans un fichier tex (chiffré).
+Mais pour les récupérer, j'ai utilisé [ce script de Guillaume Boudreau](https://www.pommepause.com/2014/10/how-to-extract-your-totp-secrets-from-authy/).
 
 # Mise à jour (2 avril 2019)
 
