@@ -42,3 +42,7 @@ Surtout le code est libre (visible et modifiable sur github), l'application est 
 Il reste un problème : le second facteur d'HumbleBundle est uniquement compatible avec Authy !
 Pourquoi ne veulent-ils pas utiliser l'algorithme TOTP ?
 
+# Mise à jour (2 avril 2019)
+
+Humble Bundle est passé à l'algorithme standard ! Je ne sais pas depuis quand, mais plus besoin d'authy.
+
