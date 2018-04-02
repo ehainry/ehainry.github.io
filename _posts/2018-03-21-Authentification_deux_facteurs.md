@@ -47,7 +47,7 @@ Pourquoi ne veulent-ils pas utiliser l'algorithme TOTP ?
 Pour sauvegarder mes secrets, je les conserve comme dit précédemment dans un fichier tex (chiffré).
 Mais pour les récupérer, j'ai utilisé [ce script de Guillaume Boudreau](https://www.pommepause.com/2014/10/how-to-extract-your-totp-secrets-from-authy/).
 
-# Mise à jour (2 avril 2019)
+# Mise à jour (2 avril 2018)
 
 Humble Bundle est passé à l'algorithme standard ! Je ne sais pas depuis quand, mais plus besoin d'authy.
 
