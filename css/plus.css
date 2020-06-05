@@ -22,9 +22,13 @@ img {max-width: 90%}
 .date {margin-top: 1em; font-size: 75%; border-top: solid thin; max-width: 25em}
 .foot {float: right; text-align: right}
 #tag {margin: 1em 1em 1em 1em; font-size: small; color: #765}
-/*.navbar-inverse {background-color: #323}*/
-.navbar-inverse .navbar-brand {color: #f84}
-.navbar-inverse .navbar-nav > li > a {color: #f84}
-.container-fluid {max-width: 1024px}
-.panel-footer, .panel-heading {background-color: #fb9 !important}
-.panel-heading a {color: #136}
+code{white-space: pre; color: #123; font-weight: bold}
+a {color: #F05E1C}
+a:hover {color: #F596AA}
+img {border:0px; max-width: 320px; height: auto}
+.column {padding: .4rem}
+.card {box-shadow:0 .25rem 1rem rgba(48,55,66,.15);}
+.navbar {right: 0; left: 0; background-color: #F05E1C; color: white; z-index: 100; /*padding: .4rem*/}
+.btn.btn-link       {color: white}
+.btn.btn-link:hover {color: white}
+.btn.btn-link:focus {color: white}
