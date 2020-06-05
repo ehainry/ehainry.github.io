@@ -31,14 +31,14 @@ Je vois alors sensiblement les mêmes choses que sur mon carnet, plus un graphe 
 
 Et via la ligne de commande, je peux constater les "performances" par mois et par vélo par exemple :
 
-    $ hledger bal -M Velo
+    $ hledger bal -M Velo -e 2019-08
     Balance changes in 2019/03/01-2019/11/30:
 
-                    ||        2019/03        2019/04        2019/05         2019/06         2019/07         2019/08         2019/09  2019/10       2019/11 
-    ================++=====================================================================================================================================
-     Velo:Mongoose  || -65km, -250min  -15km, -55min -86km, -320min -159km, -535min  -43km, -140min  -56km, -165min -139km, -430min        0 -21km, -70min 
-     Velo:Poulidor  ||              0              0              0               0               0   -10km, -35min               0        0             0 
-     Velo:Riverside ||              0 -29km, -100min              0               0 -126km, -410min -159km, -510min               0        0             0 
-    ----------------++-------------------------------------------------------------------------------------------------------------------------------------
-                    || -65km, -250min -44km, -155min -86km, -320min -159km, -535min -169km, -550min -225km, -710min -139km, -430min        0 -21km, -70min 
+                    ||        2019/03        2019/04        2019/05         2019/06         2019/07
+    ================++=============================================================================
+     Velo:Mongoose  || -65km, -250min  -15km, -55min -86km, -320min -159km, -535min  -43km, -140min
+     Velo:Poulidor  ||              0              0              0               0               0
+     Velo:Riverside ||              0 -29km, -100min              0               0 -126km, -410min
+    ----------------++-----------------------------------------------------------------------------
+                    || -65km, -250min -44km, -155min -86km, -320min -159km, -535min -169km, -550min
 
