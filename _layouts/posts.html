@@ -21,10 +21,12 @@
 <a class="btn btn-link" href="/about.html">Contact</a>
 </section>
 </nav>
+<div class="hero hero-sm bg-dark"><div class="hero-body">
+	<h2>{{ page.title }}</h2>
+</div></div>
 <div class="container grid-lg">
 <div class="columns">
 <div class="column col-10 col-sm-12">
- <h2>{{ page.title }}</h2>
  <div id="tag">
    {% for category in page.categories %}
    &mdash;&nbsp;<a href="/categories.html#{{ category }}">{{ category }}</a>&nbsp;
@@ -32,7 +34,7 @@
  {{ content }}
 <div class="date">Écrit le {{ page.date | date_to_long_string }} par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
 </div>
-<div class="column col-2">
+<div class="column col-2 col-sm-12">
   <a href="/index.html">Index</a><br /><br />
   {% if page.next %}Next: <a href="{{ page.next.url }}">{{ page.next.title }}</a><br /><br />{% endif %}
   {% if page.previous %}Prev: <a href="{{ page.previous.url }}">{{ page.previous.title }}</a><br />{% endif %}

@@ -14,7 +14,7 @@ Les situations sont donc identiques mais le nombre de points pour se maintenir n
 Par le passé, le 18<sup>e</sup> a eu jusqu'à 44 points (AS Monaco en L1 2010-2011 ou Vannes OC en L2 2010-2011). Et une équipe a fini 17<sup>e</sup> avec seulement 37 points (SM Caen en L1 2016-2017). De façon générale, le nombre de points à obtenir pour finir dans les 17 premiers est légèrement plus élevé en L2 qu'en L2 : 
 
 * À l'exception de la saison 2017-2018, le 17<sup>e</sup> de L2 a toujours obtenu au moins 41 points
-* 10 fois lors des 16 dernières saisons, le 17<sup>e</sup> de L2 a obtenu moins de 41 points. Il faut descendre à 38 points pour pouvoir dire "à une exception près, le 17<sup>e</sup> de L1 a toujours obtenu au moins x points".
+* 10 fois lors des 16 dernières saisons, le 17<sup>e</sup> de L1 a obtenu moins de 41 points. Il faut descendre à 38 points pour pouvoir dire "à une exception près, le 17<sup>e</sup> de L1 a toujours obtenu au moins x points".
 * 4 fois le 18<sup>e</sup> de L2 a obtenu 42 points ou plus.
 * le 18e de L1 a obtenu 42 points ou plus seulement 2 fois. Il faut descendre à 40 points pour pouvoir dire "4 fois, le 18<sup>e</sup> de L1 a obtenu n points."
 
