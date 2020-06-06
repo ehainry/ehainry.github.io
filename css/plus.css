@@ -15,9 +15,9 @@ h3 {
 p {font-size: 16px; font-family: serif;text-align: justify}
 p+p {text-indent:1em;}
 img {max-width: 90%}
-.fbox {display: flex; flex-wrap: wrap; justify-content: space-around}
+/*.fbox {display: flex; flex-wrap: wrap; justify-content: space-around}
 .post {display: inline-table}
-@media screen and (min-width:640px) {.post {max-width:310px}}
+@media screen and (min-width:640px) {.post {max-width:310px}}*/
 .postdate {font-family: "Monospace"}
 .date {margin-top: 1em; font-size: 75%; border-top: solid thin; max-width: 25em}
 .foot {float: right; text-align: right}
@@ -26,8 +26,8 @@ code{white-space: pre; color: #123; font-weight: bold}
 a {color: #F05E1C}
 a:hover {color: #F596AA}
 img {border:0px; max-width: 320px; height: auto}
-.column {padding: .4rem}
-.card {box-shadow:0 .25rem 1rem rgba(48,55,66,.15);}
+.column {padding: .2rem}
+.card {box-shadow:0 .25rem 1rem rgba(48,55,66,.15); min-width: 20em; max-width: 60em}
 .navbar {right: 0; left: 0; background-color: #F05E1C; color: white; z-index: 100; /*padding: .4rem*/}
 .btn.btn-link       {color: white}
 .btn.btn-link:hover {color: white}

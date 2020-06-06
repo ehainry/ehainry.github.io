@@ -3,6 +3,7 @@ layout: posts
 title: "Authentification à deux facteurs : andOTP"
 categories:
 - fr
+- Android
 ---
 
 # 2FA qu'est-ce que c'est ?
