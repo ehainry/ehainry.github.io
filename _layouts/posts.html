@@ -23,16 +23,16 @@
 </nav>
 <div class="hero hero-sm bg-dark"><div class="hero-body">
 	<h2>{{ page.title }}</h2>
-</div></div>
-<div class="container grid-lg">
-<div class="columns">
-<div class="column col-10 col-sm-12">
+<div class="date">{{ page.date | date_to_long_string }} &mdash; <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
  <div id="tag">
    {% for category in page.categories %}
    &mdash;&nbsp;<a href="/categories.html#{{ category }}">{{ category }}</a>&nbsp;
    {% endfor %}</div>
+</div></div>
+<div class="container grid-lg">
+<div class="columns">
+<div class="column col-10 col-sm-12">
  {{ content }}
-<div class="date">Écrit le {{ page.date | date_to_long_string }} par <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
 </div>
 <div class="column col-2 col-sm-12">
   <a href="/index.html">Index</a><br /><br />
