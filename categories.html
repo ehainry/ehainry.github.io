@@ -2,12 +2,16 @@
 layout: default
 title: "[Velsheda] Categories"
 ---
+<div class="columns">
+	<div class="column col-4 col-xs-12">
 <h2>Categories:</h2>
 <ul>
 {% for category in site.categories %}
   <li><a href="#{{ category | first }}">{{ category | first }}</a></li>
 {% endfor %}
 </ul>
+	</div>
+	<div class="column col-8 col-xs-12">
 <h2>Articles by Category:</h2>
 <ul>
 {% for category in site.categories %}
@@ -22,4 +26,6 @@ title: "[Velsheda] Categories"
   </li>
 {% endfor %}
 </ul>
+	</div>
+</div>
 Page generated: {{ site.time | date_to_string }}
