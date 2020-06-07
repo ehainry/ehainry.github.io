@@ -22,7 +22,7 @@ img {max-width: 90%}
 .date {margin-top: 1em; font-size: 75%; border-top: solid thin; max-width: 25em}
 .foot {float: right; text-align: right}
 #tag {margin: 1em 1em 1em 1em; font-size: small; color: #765}
-code{white-space: pre; color: #123; font-weight: bold}
+code{white-space: pre; color: #123; font-weight: bold; padding: .2rem 0}
 a {color: #F05E1C}
 a:hover {color: #F596AA}
 img {border:0px; max-width: 320px; height: auto}
