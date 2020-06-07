@@ -7,4 +7,4 @@ Contact
 =======
 
 * <hainry@gmail.com>
-* [Professional Web Page](http://www.loria.fr/~hainry/)
+* [Professional Web Page](https://members.loria.fr/ehainry/)

@@ -23,7 +23,8 @@
 </nav>
 <div class="hero hero-sm bg-dark"><div class="hero-body">
 	<h2>{{ page.title }}</h2>
-<div class="date">{{ page.date | date_to_long_string }} &mdash; <a href="https://plus.google.com/103784259248105086753?rel=author">Emmanuel</a></div>
+	<div class="author"><a href="/about.html">Emmanuel</a></div>
+	<div class="date">{{ page.date | date_to_long_string }}</div>
  <div id="tag">
    {% for category in page.categories %}
    &mdash;&nbsp;<a href="/categories.html#{{ category }}">{{ category }}</a>&nbsp;

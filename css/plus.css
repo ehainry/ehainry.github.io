@@ -22,9 +22,10 @@ li>p {display:inline}
 .footnotes {margin-top: 1rem; border-top: solid thin}
 .footnotes li,.footnotes p {font-size: 12px}
 .postdate {font-family: "Monospace"}
-.date {font-size: 75%}
+.date {font-size: small}
+.author {font-size: small}
 .foot {float: right; text-align: right}
-#tag {font-size: small; color: #765}
+#tag {font-size: small; color: #ddd}
 code{white-space: pre; color: #123; font-weight: bold; padding: .2rem 0}
 a {color: #F05E1C}
 a:hover {color: #F596AA}
