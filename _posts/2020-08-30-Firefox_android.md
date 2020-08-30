@@ -22,7 +22,7 @@ Sur tablette, j'avais une barre d'onglets qui me permettait d'ouvrir un nouvel o
 
 ## Plus de recherches rapides
 
-Depuis toujours, j'ai configuré des raccourcis de recherche dans mon navigateur : si je tape ``wf machin`` dans la barre d'adresse je vais directement sur la page *machin* de wikipédia fr ; ``i Chadwick Boseman`` m'nvoie sur la page imdb de cet acteur, etc. Et ces raccourcis étaient synchronisés dans firefox sur Android. Mais ce n'est plus le cas.
+Depuis toujours, j'ai configuré des raccourcis de recherche dans mon navigateur : si je tape ``wf machin`` dans la barre d'adresse je vais directement sur la page *machin* de wikipédia fr ; ``i Chadwick Boseman`` m'envoie sur la page imdb de cet acteur, etc. Et ces raccourcis étaient synchronisés dans firefox sur Android.
 
 ## Pas de pages fréquentes
 
